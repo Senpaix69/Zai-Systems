@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "382123839385",
+    "project_id": "zaisystems-smc-pvt-ltd",
+    "storage_bucket": "zaisystems-smc-pvt-ltd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382123839385:android:16ec7128258e96f366cd08",
+        "android_client_info": {
+          "package_name": "zaisystems.zaisystems"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382123839385-v38n9ip4aa764afvvmj2vrar2ro80019.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRukMfteVMFhv00iK3HbKmUOw3cGcTP2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "382123839385-v38n9ip4aa764afvvmj2vrar2ro80019.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "382123839385-0ro67hstnbtnu657s3ll6fgs488m497v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "zaisystems.zaisystems"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
