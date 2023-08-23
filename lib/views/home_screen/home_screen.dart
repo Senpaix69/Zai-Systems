@@ -5,8 +5,42 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: lightGolden,
+    return Scaffold(
+      backgroundColor: whiteColor,
+      body: CustomScrollView(
+        slivers: <Widget>[
+          myAppBar(),
+          SliverList(
+            delegate: SliverChildBuilderDelegate(
+              (BuildContext context, int index) {
+                return ListTile(title: Text('Item $index'));
+              },
+              childCount: 20,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  SliverAppBar myAppBar() {
+    return SliverAppBar(
+      elevation: 10.0,
+      expandedHeight: 200,
+      floating: true,
+      pinned: true,
+      snap: true,
+      flexibleSpace: FlexibleSpaceBar(
+        stretchModes: const [
+          StretchMode.fadeTitle,
+          StretchMode.zoomBackground,
+        ],
+        title: appname.text.bold.make(),
+        background: Image.asset(
+          decoration,
+          fit: BoxFit.cover,
+        ),
+      ),
     );
   }
 }

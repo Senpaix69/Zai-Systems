@@ -85,7 +85,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 message: response.dialogText, title: response.dialogTitle);
             return;
           }
-
+          goBack();
           return;
         } catch (e) {
           showError(message: e.toString(), title: "Error");

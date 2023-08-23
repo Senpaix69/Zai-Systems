@@ -51,12 +51,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
         final response = await FirebaseService.instance()
             .signInWithEmailPassword(email: email, password: password);
-        loader.hide();
-        if (response != null) {
-          showError(message: response.dialogText, title: response.dialogTitle);
-        } else {
-          showSnack(message: "Login Successfully");
-        }
+        handleResponse(response);
       } catch (e) {
         loader.hide();
         showError(message: e.toString(), title: "Error");
@@ -67,9 +62,20 @@ class _LoginScreenState extends State<LoginScreen> {
   void googleSignIn() async {
     loader.show(context: context, text: "Please wait...", title: "Login-in");
     try {
-      await _firebaseService.signInWithGoogle();
+      final response = await _firebaseService.signInWithGoogle();
+      handleResponse(response);
     } catch (e) {
       showError(message: e.toString(), title: "Error");
+    }
+  }
+
+  void handleResponse(final response) async {
+    loader.hide();
+    if (response != null) {
+      showError(message: response.dialogText, title: response.dialogTitle);
+    } else {
+      showSnack(message: "Login Successfully");
+      await Get.offAllNamed(AppRoutes.drawerScreen);
     }
   }
 

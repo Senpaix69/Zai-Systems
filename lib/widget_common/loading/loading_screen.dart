@@ -52,8 +52,7 @@ class LoadingScreen {
             child: Container(
               constraints: BoxConstraints(
                 maxHeight: size.height * 0.8,
-                maxWidth: size.width * 0.8,
-                minWidth: size.width * 0.5,
+                minWidth: size.width * 0.8,
               ),
               padding:
                   const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),

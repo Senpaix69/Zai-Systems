@@ -55,3 +55,4 @@ const placeholder = 'assets/images/placeholder.png';
 const emptyList = 'assets/images/nothing.png';
 const errorImage = 'assets/images/error.png';
 const bg = "assets/icons/background.jpeg";
+const decoration = "assets/icons/img2.jpg";

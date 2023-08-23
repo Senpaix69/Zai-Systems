@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
           iconTheme: IconThemeData(color: whiteColor),
-          backgroundColor: Colors.transparent,
+          backgroundColor: mehroonColor,
         ),
         iconTheme: const IconThemeData(color: whiteColor),
         scaffoldBackgroundColor: Colors.transparent,
