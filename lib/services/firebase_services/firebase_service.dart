@@ -60,10 +60,7 @@ class FirebaseService {
 
       if (userCred.user != null) {
         await _user.setUser(userCred.user);
-        if (!File(_user.currentUser!.profileUrl).existsSync() &&
-            _user.currentUser!.downloadableProfileUrl.isNotEmpty) {
-          await downloadProfileImage();
-        }
+        await downloadProfileImage();
       }
       return null;
     } on FirebaseAuthException catch (e) {
@@ -91,7 +88,8 @@ class FirebaseService {
       final user = userCredential.user;
 
       if (user != null) {
-        // setUser
+        await _user.setUser(user);
+        await downloadProfileImage();
       }
       return null;
     } on FirebaseAuthException catch (e) {
@@ -199,6 +197,9 @@ class FirebaseService {
   }
 
   Future<void> downloadProfileImage() async {
+    if (_user.currentUser!.downloadableProfileUrl.isEmpty) {
+      return;
+    }
     try {
       final response =
           await http.get(Uri.parse(_user.currentUser!.downloadableProfileUrl));
