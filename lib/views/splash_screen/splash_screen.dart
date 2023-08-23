@@ -66,7 +66,7 @@ class _SplashScreenState extends State<SplashScreen>
                 position: _textAnimation,
                 child: appname.text
                     .color(whiteColor)
-                    .size(20)
+                    .size(16)
                     .fontFamily(bold)
                     .make(),
               ),

@@ -1,9 +1,12 @@
 import 'dart:io' show File;
 import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/controllers/app_routes.dart';
+import 'package:zaisystems/controllers/drawer_controller.dart';
 import 'package:zaisystems/controllers/user_controller.dart';
 import 'package:zaisystems/models/firebase_user.dart';
 import 'package:zaisystems/services/firebase_services/firebase_service.dart';
+import 'package:zaisystems/views/drawer_screen/widgets/dummy_avt.dart';
+import 'package:zaisystems/views/drawer_screen/widgets/nav_tile.dart';
 import 'package:zaisystems/widget_common/custom_button.dart';
 import 'package:zaisystems/widget_common/dialog_boxs.dart';
 import 'package:zaisystems/widget_common/loading/loading_screen.dart';
@@ -14,6 +17,7 @@ class MenuScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final userController = Get.find<UserController>();
+    final navController = Get.find<NavController>();
     final loader = LoadingScreen.instance();
     final firebase = FirebaseService.instance();
     const dummyUser = FirebaseUser(
@@ -112,56 +116,14 @@ class MenuScreen extends StatelessWidget {
           20.heightBox,
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              ListTile(
-                onTap: () {},
-                leading: const Icon(
-                  Icons.home,
-                  color: whiteColor,
-                ),
-                title: "Home".text.white.make(),
+            children: List.generate(
+              menuItems.length,
+              (index) => navTile(
+                title: menuItems[index].title,
+                icon: menuItems[index].icon,
+                onClick: () => navController.setNavIndex(index),
               ),
-              ListTile(
-                onTap: () {},
-                leading: const Icon(
-                  Icons.design_services,
-                  color: whiteColor,
-                ),
-                title: "HCM 360".text.white.make(),
-              ),
-              ListTile(
-                onTap: () {},
-                leading: const Icon(
-                  Icons.miscellaneous_services,
-                  color: whiteColor,
-                ),
-                title: "Services".text.white.make(),
-              ),
-              ListTile(
-                onTap: () {},
-                leading: const Icon(
-                  Icons.my_library_books_sharp,
-                  color: whiteColor,
-                ),
-                title: "IT Training".text.white.make(),
-              ),
-              ListTile(
-                onTap: () {},
-                leading: const Icon(
-                  Icons.group,
-                  color: whiteColor,
-                ),
-                title: "Team".text.white.make(),
-              ),
-              ListTile(
-                onTap: () {},
-                leading: const Icon(
-                  Icons.contact_page,
-                  color: whiteColor,
-                ),
-                title: "Contact Us".text.white.make(),
-              ),
-            ],
+            ),
           ),
           const Spacer(),
           Row(
@@ -181,12 +143,3 @@ class MenuScreen extends StatelessWidget {
     );
   }
 }
-
-Icon dummyAvt() => const Icon(Icons.person, size: 35, color: mehroonColor);
-
-Widget circularBox({required Widget widget}) => widget.box
-    .color(lightGolden)
-    .roundedFull
-    .size(60, 60)
-    .clip(Clip.antiAlias)
-    .make();
