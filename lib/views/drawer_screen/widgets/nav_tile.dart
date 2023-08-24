@@ -12,6 +12,7 @@ Widget navTile({
       gradient: isActive
           ? const LinearGradient(colors: <Color>[
               mehroonColor,
+              mehroonColor,
               Colors.black,
             ])
           : null,
@@ -19,9 +20,16 @@ Widget navTile({
     ),
     child: Row(
       children: <Widget>[
-        Icon(icon),
+        Icon(
+          icon,
+          color: isActive ? whiteColor : lightGrey,
+        ),
         10.widthBox,
-        title.text.white.size(16).fontFamily(isActive ? bold : regular).make(),
+        title.text
+            .color(isActive ? whiteColor : lightGrey)
+            .size(16)
+            .fontFamily(isActive ? bold : regular)
+            .make(),
       ],
     ),
   ).onTap(onClick);
