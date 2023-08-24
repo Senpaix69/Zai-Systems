@@ -118,10 +118,13 @@ class MenuScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: List.generate(
               menuItems.length,
-              (index) => navTile(
-                title: menuItems[index].title,
-                icon: menuItems[index].icon,
-                onClick: () => navController.setNavIndex(index),
+              (index) => Obx(
+                () => navTile(
+                  title: menuItems[index].title,
+                  icon: menuItems[index].icon,
+                  isActive: index == navController.currentIndex,
+                  onClick: () => navController.setNavIndex(index),
+                ),
               ),
             ),
           ),

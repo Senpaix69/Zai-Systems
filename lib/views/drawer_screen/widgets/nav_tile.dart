@@ -1,16 +1,28 @@
 import 'package:zaisystems/consts/imports.dart';
 
-ListTile navTile({
+Widget navTile({
   required String title,
   required IconData icon,
+  bool isActive = false,
   required Function() onClick,
 }) {
-  return ListTile(
-    onTap: onClick,
-    leading: Icon(
-      icon,
-      color: whiteColor,
+  return Container(
+    padding: const EdgeInsets.all(15),
+    decoration: BoxDecoration(
+      gradient: isActive
+          ? const LinearGradient(colors: <Color>[
+              mehroonColor,
+              Colors.black,
+            ])
+          : null,
+      borderRadius: BorderRadius.circular(10),
     ),
-    title: title.text.white.make(),
-  );
+    child: Row(
+      children: <Widget>[
+        Icon(icon),
+        10.widthBox,
+        title.text.white.size(16).fontFamily(isActive ? bold : regular).make(),
+      ],
+    ),
+  ).onTap(onClick);
 }
