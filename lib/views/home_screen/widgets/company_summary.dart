@@ -23,5 +23,5 @@ Widget companySummary(BuildContext context) {
       ).constrainedBox(BoxConstraints(minWidth: context.screenWidth / 2)),
       10.heightBox,
     ],
-  ).box.white.roundedSM.make();
+  ).box.white.make();
 }

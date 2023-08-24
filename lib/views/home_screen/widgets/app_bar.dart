@@ -5,9 +5,7 @@ SliverAppBar myAppBar(context) {
   return SliverAppBar(
     elevation: 10.0,
     expandedHeight: 200,
-    floating: true,
     pinned: true,
-    snap: true,
     leading: IconButton(
       onPressed: () => ZoomDrawer.of(context)!.toggle(),
       icon: const Icon(Icons.menu),
