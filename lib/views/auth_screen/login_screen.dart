@@ -7,6 +7,7 @@ import 'package:zaisystems/widget_common/custom_button.dart';
 import 'package:zaisystems/widget_common/custom_textfield.dart';
 import 'package:zaisystems/widget_common/dialog_boxs.dart';
 import 'package:zaisystems/widget_common/loading/loading_screen.dart';
+import 'package:zaisystems/widget_common/social_button.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -172,19 +173,5 @@ class _LoginScreenState extends State<LoginScreen> {
         socialButton(onClick: () {}, icon: socialIconList[2]),
       ],
     );
-  }
-
-  Widget socialButton({Function()? onClick, required String icon}) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: CircleAvatar(
-        backgroundColor: lightGrey,
-        radius: 25,
-        child: Image.asset(
-          icon,
-          width: 30,
-        ),
-      ),
-    ).onTap(onClick);
   }
 }

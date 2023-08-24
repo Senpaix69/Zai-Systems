@@ -1,58 +1,45 @@
 //icons
-const icAdd = "assets/icons/add.png";
 const icAppLogo = "assets/icons/app_logo.png";
+const icAppLogoWhite = "assets/icons/logowhite.png";
 const icAppleLogo = "assets/icons/apple_logo.png";
-const icArrow = "assets/icons/arrow.png";
-const icBell = "assets/icons/bell.png";
-const icBlog = "assets/icons/blog.png";
-const icBrands = "assets/icons/brands.png";
-const icCompaigns = "assets/icons/compaigns.png";
-const icCart = "assets/icons/cart.png";
-const icCategories = "assets/icons/categories.png";
-const icChangePassword = "assets/icons/changed_password.png";
-const icChat = "assets/icons/chat.png";
-const icClubpoint = "assets/icons/clubpoint.png";
-const icCoupon = "assets/icons/coupon.png";
-const icDownload = "assets/icons/download.png";
-const icEdit = "assets/icons/edit.png";
 const icFacebookLogo = "assets/icons/facebook_logo.png";
-const icFavoriteSeller = "assets/icons/favoriteseller.png";
-const icFlashDeal = "assets/icons/flash_deal.png";
 const icGoogleLogo = "assets/icons/google_logo.png";
-const icMenu = "assets/icons/o-hamburger.png";
-const icHeadphone = "assets/icons/headphone.png";
-const icHeart = "assets/icons/heart.png";
-const icHome = "assets/icons/home.png";
 const icLogin = "assets/icons/login.png";
 const icLogout = "assets/icons/logout.png";
-const icMessages = "assets/icons/messages.png";
-const icMinus = "assets/icons/minus.png";
-const icMore = "assets/icons/more.png";
-const icOrder = "assets/icons/order.png";
-const icOrders = "assets/icons/orders.png";
-const icPlaceholderRect = "assets/icons/placeholder_rectangle.png";
-const icPlaceholder = "assets/icons/placeholder.png";
-const icPlus = "assets/icons/plus.png";
-const icPoints = "assets/icons/points.png";
-const icProfile = "assets/icons/profile.png";
-const icRefund = "assets/icons/refund.png";
-const icSearch = "assets/icons/search.png";
-const icShop = "assets/icons/shop.png";
-const icSplashBg =
-    "assets/icons/splash_login_registration_background_image.png";
-const icSquareLogo = "assets/icons/square_logo.png";
-const icTodaysDeal = "assets/icons/todays_deal.png";
-const icTopCategories = "assets/icons/top_categories.png";
-const icTopSeller = "assets/icons/top_sellers.png";
-const icTrash = "assets/icons/trash.png";
 const icTwitterLogo = "assets/icons/twitter_logo.png";
-const icWallet = "assets/icons/wallet.png";
-const icWhiteTick = "assets/icons/white_tick.png";
-const icWholeSale = "assets/icons/wholesale.png";
+const footerFbLogo = "assets/icons/facebook.png";
+const footerInstaLogo = "assets/icons/insta.png";
+const footerLinkedInLogo = "assets/icons/linkedin.png";
+const footerWebLogo = "assets/icons/website.png";
 
 //images
-const placeholder = 'assets/images/placeholder.png';
-const emptyList = 'assets/images/nothing.png';
-const errorImage = 'assets/images/error.png';
-const bg = "assets/icons/background.jpeg";
-const decoration = "assets/icons/img2.jpg";
+const bg = "assets/images/background.jpeg";
+const decoration = "assets/images/img2.jpg";
+const slider1 = "assets/images/bg.png";
+const slider2 = "assets/images/bg3.png";
+const slider3 = "assets/images/img2.jpg";
+const cSlider1 = "assets/images/webapp.png";
+const cSlider2 = "assets/images/ecom.png";
+const cSlider3 = "assets/images/schedule.png";
+const imgFooter = "assets/images/location.png";
+
+// courses
+const imgGraphics = "assets/images/course/Graphics.png";
+const imgAngular = "assets/images/course/Angular.png";
+const imgJava = "assets/images/course/java.png";
+const imgJs = "assets/images/course/Javascript.png";
+const imgWordpress = "assets/images/course/wordpress.png";
+const imgAppDev = "assets/images/course/App_Development.png";
+const imgReact = "assets/images/course/React.png";
+const imgAspNet = "assets/images/course/ASP_Net.png";
+const imgFrontend = "assets/images/course/Frontend.png";
+const imgPython = "assets/images/course/Python.png";
+const imgNode = "assets/images/course/NodeJS.png";
+const imgBlockChain = "assets/images/course/Blockchain.png";
+const imgVue = "assets/images/course/Vue_JS.png";
+const temp = "assets/images/course/paypal.png";
+
+// testimonials
+const chandra = "assets/images/testimonial/chandra.jpg";
+const jason = "assets/images/testimonial/jason.jpg";
+const ryan = "assets/images/testimonial/ryan.jpg";

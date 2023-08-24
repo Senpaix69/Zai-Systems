@@ -12,7 +12,6 @@ Widget navTile({
       gradient: isActive
           ? const LinearGradient(colors: <Color>[
               mehroonColor,
-              mehroonColor,
               Colors.black,
             ])
           : null,
