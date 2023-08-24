@@ -18,7 +18,7 @@ class Testimonials extends StatelessWidget {
             VxSwiper.builder(
               aspectRatio: 9 / 15,
               viewportFraction: 1.0,
-              autoPlayAnimationDuration: const Duration(milliseconds: 300),
+              autoPlayAnimationDuration: const Duration(milliseconds: 500),
               autoPlayInterval: const Duration(seconds: 12),
               autoPlay: true,
               onPageChanged: (index) =>

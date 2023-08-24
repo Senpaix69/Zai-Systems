@@ -25,7 +25,7 @@ class CustomSwiper extends StatelessWidget {
           children: <Widget>[
             VxSwiper.builder(
               viewportFraction: 1.0,
-              autoPlayAnimationDuration: const Duration(milliseconds: 300),
+              autoPlayAnimationDuration: const Duration(milliseconds: 500),
               autoPlayInterval: Duration(seconds: duration),
               autoPlay: true,
               enlargeCenterPage: true,
