@@ -1,7 +1,7 @@
 import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/controllers/app_routes.dart';
-import 'package:zaisystems/services/firebase_services/firebase_service.dart';
-import 'package:zaisystems/utils/snackbar.dart';
+import 'package:zaisystems/services/firebase_service.dart';
+import 'package:zaisystems/utils/snackbar.dart' show showSnack;
 import 'package:zaisystems/widget_common/bg_widget.dart';
 import 'package:zaisystems/widget_common/custom_button.dart';
 import 'package:zaisystems/widget_common/custom_textfield.dart';
@@ -31,12 +31,10 @@ class _LoginScreenState extends State<LoginScreen> {
     super.dispose();
   }
 
-  void showSnack({required String message}) => showSnackbar(
-        context: context,
-        message: message,
-      );
-
-  void showError({required String message, required String title}) =>
+  void showError({
+    required String message,
+    required String title,
+  }) =>
       errorDialogue(
         context: context,
         message: message,
@@ -45,7 +43,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   void loginUser() async {
     if (_formKey.currentState!.validate()) {
-      loader.show(context: context, text: "Please wait...", title: "Login-in");
+      loader.show(context: context, text: wait, title: logingIn);
       try {
         final email = _emailController.text.toLowerCase().trim();
         final password = _passwordController.text;
@@ -55,18 +53,19 @@ class _LoginScreenState extends State<LoginScreen> {
         handleResponse(response);
       } catch (e) {
         loader.hide();
-        showError(message: e.toString(), title: "Error");
+        showError(message: e.toString(), title: error);
       }
     }
   }
 
   void googleSignIn() async {
-    loader.show(context: context, text: "Please wait...", title: "Login-in");
+    loader.show(context: context, text: wait, title: logingIn);
     try {
       final response = await _firebaseService.signInWithGoogle();
       handleResponse(response);
     } catch (e) {
-      showError(message: e.toString(), title: "Error");
+      loader.hide();
+      showError(message: e.toString(), title: error);
     }
   }
 
@@ -75,7 +74,7 @@ class _LoginScreenState extends State<LoginScreen> {
     if (response != null) {
       showError(message: response.dialogText, title: response.dialogTitle);
     } else {
-      showSnack(message: "Login Successfully");
+      showSnack(context: context, message: successLogin);
       await Get.offAllNamed(AppRoutes.drawerScreen);
     }
   }

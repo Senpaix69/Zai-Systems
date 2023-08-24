@@ -56,7 +56,7 @@ class Testimonials extends StatelessWidget {
             Obx(
               () => DotIndicator(
                 currentIndex: controller.sliderIndices[3].value,
-                itemCount: sliderList.length,
+                itemCount: testimonialsList.length,
                 activeColor: mehroonColor,
               ).positioned(
                 bottom: 10.0,

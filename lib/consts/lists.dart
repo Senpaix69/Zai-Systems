@@ -1,6 +1,10 @@
-import 'package:flutter/material.dart' show IconData, Icons;
+import 'package:flutter/material.dart' show Icons;
 import 'package:zaisystems/consts/images.dart';
 import 'package:zaisystems/consts/strings.dart';
+import 'package:zaisystems/models/experties_item.dart';
+import 'package:zaisystems/models/menu_item.dart';
+import 'package:zaisystems/models/slider_item.dart';
+import 'package:zaisystems/models/testimonial_item.dart';
 
 const socialIconList = [
   icFacebookLogo,
@@ -16,12 +20,6 @@ const footerIconList = [
 ];
 
 // for drawer
-class MenuItem {
-  final String title;
-  final IconData icon;
-  const MenuItem(this.title, this.icon);
-}
-
 List<MenuItem> menuItems = [
   const MenuItem(home, Icons.home),
   const MenuItem(hcm360, Icons.design_services),
@@ -32,13 +30,6 @@ List<MenuItem> menuItems = [
 ];
 
 // Slider List
-class SliderItem {
-  final String title;
-  final String text;
-  final String image;
-  const SliderItem(this.title, this.text, this.image);
-}
-
 const sliderList = [
   SliderItem(
     appname,
@@ -91,18 +82,6 @@ const hcmBtns = [
   allSolutions,
 ];
 
-class ExpertiesItem {
-  final double ratio;
-  final String percent;
-  final String title;
-
-  const ExpertiesItem({
-    required this.ratio,
-    required this.percent,
-    required this.title,
-  });
-}
-
 const expertiesList = [
   ExpertiesItem(ratio: 0.85, percent: "85%", title: "Design"),
   ExpertiesItem(ratio: 0.90, percent: "90%", title: "Managed Service"),
@@ -111,22 +90,6 @@ const expertiesList = [
 ];
 
 // Testimonials
-class TestimonialItem {
-  final String name;
-  final String image;
-  final String country;
-  final String position;
-  final String feedback;
-
-  const TestimonialItem({
-    required this.name,
-    required this.image,
-    required this.country,
-    required this.feedback,
-    required this.position,
-  });
-}
-
 const testimonialsList = [
   TestimonialItem(
     name: polName,

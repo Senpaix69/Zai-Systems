@@ -10,7 +10,7 @@ import 'package:path_provider/path_provider.dart'
 import 'package:uuid/uuid.dart';
 import 'package:zaisystems/consts/strings.dart';
 import 'package:zaisystems/controllers/user_controller.dart';
-import 'package:zaisystems/services/firebase_services/auth_errors.dart';
+import 'package:zaisystems/services/auth_errors.dart';
 import 'package:zaisystems/utils/compressor.dart';
 
 class FirebaseService {

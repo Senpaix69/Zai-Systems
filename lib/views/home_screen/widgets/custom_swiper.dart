@@ -1,5 +1,6 @@
 import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/controllers/slider_controller.dart';
+import 'package:zaisystems/models/slider_item.dart';
 import 'package:zaisystems/widget_common/dot_indicator.dart';
 
 class CustomSwiper extends StatelessWidget {

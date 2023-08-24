@@ -33,10 +33,10 @@ class Footer extends StatelessWidget {
               ),
             ),
             10.heightBox,
-            "© 2022 – Zai Systems – All Rights Reserved"
+            "© 2022 - Zai Systems - All Rights Reserved"
                 .text
                 .white
-                .size(16)
+                .size(14)
                 .make(),
           ],
         ).box.padding(const EdgeInsets.all(20)).make(),

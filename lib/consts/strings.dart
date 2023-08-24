@@ -13,14 +13,27 @@ const repassword = "re-type password";
 const passwordHint = "*********";
 const forgetPassword = "Forget Password";
 const login = "Login";
+const logingIn = "Loging In";
+const logout = "Logout";
+const logingOut = "Loging Out";
+const confirmLogout = "Are you sure you want to logout?";
 const createNewAccount = "or, create new account";
 const signup = "Sign up";
+const signing = "Singing Up";
 const loginWith = "Login with";
 const name = "Name";
 const nameHint = "Enter name";
 const privacyPolicy = "Privacy Policy";
 const termsAndConditions = "Terms and Conditions";
 const alreadyHaveAcc = "Already have an account";
+const wait = "Please wait...";
+const error = "Error";
+const successLogin = "Login Successfully";
+const poorPass = "Poor Password";
+const passNotMatch = "Password did not match";
+const confirmPass = "Confirm Password";
+const passLengthValid = "Required password of lenght 6 character at least";
+const agreeToTerms = "Please agree to terms and conditions!";
 
 // -------------------- Home Screen ----------------------------------
 // names

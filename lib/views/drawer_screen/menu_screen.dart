@@ -3,8 +3,7 @@ import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/controllers/app_routes.dart';
 import 'package:zaisystems/controllers/drawer_controller.dart';
 import 'package:zaisystems/controllers/user_controller.dart';
-import 'package:zaisystems/models/firebase_user.dart';
-import 'package:zaisystems/services/firebase_services/firebase_service.dart';
+import 'package:zaisystems/services/firebase_service.dart';
 import 'package:zaisystems/views/drawer_screen/widgets/dummy_avt.dart';
 import 'package:zaisystems/views/drawer_screen/widgets/nav_tile.dart';
 import 'package:zaisystems/widget_common/custom_button.dart';
@@ -20,11 +19,6 @@ class MenuScreen extends StatelessWidget {
     final navController = Get.find<NavController>();
     final loader = LoadingScreen.instance();
     final firebase = FirebaseService.instance();
-    const dummyUser = FirebaseUser(
-      id: "",
-      name: name,
-      email: emailHint,
-    );
 
     void showLoader({
       required String message,
@@ -32,8 +26,8 @@ class MenuScreen extends StatelessWidget {
     }) =>
         loader.show(
           context: context,
-          text: "Please wait...",
-          title: "Login-out",
+          text: message,
+          title: title,
         );
 
     void showError({required String message, required String title}) =>
@@ -46,17 +40,17 @@ class MenuScreen extends StatelessWidget {
     void logOut() async {
       if (await confirmDialogue(
         context: context,
-        message: "Are you sure you want to logout?",
-        title: "Logout",
+        message: confirmLogout,
+        title: logout,
       )) {
         try {
-          showLoader(message: "Please wait...", title: "Loggin-out");
+          showLoader(message: wait, title: logingOut);
           await firebase.logOut();
           loader.hide();
           await Get.offAllNamed(AppRoutes.loginScreen);
         } catch (e) {
           loader.hide();
-          showError(message: e.toString(), title: "Error");
+          showError(message: e.toString(), title: error);
         }
       }
     }
@@ -82,7 +76,7 @@ class MenuScreen extends StatelessWidget {
       margin: EdgeInsets.symmetric(
           horizontal: 10.0, vertical: context.screenHeight * 0.14),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Obx(
             () => Row(
@@ -93,17 +87,10 @@ class MenuScreen extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      (userController.isLoggedIn
-                              ? userController.currentUser!.name
-                              : dummyUser.name)
-                          .text
-                          .white
+                      userController.currentUser!.name.text.white
                           .fontFamily(bold)
                           .make(),
-                      (userController.isLoggedIn
-                              ? userController.currentUser!.email
-                              : dummyUser.email)
-                          .text
+                      userController.currentUser!.email.text
                           .size(10)
                           .white
                           .make(),
@@ -115,7 +102,6 @@ class MenuScreen extends StatelessWidget {
           ),
           20.heightBox,
           Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: List.generate(
               menuItems.length,
               (index) => Obx(
@@ -129,17 +115,11 @@ class MenuScreen extends StatelessWidget {
             ),
           ),
           const Spacer(),
-          Row(
-            children: <Widget>[
-              Expanded(
-                child: customButton(
-                  onPress: logOut,
-                  title: "Logout",
-                  textColor: whiteColor,
-                  btnColor: mehroonColor,
-                ),
-              ),
-            ],
+          customButton(
+            onPress: logOut,
+            title: logout,
+            textColor: whiteColor,
+            btnColor: mehroonColor,
           ),
         ],
       ),

@@ -1,6 +1,6 @@
 import 'package:zaisystems/consts/imports.dart';
-import 'package:zaisystems/services/firebase_services/firebase_service.dart';
-import 'package:zaisystems/utils/snackbar.dart';
+import 'package:zaisystems/services/firebase_service.dart';
+import 'package:zaisystems/utils/snackbar.dart' show showSnack;
 import 'package:zaisystems/widget_common/bg_widget.dart';
 import 'package:zaisystems/widget_common/custom_button.dart';
 import 'package:zaisystems/widget_common/custom_textfield.dart';
@@ -34,11 +34,6 @@ class _SignupScreenState extends State<SignupScreen> {
     super.dispose();
   }
 
-  void showSnack({required String message}) => showSnackbar(
-        context: context,
-        message: message,
-      );
-
   void showError({required String message, required String title}) =>
       errorDialogue(
         context: context,
@@ -50,15 +45,15 @@ class _SignupScreenState extends State<SignupScreen> {
     if (_formKey.currentState!.validate()) {
       if (_passwordController.text.length < 6) {
         showError(
-          message: "Required password of lenght 6 character at least",
-          title: "Poor Password",
+          message: passLengthValid,
+          title: poorPass,
         );
         return;
       }
       if (_passwordController.text != _repasswordController.text) {
         showError(
-          message: "Password did not match",
-          title: "Confirm Password",
+          message: passNotMatch,
+          title: confirmPass,
         );
         return;
       }
@@ -66,8 +61,8 @@ class _SignupScreenState extends State<SignupScreen> {
       if (checkbox) {
         loader.show(
           context: context,
-          text: "Please wait...",
-          title: "Sign Up",
+          text: wait,
+          title: signing,
         );
 
         try {
@@ -86,14 +81,13 @@ class _SignupScreenState extends State<SignupScreen> {
             return;
           }
           goBack();
-          return;
         } catch (e) {
-          showError(message: e.toString(), title: "Error");
+          showError(message: e.toString(), title: error);
         } finally {
           loader.hide();
         }
       } else {
-        showSnack(message: "Please agree to terms and conditions!");
+        showSnack(context: context, message: agreeToTerms);
       }
     }
   }
@@ -200,7 +194,7 @@ class _SignupScreenState extends State<SignupScreen> {
                         style: TextStyle(fontFamily: bold, color: fontGrey),
                       ),
                       TextSpan(
-                        text: "? Login",
+                        text: "? $login",
                         style: TextStyle(fontFamily: bold, color: mehroonColor),
                       ),
                     ],

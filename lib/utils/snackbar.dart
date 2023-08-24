@@ -1,6 +1,6 @@
 import 'package:zaisystems/consts/imports.dart';
 
-void showSnackbar({required BuildContext context, required String message}) {
+void _showSnackbar({required BuildContext context, required String message}) {
   ScaffoldMessenger.of(context).showSnackBar(
     SnackBar(
       behavior: SnackBarBehavior.floating,
@@ -16,3 +16,12 @@ void showSnackbar({required BuildContext context, required String message}) {
     ),
   );
 }
+
+void showSnack({
+  required BuildContext context,
+  required String message,
+}) =>
+    _showSnackbar(
+      context: context,
+      message: message,
+    );
