@@ -1,3 +1,6 @@
+import 'package:flutter/material.dart' show immutable;
+
+@immutable
 class TestimonialItem {
   final String name;
   final String image;

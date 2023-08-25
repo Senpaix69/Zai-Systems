@@ -1,7 +1,7 @@
 import 'package:zaisystems/consts/imports.dart';
 
 Widget customButton({
-  required Function() onPress,
+  required Function()? onPress,
   required String title,
   required Color textColor,
   required Color btnColor,

@@ -1,3 +1,6 @@
+import 'package:flutter/material.dart' show immutable;
+
+@immutable
 class SliderItem {
   final String title;
   final String text;

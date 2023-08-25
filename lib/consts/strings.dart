@@ -1,6 +1,15 @@
 const appname = "Zai Systems";
 const userKey = "user";
 
+// text sizes
+const heading = 24.0;
+const header = 20.0;
+const subtitle = 18.0;
+const text = 16.0;
+
+// Exit App
+const confirmExit = "Do you really want to exit?";
+
 // firebase constants
 const profileUrl = 'profilePic';
 const downloadProfileUrl = 'profilePicURL';

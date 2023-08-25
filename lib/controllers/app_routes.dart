@@ -2,6 +2,7 @@ import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/views/auth_screen/login_screen.dart';
 import 'package:zaisystems/views/auth_screen/signup_screen.dart';
 import 'package:zaisystems/views/drawer_screen/drawer.dart';
+import 'package:zaisystems/views/hcm_screen/hcm_screen.dart';
 import 'package:zaisystems/views/home_screen/home_screen.dart';
 import 'package:zaisystems/views/splash_screen/splash_screen.dart';
 import 'package:zaisystems/views/team_screen/team_screen.dart';
@@ -11,6 +12,7 @@ class AppRoutes {
   static const String homeScreen = "/home";
   static const String drawerScreen = "/drawer";
   static const String teamScreen = "/team";
+  static const String hcmScreen = "/hcm";
   static const String loginScreen = "/login";
   static const String signUpScreen = "/signin";
   static const String profileScreen = "/profile";
@@ -22,5 +24,6 @@ class AppRoutes {
     GetPage(name: homeScreen, page: () => const HomeScreen()),
     GetPage(name: drawerScreen, page: () => const DrawerScreen()),
     GetPage(name: teamScreen, page: () => const TeamScreen()),
+    GetPage(name: hcmScreen, page: () => const HCMScreen()),
   ];
 }

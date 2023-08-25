@@ -8,6 +8,7 @@ import 'package:zaisystems/views/home_screen/home_screen.dart';
 import 'package:zaisystems/views/services_screen/services_screen.dart';
 import 'package:zaisystems/views/team_screen/team_screen.dart';
 import 'package:zaisystems/views/training_screen/training_screen.dart';
+import 'package:zaisystems/widget_common/dialog_boxs.dart';
 
 class DrawerScreen extends StatelessWidget {
   const DrawerScreen({super.key});
@@ -28,7 +29,8 @@ class DrawerScreen extends StatelessWidget {
     return WillPopScope(
       onWillPop: () async {
         if (controller.currentIndex == 0) {
-          return true;
+          return await confirmDialogue(
+              context: context, message: confirmExit, title: appname);
         }
         controller.setNavIndex(0);
         return false;

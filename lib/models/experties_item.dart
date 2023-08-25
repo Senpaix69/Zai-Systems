@@ -1,3 +1,6 @@
+import 'package:flutter/material.dart' show immutable;
+
+@immutable
 class ExpertiesItem {
   final double ratio;
   final String percent;

@@ -1,4 +1,5 @@
 import 'package:zaisystems/consts/imports.dart';
+import 'package:zaisystems/controllers/app_routes.dart';
 import 'package:zaisystems/widget_common/custom_button.dart';
 
 Widget hcmBuilder({required BuildContext context}) {
@@ -38,7 +39,7 @@ Widget hcmBuilder({required BuildContext context}) {
       ),
       10.heightBox,
       customButton(
-        onPress: () {},
+        onPress: () async => Get.toNamed(AppRoutes.hcmScreen),
         title: "Read More",
         textColor: whiteColor,
         btnColor: mehroonColor,

@@ -1,15 +1,54 @@
+import 'package:url_launcher/url_launcher.dart';
 import 'package:zaisystems/consts/imports.dart';
+import 'package:zaisystems/controllers/drawer_controller.dart';
+import 'package:zaisystems/views/team_screen/widgets/member_card.dart';
+import 'package:zaisystems/widget_common/title_appbar.dart';
 
 class TeamScreen extends StatelessWidget {
   const TeamScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.find<NavController>();
+
+    Future<void> launchCustomURL({
+      required String url,
+      String message = 'Hi, $appname',
+      int platform = 0,
+    }) async {
+      if (url.isEmpty) return;
+
+      final uri = platform == 0
+          ? Uri.parse('https://wa.me/$url/?text=${Uri.parse(message)}')
+          : Uri.parse(url);
+
+      await launchUrl(uri, mode: LaunchMode.externalApplication);
+    }
+
     return Scaffold(
-      backgroundColor: whiteColor,
-      appBar: AppBar(
-        title: "Team".text.white.make(),
+      backgroundColor: lightGrey,
+      appBar: titleAppBar(
+        controller: controller,
+        context: context,
+        title: team,
       ),
+      body: ListView.builder(
+        shrinkWrap: true,
+        itemCount: teamList.length,
+        itemBuilder: (context, index) {
+          final member = teamList[index];
+          return memberCard(
+            name: member.name,
+            position: member.position,
+            image: member.image,
+            intro: member.introduction,
+            onClick: (platform) => launchCustomURL(
+              url: platform == 0 ? member.contact : member.profile,
+              platform: platform,
+            ),
+          );
+        },
+      ).box.padding(const EdgeInsets.all(10)).make(),
     );
   }
 }

@@ -2,6 +2,7 @@ import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/controllers/app_routes.dart';
 import 'package:zaisystems/services/firebase_service.dart';
 import 'package:zaisystems/utils/snackbar.dart' show showSnack;
+import 'package:zaisystems/views/auth_screen/widgets/forgot_password.dart';
 import 'package:zaisystems/widget_common/bg_widget.dart';
 import 'package:zaisystems/widget_common/custom_button.dart';
 import 'package:zaisystems/widget_common/custom_textfield.dart';
@@ -79,6 +80,35 @@ class _LoginScreenState extends State<LoginScreen> {
     }
   }
 
+  Future<void> sendEmailForgetPassword() async {
+    await forgotPasswordModel(
+      resetPassword: resetPassword,
+      context: context,
+      controller: _emailController,
+    );
+  }
+
+  Future<void> resetPassword() async {
+    loader.show(
+      title: "Email Sending",
+      context: context,
+      text: "Please wait...",
+    );
+    final success = await _firebaseService.resetPassword(
+      email: _emailController.text.trim(),
+    );
+    if (success == null) {
+      loader.hide();
+      showError(
+        message: "You will be receiving reset password email soon",
+        title: "Reset Password Email Sent",
+      );
+      return;
+    }
+    loader.hide();
+    showError(message: success.dialogText, title: success.dialogTitle);
+  }
+
   @override
   Widget build(BuildContext context) {
     return bgWidget(
@@ -109,7 +139,7 @@ class _LoginScreenState extends State<LoginScreen> {
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () async => await sendEmailForgetPassword(),
                   child: const Text(forgetPassword),
                 ),
               ),

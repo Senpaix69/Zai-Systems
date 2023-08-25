@@ -14,14 +14,15 @@ Future<void> errorDialogue({
         title: Row(
           children: <Widget>[
             appLogoWidget().box.size(40, 40).make(),
-            10.widthBox,
-            Text(
-              title,
-              textAlign: TextAlign.left,
-              style: const TextStyle(
-                color: mehroonColor,
-                fontFamily: bold,
-                fontSize: 20,
+            const SizedBox(width: 10),
+            Flexible(
+              child: Text(
+                title,
+                style: const TextStyle(
+                  color: mehroonColor,
+                  fontFamily: bold,
+                  fontSize: 20,
+                ),
               ),
             ),
           ],
@@ -74,14 +75,15 @@ Future<bool> confirmDialogue({
           title: Row(
             children: <Widget>[
               appLogoWidget().box.size(40, 40).make(),
-              10.widthBox,
-              Text(
-                title,
-                textAlign: TextAlign.left,
-                style: const TextStyle(
-                  color: mehroonColor,
-                  fontFamily: bold,
-                  fontSize: 20,
+              const SizedBox(width: 10),
+              Flexible(
+                child: Text(
+                  title,
+                  style: const TextStyle(
+                    color: mehroonColor,
+                    fontFamily: bold,
+                    fontSize: 20,
+                  ),
                 ),
               ),
             ],
