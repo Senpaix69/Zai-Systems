@@ -11,15 +11,8 @@ SliverAppBar myAppBar(context) {
       icon: const Icon(Icons.menu),
     ),
     flexibleSpace: FlexibleSpaceBar(
-      stretchModes: const [
-        StretchMode.fadeTitle,
-        StretchMode.zoomBackground,
-      ],
-      title: appname.text.bold.make(),
-      background: Image.asset(
-        decoration,
-        fit: BoxFit.cover,
-      ),
+      title: appname.text.fontFamily(semibold).make(),
+      background: Image.asset(decoration, fit: BoxFit.cover),
     ),
   );
 }

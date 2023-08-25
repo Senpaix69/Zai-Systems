@@ -434,3 +434,13 @@ const hcmBtns = [
   letterForms,
   employeeSelfService,
 ];
+
+// Payroll
+const payrollList = [
+  HCMItem(customizablePayroll, customizablePayrollDesc, ""),
+  HCMItem(salaryTransfer, salaryTransferDesc, ""),
+  HCMItem(bankIntegration, bankIntegrationDesc, ""),
+  HCMItem(accountantSystem, accountantSystemDesc, ""),
+  HCMItem(overtime, overtimeDesc, ""),
+  HCMItem(workDays, workDaysDesc, ""),
+];

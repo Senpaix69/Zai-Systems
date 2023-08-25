@@ -11,7 +11,7 @@ Widget hcmCard({
     children: <Widget>[
       Image.asset(
         decorationImg,
-        height: 200,
+        height: 250,
         width: double.infinity,
         fit: BoxFit.cover,
       ),
@@ -31,7 +31,7 @@ Widget hcmCard({
   )
       .box
       .white
-      .margin(const EdgeInsets.all(10))
+      .margin(const EdgeInsets.symmetric(vertical: 5))
       .outerShadow
       .make()
       .onTap(onClick);

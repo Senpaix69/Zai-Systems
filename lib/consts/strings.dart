@@ -14,7 +14,7 @@ const confirmExit = "Do you really want to exit?";
 const profileUrl = 'profilePic';
 const downloadProfileUrl = 'profilePicURL';
 
-// login - Signup constants
+// !----------------------- login - Signup constants -----------------------
 const email = "Email";
 const emailHint = "user@gmail.com";
 const password = "Password";
@@ -44,7 +44,7 @@ const confirmPass = "Confirm Password";
 const passLengthValid = "Required password of lenght 6 character at least";
 const agreeToTerms = "Please agree to terms and conditions!";
 
-// -------------------- Home Screen ----------------------------------
+// !-------------------------- Home Screen ----------------------------------
 // names
 const home = "Home";
 const hcm360 = "HCM 360°";
@@ -53,7 +53,7 @@ const itTrainig = "IT Training";
 const team = "Team";
 const contactUs = "Contact Us";
 
-// hcm 360
+// !---------------------------- hcm 360 -------------------------------
 const courseProvide = "Courses Provided";
 const softwareProvide = "Software Provider";
 const payrolls = "Payrolls";
@@ -66,8 +66,37 @@ const letterFormsText =
     "Create, edit and design HR forms and official letters in a smart way";
 const employeeSelfService = "Employee Self Services";
 const courses = "Courses";
+const impulseHCM = "Impulse $hcm360";
+const impulseHCMDesc =
+    "Impulse HCM 360 is a comprehensive Human Capital Management (HCM) software solution designed to streamline and automate various HR processes. It offers a range of features and tools to help businesses effectively manage their workforce, from recruitment and onboarding to payroll, performance management, and employee self-service. Impulse HCM 360 is known for its user-friendly interface and flexibility, making it accessible for companies of different sizes and industries. It aims to enhance HR efficiency, reduce manual work, and improve overall HR operations, leading to increased productivity and employee satisfaction.";
+const impulseHCMPayroll = "Empowering Your Payroll Needs";
+const impulseHCMPayrollDesc =
+    "Impulse HCM offers a complete payroll solution designed to meet and exceed your organization's needs. Out payroll system is fully customizable, ensuring it aligns perfectly with all your requirements";
 
-// Company Data
+// !--------------------------- hcm payroll section ------------------------
+const customizablePayroll = "Customizable Payroll";
+const customizablePayrollDesc =
+    "Our payroll system can easily fit your specific needs. With Impulse HCM, you have the freedom to customize every aspect of your payroll process, ensuring seamless integration with your existing workflows.";
+const salaryTransfer = "Salary Transfers";
+const salaryTransferDesc =
+    "Simplify your salary transfer process with Impulse HCM. Our system allows you to effortlessly transfer employee salaries directly to their bank accounts, streamlining your payroll operations. Additionally, you can conveniently upload WPS files in just one step, enhancing efficiency and reducing manual effort.";
+const bankIntegration = "Bank Integration";
+const bankIntegrationDesc =
+    "Exporting local bank files and WPF files for uploading to the bank portal has never been easier. Impulse HCM enables you to generate these files with minimal steps, facilitating seamless integration with your chosen banking system.";
+const accountantSystem = "Accountant System Integration";
+const accountantSystemDesc =
+    "Impulse HCM seamlessly integrates with accountant systems. After payroll approval, you can effortlessly send the payroll data to your accountant system in just one click, eliminating the need for manual data entry and reducing the chances of errors.";
+const overtime = "Overtime Calculation";
+const overtimeDesc =
+    "Calculating overtime hours for your employees is a breeze with Impulse HCM. Our user-friendly interface simplifies the process, allowing you to accurately track and manage overtime hours in a few simple steps.";
+const workDays = "Work Days";
+const workDaysDesc =
+    "Impulse HCM allows you to configure workdays according to your organization's requirements. Whether you prefer a standard 30-day month or need to account for actual month days, our system can accommodate your preferences effortlessly.";
+
+const demoRequestDesc = "For more information please request a demo";
+const demoReq = "Request Demo";
+
+// ! ---------------------------- Company Data -----------------------------
 const welcome = "Welcome to";
 const companyFullName = "ZAI SYSTEMS (SMC-PRIVATE) LIMITED";
 const homeText =
@@ -75,7 +104,7 @@ const homeText =
 const footerText =
     "$appname a software company for those professionals who seek passion in the world of IT. $appname integrates technology and human potential to provide intelligent business solutions for entrepreneurs and enterprises.";
 
-// services
+// ! ----------------------- services ---------------------------------
 const servicesProvide = "Services we provide for you";
 const webAndApp = "Web and App";
 const webDetails =
@@ -89,7 +118,7 @@ const supportDetails =
 const coursesDetails =
     "$appname offers a variety of IT courses that cover the fundamentals of web development, cybersecurity, data science, cloud computing, and digital marketing. Students have access to a dedicated instructor and a supportive community of learners";
 
-// course
+// ! -------------------------- courses -----------------------------------
 const graphicDesign = "Graphic Design";
 const graphicDesignDesc =
     "The artistic and strategic process of creating visual content using elements like typography, imagery, and layout to communicate ideas effectively, often applied in branding, advertising, and digital media.";
@@ -133,10 +162,10 @@ const flutter = "Flutter";
 const flutterDesc =
     "An open-source UI software development toolkit by Google for building natively compiled applications for mobile, web, and desktop from a single codebase, known for its fast performance, expressive UI, and hot reload feature for quick development iterations.";
 
-// experties
+//! ------------------------- experties ---------------------------------
 const experties = "Our Experties";
 
-// testimonials
+//! ------------------------ testimonials -------------------------------
 const polCountry = "Polland";
 const polDetails =
     "Excellent communication, follow thru and very dedicated! Complete ease working with Zai Systems and his teams. All are organuzed and very efficient with their processes.";

@@ -7,7 +7,11 @@ AppBar titleAppBar({
 }) {
   final controller = Get.find<NavController>();
   return AppBar(
-    title: title.text.fontFamily(semibold).white.make(),
+    title: title.text
+        .fontFamily(semibold)
+        .overflow(TextOverflow.ellipsis)
+        .white
+        .make(),
     leading: IconButton(
       icon: const Icon(Icons.arrow_back),
       onPressed: () {

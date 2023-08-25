@@ -3,6 +3,12 @@ import 'package:zaisystems/controllers/app_routes.dart';
 import 'package:zaisystems/widget_common/custom_button.dart';
 
 Widget hcmBuilder({required BuildContext context}) {
+  const routes = [
+    AppRoutes.payrollsScreen,
+    AppRoutes.attendanceScreen,
+    AppRoutes.letterFormsScreen,
+    AppRoutes.eServiceScreen,
+  ];
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: <Widget>[
@@ -35,7 +41,8 @@ Widget hcmBuilder({required BuildContext context}) {
               .color(whiteColor)
               .shadowSm
               .roundedSM
-              .make();
+              .make()
+              .onTap(() async => await Get.toNamed(routes[index]));
         },
       ),
       10.heightBox,

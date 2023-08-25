@@ -14,7 +14,7 @@ const footerWebLogo = "assets/icons/website.png";
 
 //images
 const bg = "assets/images/background.jpeg";
-const decoration = "assets/images/img2.jpg";
+const decoration = "assets/images/sp2.jpg";
 const slider1 = "assets/images/bg.png";
 const slider2 = "assets/images/bg3.png";
 const slider3 = "assets/images/img2.jpg";
