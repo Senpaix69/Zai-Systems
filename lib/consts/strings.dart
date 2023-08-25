@@ -64,7 +64,7 @@ const attendanceText =
 const letterForms = "Letter & Forms";
 const letterFormsText =
     "Create, edit and design HR forms and official letters in a smart way";
-const allSolutions = "All Solutions";
+const employeeSelfService = "Employee Self Services";
 const courses = "Courses";
 
 // Company Data

@@ -78,13 +78,6 @@ const courseList = [
   SliderItem(wordpress, wordpressDesc, imgWordpress),
 ];
 
-const hcmBtns = [
-  payrolls,
-  attendance,
-  letterForms,
-  allSolutions,
-];
-
 const expertiesList = [
   ExpertiesItem(ratio: 0.85, percent: "85%", title: "Design"),
   ExpertiesItem(ratio: 0.90, percent: "90%", title: "Managed Service"),
@@ -433,4 +426,11 @@ const hcmList = [
   HCMItem(payrolls, payrollsText, imgPayroll),
   HCMItem(attendance, attendanceText, imgAttendance),
   HCMItem(letterForms, letterFormsText, imgLetterAndServices),
+];
+
+const hcmBtns = [
+  payrolls,
+  attendance,
+  letterForms,
+  employeeSelfService,
 ];

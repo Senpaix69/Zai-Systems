@@ -34,7 +34,7 @@ class AppRoutes {
     GetPage(name: teamScreen, page: () => const TeamScreen()),
     GetPage(name: hcmScreen, page: () => const HCMScreen()),
     GetPage(name: payrollsScreen, page: () => const PayrollScreen()),
-    GetPage(name: allSolutionScreen, page: () => const AllSolutionScreen()),
+    GetPage(name: allSolutionScreen, page: () => const EmployeeServiceScreen()),
     GetPage(name: letterFormsScreen, page: () => const LetterFormsScreen()),
     GetPage(name: attendanceScreen, page: () => const AttendanceScreen()),
   ];

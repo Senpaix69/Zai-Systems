@@ -7,29 +7,31 @@ Widget hcmCard({
   required Function() onClick,
 }) {
   return Column(
-    mainAxisAlignment: MainAxisAlignment.center,
+    mainAxisAlignment: MainAxisAlignment.start,
     children: <Widget>[
-      title.text.size(heading).fontFamily(bold).color(mehroonColor).make(),
-      10.heightBox,
-      text.text.size(header).fontFamily(semibold).extraBlack.justify.make(),
+      Image.asset(
+        decorationImg,
+        height: 200,
+        width: double.infinity,
+        fit: BoxFit.cover,
+      ),
+      Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          title.text.size(header).fontFamily(bold).color(mehroonColor).make(),
+          5.heightBox,
+          text.text.size(16).fontFamily(semibold).black.justify.make(),
+        ],
+      )
+          .box
+          .width(double.infinity)
+          .padding(const EdgeInsets.symmetric(vertical: 20, horizontal: 10))
+          .make(),
     ],
   )
       .box
+      .white
       .margin(const EdgeInsets.all(10))
-      .padding(const EdgeInsets.all(30))
-      .size(double.infinity, 250)
-      .withDecoration(
-        BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage(decorationImg),
-            fit: BoxFit.cover,
-            colorFilter: ColorFilter.mode(
-              Colors.white.withOpacity(0.5),
-              BlendMode.hardLight,
-            ),
-          ),
-        ),
-      )
       .outerShadow
       .make()
       .onTap(onClick);

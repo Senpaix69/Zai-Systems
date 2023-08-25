@@ -7,7 +7,7 @@ Widget hcmBuilder({required BuildContext context}) {
     crossAxisAlignment: CrossAxisAlignment.start,
     children: <Widget>[
       10.heightBox,
-      hcm360.text.size(24).bold.color(whiteColor).make(),
+      hcm360.text.size(heading).bold.color(whiteColor).make(),
       servicesProvide.text
           .color(whiteColor)
           .shadow(1, 1, 4, Vx.black)
@@ -26,8 +26,9 @@ Widget hcmBuilder({required BuildContext context}) {
         itemBuilder: (context, index) {
           return hcmBtns[index]
               .text
-              .size(16)
+              .size(text)
               .semiBold
+              .align(TextAlign.center)
               .make()
               .centered()
               .box
