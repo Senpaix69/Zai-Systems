@@ -1,7 +1,7 @@
 import 'package:url_launcher/url_launcher.dart';
 import 'package:zaisystems/consts/imports.dart';
-import 'package:zaisystems/controllers/drawer_controller.dart';
 import 'package:zaisystems/views/team_screen/widgets/member_card.dart';
+import 'package:zaisystems/views/team_screen/widgets/member_details.dart';
 import 'package:zaisystems/widget_common/title_appbar.dart';
 
 class TeamScreen extends StatelessWidget {
@@ -9,8 +9,6 @@ class TeamScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.find<NavController>();
-
     Future<void> launchCustomURL({
       required String url,
       String message = 'Hi, $appname',
@@ -28,7 +26,6 @@ class TeamScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: lightGrey,
       appBar: titleAppBar(
-        controller: controller,
         context: context,
         title: team,
       ),
@@ -42,9 +39,13 @@ class TeamScreen extends StatelessWidget {
             position: member.position,
             image: member.image,
             intro: member.introduction,
-            onClick: (platform) => launchCustomURL(
+            onBtnClick: (platform) => launchCustomURL(
               url: platform == 0 ? member.contact : member.profile,
               platform: platform,
+            ),
+            onCardClick: () => memberDetailModel(
+              context: context,
+              member: member,
             ),
           );
         },

@@ -52,11 +52,18 @@ const services = "Services";
 const itTrainig = "IT Training";
 const team = "Team";
 const contactUs = "Contact Us";
+
+// hcm 360
 const courseProvide = "Courses Provided";
 const softwareProvide = "Software Provider";
 const payrolls = "Payrolls";
+const payrollsText = "Powerfull and flexible payroll";
 const attendance = "Attendance";
+const attendanceText =
+    "Follow up attendance records from everywhere and anytime";
 const letterForms = "Letter & Forms";
+const letterFormsText =
+    "Create, edit and design HR forms and official letters in a smart way";
 const allSolutions = "All Solutions";
 const courses = "Courses";
 

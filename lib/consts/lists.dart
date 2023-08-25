@@ -2,6 +2,7 @@ import 'package:flutter/material.dart' show Icons;
 import 'package:zaisystems/consts/images.dart';
 import 'package:zaisystems/consts/strings.dart';
 import 'package:zaisystems/models/experties_item.dart';
+import 'package:zaisystems/models/hcm_item.dart';
 import 'package:zaisystems/models/member.dart';
 import 'package:zaisystems/models/menu_item.dart';
 import 'package:zaisystems/models/slider_item.dart';
@@ -425,4 +426,11 @@ const teamList = [
     contact: "",
     profile: "",
   ),
+];
+
+// HCM 360
+const hcmList = [
+  HCMItem(payrolls, payrollsText, imgPayroll),
+  HCMItem(attendance, attendanceText, imgAttendance),
+  HCMItem(letterForms, letterFormsText, imgLetterAndServices),
 ];

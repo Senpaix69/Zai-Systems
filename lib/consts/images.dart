@@ -79,3 +79,8 @@ const irfan = "assets/images/team/mIrfan.png";
 const momin = "assets/images/team/mominmohsin.JPG";
 const muneeb = "assets/images/team/Muneeb.jpg";
 const sheherbano = "assets/images/team/shehrbano.jpeg";
+
+// HCM 360
+const imgPayroll = "assets/images/payroll.jpg";
+const imgLetterAndServices = "assets/images/letter.png";
+const imgAttendance = "assets/images/attendance.jfif";

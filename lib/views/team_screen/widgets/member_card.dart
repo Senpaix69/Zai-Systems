@@ -7,7 +7,8 @@ Widget memberCard({
   required String position,
   required String image,
   required String intro,
-  required Function(int) onClick,
+  required Function(int) onBtnClick,
+  required Function() onCardClick,
 }) {
   return Row(
     crossAxisAlignment: CrossAxisAlignment.start,
@@ -41,7 +42,7 @@ Widget memberCard({
               children: <Widget>[
                 Expanded(
                   child: outLinedButton(
-                    onPress: () => onClick(1),
+                    onPress: () => onBtnClick(1),
                     title: "Profile",
                     textColor: mehroonColor,
                     outlineColor: mehroonColor,
@@ -50,7 +51,7 @@ Widget memberCard({
                 10.widthBox,
                 Expanded(
                   child: customButton(
-                    onPress: () => onClick(0),
+                    onPress: () => onBtnClick(0),
                     title: "Message",
                     textColor: whiteColor,
                     btnColor: mehroonColor,
@@ -70,5 +71,6 @@ Widget memberCard({
       .margin(const EdgeInsets.only(bottom: 10))
       .rounded
       .shadowSm
-      .make();
+      .make()
+      .onTap(onCardClick);
 }
