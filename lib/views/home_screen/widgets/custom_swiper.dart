@@ -72,7 +72,7 @@ class CustomSwiper extends StatelessWidget {
                   .text
                   .text
                   .minFontSize(16)
-                  .maxLines(3)
+                  .maxLines(4)
                   .overflow(TextOverflow.ellipsis)
                   .justify
                   .make()

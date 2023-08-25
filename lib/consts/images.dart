@@ -37,7 +37,7 @@ const imgPython = "assets/images/course/Python.png";
 const imgNode = "assets/images/course/NodeJS.png";
 const imgBlockChain = "assets/images/course/Blockchain.png";
 const imgVue = "assets/images/course/Vue_JS.png";
-const temp = "assets/images/course/paypal.png";
+const imgFlutter = "assets/images/course/flutter.jpg";
 
 // testimonials
 const chandra = "assets/images/testimonial/chandra.jpg";

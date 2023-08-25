@@ -60,6 +60,7 @@ const servicesList = [
 ];
 
 const courseList = [
+  SliderItem(flutter, flutterDesc, imgFlutter),
   SliderItem(angular, angularDesc, imgAngular),
   SliderItem(appDev, appDevDesc, imgAppDev),
   SliderItem(aspNet, aspNetDesc, imgAspNet),

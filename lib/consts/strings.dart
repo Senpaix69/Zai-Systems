@@ -113,6 +113,9 @@ const blockchainDesc =
 const vueJs = "Vue JS";
 const vueDesc =
     " A progressive JavaScript framework for building user interfaces, focusing on simplicity and flexibility, allowing developers to create dynamic and interactive web applications through its component-based architecture and reactive data binding.";
+const flutter = "Flutter";
+const flutterDesc =
+    "An open-source UI software development toolkit by Google for building natively compiled applications for mobile, web, and desktop from a single codebase, known for its fast performance, expressive UI, and hot reload feature for quick development iterations.";
 
 // experties
 const experties = "Our Experties";

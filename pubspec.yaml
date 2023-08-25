@@ -79,6 +79,7 @@ flutter:
     - assets/
     - assets/images/
     - assets/images/course/
+    - assets/images/team/
     - assets/images/testimonial/
     - assets/icons/
 
