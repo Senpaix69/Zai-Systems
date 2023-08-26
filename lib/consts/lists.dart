@@ -2,7 +2,7 @@ import 'package:flutter/material.dart' show Icons;
 import 'package:zaisystems/consts/images.dart';
 import 'package:zaisystems/consts/strings.dart';
 import 'package:zaisystems/models/experties_item.dart';
-import 'package:zaisystems/models/hcm_item.dart';
+import 'package:zaisystems/models/card_item.dart';
 import 'package:zaisystems/models/member.dart';
 import 'package:zaisystems/models/menu_item.dart';
 import 'package:zaisystems/models/slider_item.dart';
@@ -15,10 +15,10 @@ const socialIconList = [
 ];
 
 const footerIconList = [
-  footerFbLogo,
-  footerInstaLogo,
-  footerLinkedInLogo,
-  footerWebLogo,
+  CardItem("", fbUrl, footerFbLogo),
+  CardItem("", instaUrl, footerInstaLogo),
+  CardItem("", linkedInUrl, footerLinkedInLogo),
+  CardItem("", webUrl, footerWebLogo),
 ];
 
 // for drawer
@@ -423,9 +423,9 @@ const teamList = [
 
 // HCM 360
 const hcmList = [
-  HCMItem(payrolls, payrollsText, imgPayroll),
-  HCMItem(attendance, attendanceText, imgAttendance),
-  HCMItem(letterForms, letterFormsText, imgLetterAndServices),
+  CardItem(payrolls, payrollsText, imgPayroll),
+  CardItem(attendance, attendanceText, imgAttendance),
+  CardItem(letterForms, letterFormsText, imgLetterAndServices),
 ];
 
 const hcmBtns = [
@@ -437,34 +437,34 @@ const hcmBtns = [
 
 // Payroll
 const payrollList = [
-  HCMItem(customizablePayroll, customizablePayrollDesc, ""),
-  HCMItem(salaryTransfer, salaryTransferDesc, ""),
-  HCMItem(bankIntegration, bankIntegrationDesc, ""),
-  HCMItem(accountantSystem, accountantSystemDesc, ""),
-  HCMItem(overtime, overtimeDesc, ""),
-  HCMItem(workDays, workDaysDesc, ""),
+  CardItem(customizablePayroll, customizablePayrollDesc, ""),
+  CardItem(salaryTransfer, salaryTransferDesc, ""),
+  CardItem(bankIntegration, bankIntegrationDesc, ""),
+  CardItem(accountantSystem, accountantSystemDesc, ""),
+  CardItem(overtime, overtimeDesc, ""),
+  CardItem(workDays, workDaysDesc, ""),
 ];
 
 // Attendance
 const attendanceList = [
-  HCMItem(mobilePunch, mobilePunchDesc, imgMobileAtt),
-  HCMItem(flexibleWork, flexibleWorkDesc, ""),
-  HCMItem(fingerPrint, fingerPrintDesc, ""),
-  HCMItem(workOverTime, workOverTimeDesc, ""),
-  HCMItem(deviceInt, deviceIntDesc, ""),
+  CardItem(mobilePunch, mobilePunchDesc, imgMobileAtt),
+  CardItem(flexibleWork, flexibleWorkDesc, ""),
+  CardItem(fingerPrint, fingerPrintDesc, ""),
+  CardItem(workOverTime, workOverTimeDesc, ""),
+  CardItem(deviceInt, deviceIntDesc, ""),
 ];
 
 // LetterForms
 const letterFormsList = [
-  HCMItem(textEditor, textEditorDesc, imgText),
-  HCMItem(readyToUseForms, readyToUseFormsDesc, imgForms),
-  HCMItem(unlimitedLetters, unlimitedLettersDesc, imgOfficial),
+  CardItem(textEditor, textEditorDesc, imgText),
+  CardItem(readyToUseForms, readyToUseFormsDesc, imgForms),
+  CardItem(unlimitedLetters, unlimitedLettersDesc, imgOfficial),
 ];
 
 // Contact
 const contactList = [
-  HCMItem(companyEmailText, companyEmail, ""),
-  HCMItem(infoText, infoEmail, ""),
-  HCMItem(ceoText, ceoEmail, ""),
-  HCMItem(hrText, hrEmail, ""),
+  CardItem(companyEmailText, companyEmail, ""),
+  CardItem(infoText, infoEmail, ""),
+  CardItem(ceoText, ceoEmail, ""),
+  CardItem(hrText, hrEmail, ""),
 ];

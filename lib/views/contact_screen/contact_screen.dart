@@ -15,7 +15,7 @@ class ContactScreen extends StatelessWidget {
       backgroundColor: whiteColor,
       appBar: navAppBar(
         context: context,
-        title: "Contact Us",
+        title: contactUs,
       ),
       body: SingleChildScrollView(
         child: Container(

@@ -1,4 +1,5 @@
 import 'package:zaisystems/consts/imports.dart';
+import 'package:zaisystems/controllers/app_routes.dart';
 import 'package:zaisystems/views/home_screen/widgets/custom_swiper.dart';
 import 'package:zaisystems/widget_common/custom_button.dart';
 
@@ -52,7 +53,7 @@ Widget servicesAndCourses({required BuildContext context}) {
 
       10.heightBox,
       customButton(
-        onPress: () {},
+        onPress: () async => await Get.toNamed(AppRoutes.coursesScreen),
         title: "All Courses",
         textColor: whiteColor,
         btnColor: mehroonColor,

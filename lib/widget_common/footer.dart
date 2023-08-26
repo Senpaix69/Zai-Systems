@@ -1,3 +1,4 @@
+import 'package:url_launcher/url_launcher.dart';
 import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/widget_common/social_button.dart';
 
@@ -6,6 +7,14 @@ class Footer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Future<void> launchURL({
+      required String url,
+    }) async {
+      if (url.isEmpty) return;
+      final uri = Uri.parse(url);
+      await launchUrl(uri, mode: LaunchMode.externalApplication);
+    }
+
     return Column(
       children: <Widget>[
         Image.asset(imgFooter),
@@ -27,7 +36,9 @@ class Footer extends StatelessWidget {
               children: List.generate(
                 footerIconList.length,
                 (index) => socialButton(
-                  icon: footerIconList[index],
+                  onClick: () async =>
+                      await launchURL(url: footerIconList[index].text),
+                  icon: footerIconList[index].image,
                   isBackground: false,
                   iconColor: Colors.white,
                 ),

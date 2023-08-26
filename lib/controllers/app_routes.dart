@@ -10,6 +10,7 @@ import 'package:zaisystems/views/letter_forms_screen/letter_forms_screen.dart';
 import 'package:zaisystems/views/payroll_screen/payroll_screen.dart';
 import 'package:zaisystems/views/splash_screen/splash_screen.dart';
 import 'package:zaisystems/views/team_screen/team_screen.dart';
+import 'package:zaisystems/views/training_screen/training_screen.dart';
 
 class AppRoutes {
   static const String splashScreen = "/";
@@ -21,10 +22,11 @@ class AppRoutes {
   static const String signUpScreen = "/signin";
   static const String profileScreen = "/profile";
   static const String editProfileScreen = "/editProfile";
+  static const String coursesScreen = "/courses";
   static const String payrollsScreen = "/payrolls";
   static const String letterFormsScreen = "/letterForms";
   static const String attendanceScreen = "/attendance";
-  static const String eServiceScreen = "/allSolution";
+  static const String eServiceScreen = "/employeeService";
   static final List<GetPage> routes = <GetPage>[
     GetPage(name: splashScreen, page: () => const SplashScreen()),
     GetPage(name: loginScreen, page: () => const LoginScreen()),
@@ -37,5 +39,6 @@ class AppRoutes {
     GetPage(name: eServiceScreen, page: () => const EmployeeServiceScreen()),
     GetPage(name: letterFormsScreen, page: () => const LetterFormsScreen()),
     GetPage(name: attendanceScreen, page: () => const AttendanceScreen()),
+    GetPage(name: coursesScreen, page: () => const TrainingScreen()),
   ];
 }

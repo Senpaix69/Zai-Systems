@@ -24,7 +24,7 @@ InputDecoration inputDecoration({
     fillColor: whiteColor,
     filled: true,
     enabledBorder: const OutlineInputBorder(
-      borderSide: BorderSide(color: mehroonColor),
+      borderSide: BorderSide(color: fontGrey),
       borderRadius: BorderRadius.all(Radius.circular(10.0)),
     ),
     border: const OutlineInputBorder(

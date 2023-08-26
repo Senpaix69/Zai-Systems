@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart' show immutable;
 
 @immutable
-class HCMItem {
+class CardItem {
   final String title;
   final String text;
-  final String decorationImage;
-  const HCMItem(
+  final String image;
+  const CardItem(
     this.title,
     this.text,
-    this.decorationImage,
+    this.image,
   );
 }

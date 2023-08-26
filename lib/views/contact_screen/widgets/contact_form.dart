@@ -26,22 +26,22 @@ class _ContactFormState extends State<ContactForm> {
           hint: name,
           prefixIcon: Icons.person,
         ),
-        10.heightBox,
+        20.heightBox,
         customTextField(
           hint: email,
           prefixIcon: Icons.email,
         ),
-        10.heightBox,
+        20.heightBox,
         customTextField(
           hint: "Phone No",
           prefixIcon: Icons.contact_page,
         ),
-        10.heightBox,
+        20.heightBox,
         customTextField(
           hint: "Subject",
           prefixIcon: Icons.subject,
         ),
-        10.heightBox,
+        20.heightBox,
         customTextField(
           hint: "Your message",
           prefixIcon: Icons.message,

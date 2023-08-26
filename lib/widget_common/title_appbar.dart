@@ -14,16 +14,10 @@ AppBar navAppBar({
         .white
         .make(),
     leading: IconButton(
-      icon: Icon(controller.currentIndex != 0 ? Icons.menu : Icons.arrow_back),
-      onPressed: controller.currentIndex != 0
+      icon: Icon(controller.menuItem ? Icons.menu : Icons.arrow_back),
+      onPressed: controller.menuItem
           ? () => ZoomDrawer.of(context)!.toggle()
-          : () {
-              if (controller.currentIndex == 0) {
-                Navigator.of(context).pop();
-                return;
-              }
-              controller.setNavIndex(0, context);
-            },
+          : () => Navigator.of(context).pop(),
     ),
   );
 }

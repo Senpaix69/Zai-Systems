@@ -11,6 +11,13 @@ const hrText = "HR";
 const ceoEmail = "ceo@zaisystems.com";
 const ceoText = "CEO";
 
+// URLS
+const fbUrl = "https://www.facebook.com/zaisystems";
+const instaUrl = "https://www.instagram.com/zaisystems/";
+const linkedInUrl =
+    "https://www.linkedin.com/company/zai-systems-smc-private-limited/mycompany/";
+const webUrl = "https://www.zaisystems.com";
+
 // text sizes
 const heading = 24.0;
 const header = 20.0;

@@ -32,7 +32,11 @@ Future<void> forgotPasswordModel({
               const SizedBox(
                 height: 20,
               ),
-              customTextField(hint: "Enter email", controller: controller),
+              customTextField(
+                hint: "Enter email",
+                controller: controller,
+                prefixIcon: Icons.email,
+              ),
               20.heightBox,
               customButton(
                 onPress: resetPassword,

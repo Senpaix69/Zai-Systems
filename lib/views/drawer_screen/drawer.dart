@@ -28,12 +28,12 @@ class DrawerScreen extends StatelessWidget {
 
     return WillPopScope(
       onWillPop: () async {
-        if (controller.currentIndex == 0) {
-          return await confirmDialogue(
-              context: context, message: confirmExit, title: appname);
+        if (controller.currentIndex != 0) {
+          controller.setNavIndex(0, context);
+          return false;
         }
-        controller.setNavIndex(0, context);
-        return false;
+        return await confirmDialogue(
+            context: context, message: confirmExit, title: appname);
       },
       child: Scaffold(
         body: ZoomDrawer(
