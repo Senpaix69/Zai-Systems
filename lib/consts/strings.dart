@@ -1,6 +1,16 @@
 const appname = "Zai Systems";
 const userKey = "user";
 
+// Contacts
+const companyEmail = "zaisystems@gmail.com";
+const companyEmailText = "Company Email Address";
+const infoText = "Our Info";
+const infoEmail = "info@zaisystems.com";
+const hrEmail = "hr@zaisystems.com";
+const hrText = "HR";
+const ceoEmail = "ceo@zaisystems.com";
+const ceoText = "CEO";
+
 // text sizes
 const heading = 24.0;
 const header = 20.0;
@@ -69,11 +79,11 @@ const courses = "Courses";
 const impulseHCM = "Impulse $hcm360";
 const impulseHCMDesc =
     "Impulse HCM 360 is a comprehensive Human Capital Management (HCM) software solution designed to streamline and automate various HR processes. It offers a range of features and tools to help businesses effectively manage their workforce, from recruitment and onboarding to payroll, performance management, and employee self-service. Impulse HCM 360 is known for its user-friendly interface and flexibility, making it accessible for companies of different sizes and industries. It aims to enhance HR efficiency, reduce manual work, and improve overall HR operations, leading to increased productivity and employee satisfaction.";
-const impulseHCMPayroll = "Empowering Your Payroll Needs";
-const impulseHCMPayrollDesc =
-    "Impulse HCM offers a complete payroll solution designed to meet and exceed your organization's needs. Out payroll system is fully customizable, ensuring it aligns perfectly with all your requirements";
 
 // !--------------------------- hcm payroll section ------------------------
+const impulseHCMPayrollDesc =
+    "Impulse HCM offers a complete payroll solution designed to meet and exceed your organization's needs. Out payroll system is fully customizable, ensuring it aligns perfectly with all your requirements";
+const impulseHCMPayroll = "Empowering Your Payroll Needs";
 const customizablePayroll = "Customizable Payroll";
 const customizablePayrollDesc =
     "Our payroll system can easily fit your specific needs. With Impulse HCM, you have the freedom to customize every aspect of your payroll process, ensuring seamless integration with your existing workflows.";
@@ -95,6 +105,40 @@ const workDaysDesc =
 
 const demoRequestDesc = "For more information please request a demo";
 const demoReq = "Request Demo";
+
+// ! --------------------------- HCM Attendance section --------------------
+const impulseHCMAttendace = "Managing Workforce Attendance";
+const impulseHCMAttendaceDesc =
+    "Streamline your attendance management with Impulse HCM, empowering you to effortlessly tract attendance records anytime, anywhere";
+const mobilePunch = "Mobile App Punch-In/Out";
+const mobilePunchDesc =
+    "Equip your team with the convenience of punching in and out using their mobile phones. Impulse HCM takes care of workplace and employee location verification automatically, ensuring accuracy and efficiency.";
+const flexibleWork = "Flexible Work Shifts";
+const flexibleWorkDesc =
+    "Define work shifts and effortlessly set working hours and days for each employee. Impulse HCM also simplifies the process of assigning work shifts to your workforce.";
+const fingerPrint = "Fingerprint Records";
+const fingerPrintDesc =
+    "Effortlessly track and manage fingerprint records from various devices, including fingerprint scanners, mobile devices, web platforms, or even Excel file uploads.";
+const workOverTime = "Working Hours & Overtime";
+const workOverTimeDesc =
+    "Let Impulse HCM handle the automatic calculation of working hours, overtime, late arrivals, and absent deductions. Also, customize and define how our system calculates overtime and late deductions to suit your unique needs.";
+const deviceInt = "Device Integration";
+const deviceIntDesc =
+    "Integrate your fingerprint devices with Impulse HCM effortlessly. Our user-friendly platform fetches records and performs the necessary calculations for you, saving you valuable time and effort.";
+
+// ! --------------------------- HCM Letter and Forms Sectio  --------------
+const impulseHCMLetter = "Simplifying Letters & Forms for HR";
+const impulseHCMLetterDesc =
+    "Create, edit, and design HR forms and official letters with the smart capabilities of Impulse HCM.";
+const textEditor = "Text Editor";
+const textEditorDesc =
+    "Our robust text editor allows you to create and design official letters and forms with ease. Set fields such as employee name, job information, salary details, and contract data, which are automatically replaced by Impulse HCM.";
+const readyToUseForms = "Ready-to-Use HR Forms";
+const readyToUseFormsDesc =
+    "Discover a range of pre-designed HR forms at your fingertips, ready for customization. Whether it's contracted, service certificates, end-of-service settlements, warnings, notices, or more, Impulse HCM offers editable templates to streamline your HR processes.";
+const unlimitedLetters = "Unlimited Official Letters";
+const unlimitedLettersDesc =
+    "Set free your creativity and generate unlimited official letters with Impulse HCM. Assign a unique name to each letter and specify the required fields such as employee name, salary information, job details, and more.";
 
 // ! ---------------------------- Company Data -----------------------------
 const welcome = "Welcome to";

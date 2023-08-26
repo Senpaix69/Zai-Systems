@@ -1,8 +1,8 @@
 import 'package:zaisystems/consts/imports.dart';
-import 'package:zaisystems/views/payroll_screen/widgets/payroll_description.dart';
-import 'package:zaisystems/views/payroll_screen/widgets/section_builder.dart';
+import 'package:zaisystems/widget_common/custom_description.dart';
+import 'package:zaisystems/widget_common/my_appbar.dart';
 import 'package:zaisystems/widget_common/request_demo.dart';
-import 'package:zaisystems/widget_common/title_appbar.dart';
+import 'package:zaisystems/widget_common/section_builder.dart';
 
 class PayrollScreen extends StatelessWidget {
   const PayrollScreen({super.key});
@@ -10,7 +10,7 @@ class PayrollScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: titleAppBar(
+      appBar: myAppBar(
         context: context,
         title: payrolls,
       ),
@@ -22,8 +22,11 @@ class PayrollScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Image.asset(imgPayroll),
-              payrollDescription(),
-              payrollSectionBuilder(),
+              customDescription(
+                title: impulseHCMPayroll,
+                desc: impulseHCMPayrollDesc,
+              ),
+              hcmSectionBuilder(list: payrollList),
               20.heightBox,
               requestDemo(),
             ],

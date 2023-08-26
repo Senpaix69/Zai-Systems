@@ -1,4 +1,5 @@
 import 'package:zaisystems/consts/imports.dart';
+import 'package:zaisystems/widget_common/title_appbar.dart';
 
 class TrainingScreen extends StatelessWidget {
   const TrainingScreen({super.key});
@@ -7,8 +8,9 @@ class TrainingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: whiteColor,
-      appBar: AppBar(
-        title: "Training".text.white.make(),
+      appBar: navAppBar(
+        context: context,
+        title: itTrainig,
       ),
     );
   }

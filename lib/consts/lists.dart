@@ -444,3 +444,27 @@ const payrollList = [
   HCMItem(overtime, overtimeDesc, ""),
   HCMItem(workDays, workDaysDesc, ""),
 ];
+
+// Attendance
+const attendanceList = [
+  HCMItem(mobilePunch, mobilePunchDesc, imgMobileAtt),
+  HCMItem(flexibleWork, flexibleWorkDesc, ""),
+  HCMItem(fingerPrint, fingerPrintDesc, ""),
+  HCMItem(workOverTime, workOverTimeDesc, ""),
+  HCMItem(deviceInt, deviceIntDesc, ""),
+];
+
+// LetterForms
+const letterFormsList = [
+  HCMItem(textEditor, textEditorDesc, imgText),
+  HCMItem(readyToUseForms, readyToUseFormsDesc, imgForms),
+  HCMItem(unlimitedLetters, unlimitedLettersDesc, imgOfficial),
+];
+
+// Contact
+const contactList = [
+  HCMItem(companyEmailText, companyEmail, ""),
+  HCMItem(infoText, infoEmail, ""),
+  HCMItem(ceoText, ceoEmail, ""),
+  HCMItem(hrText, hrEmail, ""),
+];

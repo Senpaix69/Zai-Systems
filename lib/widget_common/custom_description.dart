@@ -1,16 +1,15 @@
 import 'package:zaisystems/consts/imports.dart';
 
-Widget payrollDescription() {
+Widget customDescription({
+  required String title,
+  required String desc,
+}) {
   return Column(
     children: <Widget>[
       impulseHCM.text.size(heading).color(mehroonColor).fontFamily(bold).make(),
-      impulseHCMPayroll.text
-          .size(text)
-          .color(fontGrey)
-          .fontFamily(semibold)
-          .make(),
+      title.text.size(text).color(fontGrey).fontFamily(semibold).make(),
       10.heightBox,
-      impulseHCMPayrollDesc.text.size(text).justify.make(),
+      desc.text.size(text).justify.make(),
     ],
   ).box.padding(const EdgeInsets.all(16)).make();
 }

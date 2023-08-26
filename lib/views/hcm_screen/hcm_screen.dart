@@ -16,7 +16,7 @@ class HCMScreen extends StatelessWidget {
     ];
     return Scaffold(
         backgroundColor: lightGrey,
-        appBar: titleAppBar(
+        appBar: navAppBar(
           context: context,
           title: hcm360,
         ),

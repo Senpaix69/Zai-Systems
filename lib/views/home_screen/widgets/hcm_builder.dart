@@ -33,7 +33,6 @@ Widget hcmBuilder({required BuildContext context}) {
           return hcmBtns[index]
               .text
               .size(text)
-              .semiBold
               .align(TextAlign.center)
               .make()
               .centered()

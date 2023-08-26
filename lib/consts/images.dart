@@ -22,6 +22,7 @@ const cSlider1 = "assets/images/webapp.png";
 const cSlider2 = "assets/images/ecom.png";
 const cSlider3 = "assets/images/schedule.png";
 const imgFooter = "assets/images/location.png";
+const imgContact = "assets/images/contact.png";
 
 // courses
 const imgGraphics = "assets/images/course/Graphics.png";
@@ -84,3 +85,7 @@ const sheherbano = "assets/images/team/shehrbano.jpeg";
 const imgPayroll = "assets/images/payroll.jpg";
 const imgLetterAndServices = "assets/images/letter.png";
 const imgAttendance = "assets/images/attendance.jfif";
+const imgMobileAtt = "assets/images/mobile.png";
+const imgText = "assets/images/text.jpg";
+const imgForms = "assets/images/forms.png";
+const imgOfficial = "assets/images/official.png";

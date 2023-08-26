@@ -29,22 +29,19 @@ class Footer extends StatelessWidget {
                 (index) => socialButton(
                   icon: footerIconList[index],
                   isBackground: false,
+                  iconColor: Colors.white,
                 ),
               ),
             ),
             10.heightBox,
             "© 2022 - Zai Systems - All Rights Reserved"
                 .text
-                .white
+                .color(fontGrey)
                 .size(14)
                 .make(),
           ],
         ).box.padding(const EdgeInsets.all(20)).make(),
       ],
-    )
-        .box
-        .padding(const EdgeInsets.symmetric(vertical: 20))
-        .color(Colors.black)
-        .make();
+    ).box.padding(const EdgeInsets.only(top: 20)).color(Colors.black).make();
   }
 }

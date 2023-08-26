@@ -6,17 +6,14 @@ Widget servicesAndCourses({required BuildContext context}) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: <Widget>[
-      services.text
-          .size(24)
-          .bold
-          .color(mehroonColor)
-          .make()
-          .box
-          .color(lightGolden)
-          .width(context.screenWidth)
-          .padding(const EdgeInsets.all(16))
-          .make(),
-      20.heightBox,
+      Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          services.text.size(24).fontFamily(bold).color(mehroonColor).make(),
+          5.heightBox,
+          servicesProvide.text.size(16).justify.make(),
+        ],
+      ).box.width(context.screenWidth).padding(const EdgeInsets.all(20)).make(),
       const CustomSwiper(
         sliderList: servicesList,
         duration: 10,
@@ -35,7 +32,7 @@ Widget servicesAndCourses({required BuildContext context}) {
       Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          courses.text.size(24).bold.color(mehroonColor).make(),
+          courses.text.size(24).fontFamily(bold).color(mehroonColor).make(),
           5.heightBox,
           coursesDetails.text.size(16).justify.make(),
         ],
@@ -43,7 +40,7 @@ Widget servicesAndCourses({required BuildContext context}) {
           .box
           .color(lightGolden)
           .width(context.screenWidth)
-          .padding(const EdgeInsets.all(16))
+          .padding(const EdgeInsets.all(20))
           .make(),
       20.heightBox,
 
