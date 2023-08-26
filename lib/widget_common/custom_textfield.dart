@@ -4,6 +4,7 @@ import 'package:zaisystems/widget_common/input_decoration.dart';
 Widget customTextField({
   required String hint,
   IconData? suffixIcon,
+  IconData? prefixIcon,
   bool obsecure = false,
   Function()? onPress,
   Function(String)? onChange,
@@ -16,6 +17,7 @@ Widget customTextField({
     obscureText: obsecure,
     controller: controller,
     decoration: inputDecoration(
+      prefixIcon: prefixIcon,
       suffixIcon: suffixIcon,
       onPress: onPress,
       hintText: hint,

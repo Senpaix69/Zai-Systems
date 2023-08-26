@@ -125,11 +125,13 @@ class _LoginScreenState extends State<LoginScreen> {
               "Log In!".text.bold.white.size(46).make(),
               (context.screenHeight * 0.2).heightBox,
               customTextField(
+                prefixIcon: Icons.email,
                 controller: _emailController,
                 hint: email,
               ),
               12.heightBox,
               customTextField(
+                prefixIcon: Icons.password,
                 controller: _passwordController,
                 hint: password,
                 obsecure: !passVis,
@@ -148,7 +150,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 title: login,
                 btnColor: mehroonColor,
                 textColor: whiteColor,
-              ).box.width(context.screenWidth - 50).make(),
+              ).box.width(context.screenWidth * 0.6).make().centered(),
               8.heightBox,
               Align(
                 alignment: Alignment.center,
@@ -163,7 +165,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 title: signup,
                 btnColor: lightGolden,
                 textColor: mehroonColor,
-              ).box.width(context.screenWidth - 50).make(),
+              ).box.width(context.screenWidth * 0.6).make().centered(),
               5.heightBox,
               Align(
                 alignment: Alignment.center,

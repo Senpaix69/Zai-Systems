@@ -36,9 +36,7 @@ class HomeScreen extends StatelessWidget {
                 .padding(const EdgeInsets.only(top: 16, left: 10, right: 10))
                 .make(),
           ),
-          const SliverToBoxAdapter(
-            child: Footer(),
-          )
+          const SliverToBoxAdapter(child: Footer()),
         ],
       ),
     );

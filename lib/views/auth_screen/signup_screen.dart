@@ -112,16 +112,19 @@ class _SignupScreenState extends State<SignupScreen> {
               Column(
                 children: <Widget>[
                   customTextField(
+                    prefixIcon: Icons.person,
                     controller: _nameController,
                     hint: name,
                   ),
                   12.heightBox,
                   customTextField(
+                    prefixIcon: Icons.email,
                     controller: _emailController,
                     hint: email,
                   ),
                   12.heightBox,
                   customTextField(
+                    prefixIcon: Icons.password,
                     controller: _passwordController,
                     hint: password,
                     obsecure: !passVis,
@@ -131,6 +134,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   ),
                   12.heightBox,
                   customTextField(
+                    prefixIcon: Icons.password,
                     controller: _repasswordController,
                     hint: repassword,
                     obsecure: !repassVis,
@@ -184,7 +188,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     title: signup,
                     btnColor: mehroonColor,
                     textColor: whiteColor,
-                  ).box.width(context.screenWidth - 50).make(),
+                  ).box.width(context.screenWidth * 0.6).make().centered(),
                   10.heightBox,
                   RichText(
                       text: const TextSpan(
