@@ -144,7 +144,7 @@ const unlimitedLettersDesc =
 const welcome = "Welcome to";
 const companyFullName = "ZAI SYSTEMS (SMC-PRIVATE) LIMITED";
 const homeText =
-    "If you are worried about your new business then no need to worry because $appname have ways out for all of your problems.\n\n$appname has a powerfull conbination of business experience and technological expertise providing clients best-in-class name solutions, in software development projects. $appname delivers high-quality, cost-effective, full lifecycle solutions for all sorts of development projects.";
+    "If you are worried about your new business then no need to worry because $appname have ways out for all of your problems.\n\n$appname has a powerfull combination of business experience and technological expertise providing clients best-in-class name solutions, in software development projects. $appname delivers high-quality, cost-effective, full lifecycle solutions for all sorts of development projects.";
 const footerText =
     "$appname a software company for those professionals who seek passion in the world of IT. $appname integrates technology and human potential to provide intelligent business solutions for entrepreneurs and enterprises.";
 

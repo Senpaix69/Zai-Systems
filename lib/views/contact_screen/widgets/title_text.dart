@@ -19,9 +19,6 @@ Widget titleText({
       ),
       5.heightBox,
       email.text.color(fontGrey).make(),
-      const Divider(
-        color: lightGrey,
-      ),
     ],
-  ).box.margin(const EdgeInsets.symmetric(vertical: 5)).make();
+  ).box.margin(const EdgeInsets.symmetric(vertical: 10)).make();
 }

@@ -32,7 +32,7 @@ class DrawerScreen extends StatelessWidget {
           return await confirmDialogue(
               context: context, message: confirmExit, title: appname);
         }
-        controller.setNavIndex(0);
+        controller.setNavIndex(0, context);
         return false;
       },
       child: Scaffold(

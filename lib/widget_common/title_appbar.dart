@@ -1,3 +1,4 @@
+import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/controllers/drawer_controller.dart';
 
@@ -13,14 +14,16 @@ AppBar navAppBar({
         .white
         .make(),
     leading: IconButton(
-      icon: const Icon(Icons.arrow_back),
-      onPressed: () {
-        if (controller.currentIndex == 0) {
-          Navigator.of(context).pop();
-          return;
-        }
-        controller.setNavIndex(0);
-      },
+      icon: Icon(controller.currentIndex != 0 ? Icons.menu : Icons.arrow_back),
+      onPressed: controller.currentIndex != 0
+          ? () => ZoomDrawer.of(context)!.toggle()
+          : () {
+              if (controller.currentIndex == 0) {
+                Navigator.of(context).pop();
+                return;
+              }
+              controller.setNavIndex(0, context);
+            },
     ),
   );
 }

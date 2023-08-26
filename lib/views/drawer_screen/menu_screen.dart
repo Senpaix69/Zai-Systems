@@ -109,7 +109,7 @@ class MenuScreen extends StatelessWidget {
                   title: menuItems[index].title,
                   icon: menuItems[index].icon,
                   isActive: index == navController.currentIndex,
-                  onClick: () => navController.setNavIndex(index),
+                  onClick: () => navController.setNavIndex(index, context),
                 ),
               ),
             ),
