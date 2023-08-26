@@ -46,6 +46,7 @@ Widget memberCard({
                     title: "Profile",
                     textColor: mehroonColor,
                     outlineColor: mehroonColor,
+                    padding: (1, 1),
                   ),
                 ),
                 10.widthBox,
@@ -55,6 +56,7 @@ Widget memberCard({
                     title: "Message",
                     textColor: whiteColor,
                     btnColor: mehroonColor,
+                    padding: (1, 1),
                   ),
                 ),
               ],
@@ -68,9 +70,9 @@ Widget memberCard({
       .white
       .padding(const EdgeInsets.all(10))
       .size(double.infinity, 200)
-      .margin(const EdgeInsets.only(bottom: 10))
+      .margin(const EdgeInsets.symmetric(vertical: 5))
       .rounded
-      .shadowSm
+      .outerShadow
       .make()
       .onTap(onCardClick);
 }

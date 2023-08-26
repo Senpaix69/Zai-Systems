@@ -92,7 +92,7 @@ class _LoginScreenState extends State<LoginScreen> {
     loader.show(
       title: "Email Sending",
       context: context,
-      text: "Please wait...",
+      text: wait,
     );
     final success = await _firebaseService.resetPassword(
       email: _emailController.text.trim(),

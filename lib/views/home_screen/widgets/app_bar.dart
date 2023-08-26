@@ -4,7 +4,7 @@ import 'package:zaisystems/consts/imports.dart';
 SliverAppBar myAppBar(context) {
   return SliverAppBar(
     elevation: 10.0,
-    expandedHeight: 200,
+    expandedHeight: 250,
     pinned: true,
     leading: IconButton(
       onPressed: () => ZoomDrawer.of(context)!.toggle(),

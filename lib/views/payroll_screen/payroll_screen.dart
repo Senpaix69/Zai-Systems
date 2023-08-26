@@ -1,7 +1,7 @@
 import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/views/payroll_screen/widgets/payroll_description.dart';
 import 'package:zaisystems/views/payroll_screen/widgets/section_builder.dart';
-import 'package:zaisystems/widget_common/custom_button.dart';
+import 'package:zaisystems/widget_common/request_demo.dart';
 import 'package:zaisystems/widget_common/title_appbar.dart';
 
 class PayrollScreen extends StatelessWidget {
@@ -25,24 +25,7 @@ class PayrollScreen extends StatelessWidget {
               payrollDescription(),
               payrollSectionBuilder(),
               20.heightBox,
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: <Widget>[
-                  demoRequestDesc.text.white.size(header).make(),
-                  10.heightBox,
-                  customButton(
-                    onPress: () {},
-                    title: demoReq,
-                    textColor: mehroonColor,
-                    btnColor: lightGolden,
-                  ),
-                ],
-              )
-                  .box
-                  .width(double.infinity)
-                  .color(mehroonColor)
-                  .padding(const EdgeInsets.all(16))
-                  .make(),
+              requestDemo(),
             ],
           ),
         ),

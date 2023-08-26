@@ -49,7 +49,7 @@ class TeamScreen extends StatelessWidget {
             ),
           );
         },
-      ).box.padding(const EdgeInsets.all(10)).make(),
+      ).box.padding(const EdgeInsets.symmetric(horizontal: 10)).make(),
     );
   }
 }
