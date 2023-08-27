@@ -60,5 +60,5 @@ Widget servicesAndCourses({required BuildContext context}) {
       ).box.margin(const EdgeInsets.symmetric(horizontal: 20)).make(),
       10.heightBox,
     ],
-  ).box.roundedSM.width(context.screenWidth).white.make();
+  ).box.width(context.screenWidth).white.make();
 }

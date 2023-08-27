@@ -22,7 +22,7 @@ Widget courseCard({
   )
       .box
       .white
-      .shadowSm
+      .outerShadowSm
       .padding(const EdgeInsets.all(20))
       .margin(const EdgeInsets.symmetric(vertical: 5))
       .make();

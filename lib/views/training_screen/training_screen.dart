@@ -15,17 +15,23 @@ class TrainingScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Container(
-          padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+          padding: const EdgeInsets.only(bottom: 20),
           width: double.infinity,
           child: Column(
             children: <Widget>[
-              "Course We Offer"
+              "Certified Courses We Offer"
                   .text
                   .size(heading)
                   .fontFamily(bold)
                   .color(mehroonColor)
+                  .make()
+                  .centered()
+                  .box
+                  .width(double.infinity)
+                  .white
+                  .padding(const EdgeInsets.all(20))
                   .make(),
-              20.heightBox,
+              5.heightBox,
               ListView.builder(
                 physics: const NeverScrollableScrollPhysics(),
                 itemCount: courseList.length,

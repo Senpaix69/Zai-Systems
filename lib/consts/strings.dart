@@ -112,6 +112,10 @@ const workDaysDesc =
 
 const demoRequestDesc = "For more information please request a demo";
 const demoReq = "Request Demo";
+// Demo Request
+const demo = "Demo";
+const demoDetails =
+    "By submitting this demo request, you consent to our use of your provided information to schedule and conduct the demo. Your information will be handled in accordance with our privacy policy.";
 
 // ! --------------------------- HCM Attendance section --------------------
 const impulseHCMAttendace = "Managing Workforce Attendance";

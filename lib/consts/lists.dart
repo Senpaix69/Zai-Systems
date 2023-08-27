@@ -113,8 +113,8 @@ const testimonialsList = [
 // team members
 const teamList = [
   Member(
-      name: 'Owais Ahmed Khan',
-      position: 'CEO',
+      name: 'Owais Ahmad Khan',
+      position: 'Founder / CEO',
       image: owais,
       introduction: "Chief Executive Officer of Zai Systems",
       description:
@@ -123,7 +123,7 @@ const teamList = [
       profile:
           "https://www.facebook.com/zaisystems?paipv=0&eav=AfY8FerIphTkdF6U1gcw5SpXWpEET_yups6EeIAuM8C_BP-U5HU003uWYUWbtICGvcY"),
   Member(
-    name: 'Abdul Rafay Khan',
+    name: 'Abdul Rafay Ahmad',
     position: 'COO',
     image: rafey,
     introduction: "Chief Operating Officer of Zai Systems",

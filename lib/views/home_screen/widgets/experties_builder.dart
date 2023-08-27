@@ -22,5 +22,5 @@ Widget expertiesBuilder() {
         ),
       ),
     ],
-  ).box.padding(const EdgeInsets.all(20)).white.roundedSM.shadowSm.make();
+  ).box.padding(const EdgeInsets.all(20)).white.make();
 }

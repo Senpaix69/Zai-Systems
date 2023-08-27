@@ -2,6 +2,7 @@ import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/views/attendance_screen/attendance_screen.dart';
 import 'package:zaisystems/views/auth_screen/login_screen.dart';
 import 'package:zaisystems/views/auth_screen/signup_screen.dart';
+import 'package:zaisystems/views/demo_screen/demo_screen.dart';
 import 'package:zaisystems/views/drawer_screen/drawer.dart';
 import 'package:zaisystems/views/emp_service_screen/e_service_screen.dart';
 import 'package:zaisystems/views/hcm_screen/hcm_screen.dart';
@@ -27,6 +28,7 @@ class AppRoutes {
   static const String letterFormsScreen = "/letterForms";
   static const String attendanceScreen = "/attendance";
   static const String eServiceScreen = "/employeeService";
+  static const String demoScreen = "/demoScreen";
   static final List<GetPage> routes = <GetPage>[
     GetPage(name: splashScreen, page: () => const SplashScreen()),
     GetPage(name: loginScreen, page: () => const LoginScreen()),
@@ -40,5 +42,6 @@ class AppRoutes {
     GetPage(name: letterFormsScreen, page: () => const LetterFormsScreen()),
     GetPage(name: attendanceScreen, page: () => const AttendanceScreen()),
     GetPage(name: coursesScreen, page: () => const TrainingScreen()),
+    GetPage(name: demoScreen, page: () => const DemoScreen()),
   ];
 }

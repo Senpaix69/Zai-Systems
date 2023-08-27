@@ -20,7 +20,6 @@ class ContactScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.only(top: 20),
-          color: lightGrey,
           width: double.infinity,
           child: Column(
             children: <Widget>[
