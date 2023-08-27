@@ -48,7 +48,6 @@ dependencies:
   http: ^1.1.0
   uuid: ^3.0.7
   file_picker: ^5.3.3
-  flutter_zoom_drawer: ^3.1.1
   percent_indicator: ^4.2.3
   url_launcher: ^6.1.12
 
@@ -78,6 +77,7 @@ flutter:
   assets:
     - assets/
     - assets/images/
+    - assets/pdf/
     - assets/images/course/
     - assets/images/team/
     - assets/images/testimonial/

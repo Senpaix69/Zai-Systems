@@ -16,7 +16,7 @@ class MenuScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final userController = Get.find<UserController>();
-    final navController = Get.find<NavController>();
+    final navController = Get.put(NavController());
     final loader = LoadingScreen.instance();
     final firebase = FirebaseService.instance();
 
@@ -70,58 +70,59 @@ class MenuScreen extends StatelessWidget {
       return circularBox(widget: dummyAvt());
     }
 
-    return Container(
-      width: double.infinity,
-      height: double.infinity,
-      margin: EdgeInsets.symmetric(
-          horizontal: 10.0, vertical: context.screenHeight * 0.14),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          Obx(
-            () => Row(
-              children: <Widget>[
-                getProfile(),
-                const SizedBox(width: 10),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      userController.currentUser!.name.text.white
-                          .fontFamily(bold)
-                          .make(),
-                      userController.currentUser!.email.text
-                          .size(10)
-                          .white
-                          .make(),
-                    ],
+    return Drawer(
+      backgroundColor: whiteColor,
+      child: Container(
+        margin: EdgeInsets.symmetric(
+            horizontal: 10.0, vertical: context.screenHeight * 0.06),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Obx(
+              () => Row(
+                children: <Widget>[
+                  getProfile(),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        userController.currentUser!.name.text
+                            .fontFamily(bold)
+                            .make(),
+                        userController.currentUser!.email.text
+                            .size(10)
+                            .color(fontGrey)
+                            .make(),
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-          20.heightBox,
-          Column(
-            children: List.generate(
-              menuItems.length,
-              (index) => Obx(
-                () => navTile(
-                  title: menuItems[index].title,
-                  icon: menuItems[index].icon,
-                  isActive: index == navController.currentIndex,
-                  onClick: () => navController.setNavIndex(index, context),
+            20.heightBox,
+            Column(
+              children: List.generate(
+                menuItems.length,
+                (index) => Obx(
+                  () => navTile(
+                    title: menuItems[index].title,
+                    icon: menuItems[index].icon,
+                    isActive: index == navController.currentIndex,
+                    onClick: () => navController.setNavIndex(index, context),
+                  ),
                 ),
               ),
             ),
-          ),
-          const Spacer(),
-          customButton(
-            onPress: logOut,
-            title: logout,
-            textColor: whiteColor,
-            btnColor: mehroonColor,
-          ),
-        ],
+            const Spacer(),
+            customButton(
+              onPress: logOut,
+              title: logout,
+              textColor: whiteColor,
+              btnColor: mehroonColor,
+            ).box.width(context.screenWidth * 0.4).make().marginOnly(left: 10),
+          ],
+        ),
       ),
     );
   }

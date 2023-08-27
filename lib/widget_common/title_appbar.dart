@@ -1,4 +1,3 @@
-import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/controllers/drawer_controller.dart';
 
@@ -7,6 +6,10 @@ AppBar navAppBar({
   required String title,
 }) {
   final controller = Get.find<NavController>();
+
+  void toggleDrawer() => Scaffold.of(context).isDrawerOpen
+      ? Scaffold.of(context).closeDrawer()
+      : Scaffold.of(context).openDrawer();
   return AppBar(
     title: title.text
         .fontFamily(semibold)
@@ -16,7 +19,7 @@ AppBar navAppBar({
     leading: IconButton(
       icon: Icon(controller.menuItem ? Icons.menu : Icons.arrow_back),
       onPressed: controller.menuItem
-          ? () => ZoomDrawer.of(context)!.toggle()
+          ? toggleDrawer
           : () => Navigator.of(context).pop(),
     ),
   );

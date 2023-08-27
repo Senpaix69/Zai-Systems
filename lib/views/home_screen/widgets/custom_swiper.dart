@@ -32,7 +32,7 @@ class CustomSwiper extends StatelessWidget {
               autoPlay: true,
               enlargeCenterPage: true,
               onPageChanged: (index) =>
-                  controller.sliderIndices[sliderNo].value = index,
+                  controller.setSliderIndex(sliderNo, index),
               itemCount: sliderList.length,
               itemBuilder: (context, index) => Image.asset(
                 sliderList[index].image,

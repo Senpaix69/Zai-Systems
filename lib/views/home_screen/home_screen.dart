@@ -1,4 +1,5 @@
 import 'package:zaisystems/consts/imports.dart';
+import 'package:zaisystems/views/drawer_screen/menu_screen.dart';
 import 'package:zaisystems/views/home_screen/widgets/app_bar.dart';
 import 'package:zaisystems/views/home_screen/widgets/experties_builder.dart';
 import 'package:zaisystems/views/home_screen/widgets/company_summary.dart';
@@ -39,6 +40,7 @@ class HomeScreen extends StatelessWidget {
           const SliverToBoxAdapter(child: Footer()),
         ],
       ),
+      drawer: const MenuScreen(),
     );
   }
 }

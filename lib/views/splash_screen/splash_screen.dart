@@ -24,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen>
     Future.delayed(
       const Duration(seconds: 3),
       () async => await Get.offNamed(
-        user != null ? AppRoutes.drawerScreen : AppRoutes.loginScreen,
+        user != null ? AppRoutes.homeScreen : AppRoutes.loginScreen,
       ),
     );
   }

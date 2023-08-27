@@ -1,5 +1,4 @@
 import 'package:zaisystems/consts/imports.dart';
-import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 
 class NavController extends GetxController {
   final currentNavIndex = 0.obs;
@@ -8,10 +7,9 @@ class NavController extends GetxController {
   void setNavIndex(int val, BuildContext context) {
     if (currentIndex != val) {
       currentNavIndex.value = val;
-      Future.delayed(
-        const Duration(milliseconds: 100),
-        () => ZoomDrawer.of(context)!.toggle(),
-      );
+      Scaffold.of(context).isDrawerOpen
+          ? Scaffold.of(context).closeDrawer()
+          : Scaffold.of(context).openDrawer();
     }
     if (isMenuItem.value == true && currentIndex == 0) {
       isMenuItem.value = false;

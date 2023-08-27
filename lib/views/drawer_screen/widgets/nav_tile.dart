@@ -9,23 +9,18 @@ Widget navTile({
   return Container(
     padding: const EdgeInsets.all(15),
     decoration: BoxDecoration(
-      gradient: isActive
-          ? const LinearGradient(colors: <Color>[
-              mehroonColor,
-              Colors.black,
-            ])
-          : null,
+      color: isActive ? mehroonColor : null,
       borderRadius: BorderRadius.circular(10),
     ),
     child: Row(
       children: <Widget>[
         Icon(
           icon,
-          color: isActive ? whiteColor : lightGrey,
+          color: isActive ? whiteColor : fontGrey,
         ),
         10.widthBox,
         title.text
-            .color(isActive ? whiteColor : lightGrey)
+            .color(isActive ? whiteColor : fontGrey)
             .size(16)
             .fontFamily(isActive ? bold : regular)
             .make(),
