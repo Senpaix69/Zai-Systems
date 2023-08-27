@@ -1,10 +1,10 @@
 import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/controllers/slider_controller.dart';
-import 'package:zaisystems/models/slider_item.dart';
+import 'package:zaisystems/models/card_item.dart';
 import 'package:zaisystems/widget_common/dot_indicator.dart';
 
 class CustomSwiper extends StatelessWidget {
-  final List<SliderItem> sliderList;
+  final List<CardItem> sliderList;
   final int duration;
   final int sliderNo;
   const CustomSwiper({
@@ -25,7 +25,8 @@ class CustomSwiper extends StatelessWidget {
           alignment: Alignment.bottomCenter,
           children: <Widget>[
             VxSwiper.builder(
-              viewportFraction: 1.0,
+              viewportFraction: 0.9,
+              height: 220,
               autoPlayAnimationDuration: const Duration(milliseconds: 500),
               autoPlayInterval: Duration(seconds: duration),
               autoPlay: true,
@@ -48,7 +49,8 @@ class CustomSwiper extends StatelessWidget {
               () => DotIndicator(
                 currentIndex: controller.sliderIndices[sliderNo].value,
                 itemCount: sliderList.length,
-                activeColor: mehroonColor,
+                activeColor: lightGrey,
+                inactiveColor: fontGrey,
               ).positioned(
                 bottom: 10.0,
               ),
@@ -69,7 +71,7 @@ class CustomSwiper extends StatelessWidget {
                   .make(),
               10.heightBox,
               sliderList[controller.currentSliderIndex(sliderNo)]
-                  .text
+                  .subText
                   .text
                   .minFontSize(16)
                   .maxLines(4)

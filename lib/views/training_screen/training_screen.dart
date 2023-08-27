@@ -1,5 +1,6 @@
 import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/views/training_screen/widgets/course_card.dart';
+import 'package:zaisystems/views/training_screen/widgets/course_detail.dart';
 import 'package:zaisystems/widget_common/title_appbar.dart';
 
 class TrainingScreen extends StatelessWidget {
@@ -39,9 +40,11 @@ class TrainingScreen extends StatelessWidget {
                 itemBuilder: (context, index) {
                   final course = courseList[index];
                   return courseCard(
-                    image: course.image,
-                    title: course.title,
-                    description: course.text,
+                    item: course,
+                    onCardClick: () async => await courseDetailModel(
+                      context: context,
+                      course: course,
+                    ),
                   );
                 },
               )

@@ -1,6 +1,7 @@
 //icons
 const icAppLogo = "assets/icons/app_logo.png";
 const icAppLogoWhite = "assets/icons/logowhite.png";
+const icWhatsapp = "assets/icons/whatsapp.png";
 const icAppleLogo = "assets/icons/apple_logo.png";
 const icFacebookLogo = "assets/icons/facebook_logo.png";
 const icGoogleLogo = "assets/icons/google_logo.png";
@@ -25,20 +26,18 @@ const imgFooter = "assets/images/location.png";
 const imgContact = "assets/images/contact.png";
 
 // courses
-const imgGraphics = "assets/images/course/Graphics.png";
-const imgAngular = "assets/images/course/Angular.png";
-const imgJava = "assets/images/course/java.png";
-const imgJs = "assets/images/course/Javascript.png";
-const imgWordpress = "assets/images/course/wordpress.png";
-const imgAppDev = "assets/images/course/App_Development.png";
-const imgReact = "assets/images/course/React.png";
-const imgAspNet = "assets/images/course/ASP_Net.png";
-const imgFrontend = "assets/images/course/Frontend.png";
-const imgPython = "assets/images/course/Python.png";
-const imgNode = "assets/images/course/NodeJS.png";
-const imgBlockChain = "assets/images/course/Blockchain.png";
-const imgVue = "assets/images/course/Vue_JS.png";
-const imgFlutter = "assets/images/course/flutter.jpg";
+const imgGraphics = "assets/images/course/graphics.jpg";
+const imgJava = "assets/images/course/java.jpg";
+const imgJs = "assets/images/course/javascript.jpg";
+const imgWordpress = "assets/images/course/wordpress.jpg";
+const imgAppDev = "assets/images/course/appdev.jpg";
+const imgReact = "assets/images/course/react.jpg";
+const imgAspNet = "assets/images/course/aspnet.jpg";
+const imgFrontend = "assets/images/course/frontend.jpg";
+const imgPython = "assets/images/course/python.jpg";
+const imgNode = "assets/images/course/nodejs.jpg";
+const imgBlockChain = "assets/images/course/blockchain.jpg";
+const imgVue = "assets/images/course/vuejs.jpg";
 
 // testimonials
 const chandra = "assets/images/testimonial/chandra.jpg";

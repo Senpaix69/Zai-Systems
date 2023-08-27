@@ -1,5 +1,6 @@
 const appname = "Zai Systems";
 const userKey = "user";
+const ceoNumber = "+923346906960";
 
 // Contacts
 const companyEmail = "zaisystems@gmail.com";

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:zaisystems/consts/imports.dart';
 
 class DotIndicator extends StatelessWidget {
   final int currentIndex;
@@ -29,6 +29,6 @@ class DotIndicator extends StatelessWidget {
           ),
         );
       }),
-    );
+    ).box.color(darkFontGrey).padding(const EdgeInsets.all(4)).roundedLg.make();
   }
 }

@@ -1,12 +1,10 @@
 import 'package:zaisystems/consts/imports.dart';
+import 'package:zaisystems/models/member.dart';
 import 'package:zaisystems/widget_common/custom_button.dart';
 import 'package:zaisystems/widget_common/outlined_button.dart';
 
 Widget memberCard({
-  required String name,
-  required String position,
-  required String image,
-  required String intro,
+  required Member member,
   required Function(int) onBtnClick,
   required Function() onCardClick,
 }) {
@@ -14,7 +12,7 @@ Widget memberCard({
     crossAxisAlignment: CrossAxisAlignment.start,
     children: <Widget>[
       Image.asset(
-        image,
+        member.image,
         height: 180,
         width: 140,
         fit: BoxFit.cover,
@@ -24,14 +22,18 @@ Widget memberCard({
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            name.text.size(header).fontFamily(bold).color(mehroonColor).make(),
-            position.text
+            member.name.text
+                .size(header)
+                .fontFamily(bold)
+                .color(mehroonColor)
+                .make(),
+            member.position.text
                 .size(text)
                 .fontFamily(semibold)
                 .color(darkFontGrey)
                 .make(),
             5.heightBox,
-            intro.text
+            member.introduction.text
                 .color(darkFontGrey)
                 .minFontSize(14)
                 .overflow(TextOverflow.ellipsis)
@@ -43,7 +45,7 @@ Widget memberCard({
                 Expanded(
                   child: outLinedButton(
                     onPress: () => onBtnClick(1),
-                    title: "Profile",
+                    title: "LinkedIn",
                     textColor: mehroonColor,
                     outlineColor: mehroonColor,
                     padding: (1, 1),

@@ -35,10 +35,7 @@ class TeamScreen extends StatelessWidget {
         itemBuilder: (context, index) {
           final member = teamList[index];
           return memberCard(
-            name: member.name,
-            position: member.position,
-            image: member.image,
-            intro: member.introduction,
+            member: member,
             onBtnClick: (platform) => launchCustomURL(
               url: platform == 0 ? member.contact : member.profile,
               platform: platform,

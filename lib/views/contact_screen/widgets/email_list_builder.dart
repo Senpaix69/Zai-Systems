@@ -11,7 +11,7 @@ Widget emailListBuilder() {
         contactList.length,
         (index) => titleText(
           title: contactList[index].title,
-          email: contactList[index].text,
+          email: contactList[index].subText,
         ),
       )
     ],

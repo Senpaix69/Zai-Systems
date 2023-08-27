@@ -5,7 +5,6 @@ import 'package:zaisystems/models/experties_item.dart';
 import 'package:zaisystems/models/card_item.dart';
 import 'package:zaisystems/models/member.dart';
 import 'package:zaisystems/models/menu_item.dart';
-import 'package:zaisystems/models/slider_item.dart';
 import 'package:zaisystems/models/testimonial_item.dart';
 
 const socialIconList = [
@@ -33,22 +32,22 @@ List<MenuItem> menuItems = [
 
 // Slider List
 const sliderList = [
-  SliderItem(
+  CardItem(
     appname,
     "$appname speciality teams create cost-effective innovative custom solutions to meet your challenges",
     slider1,
   ),
-  SliderItem(
+  CardItem(
     hcm360,
     "$appname brings you an all-encompassing, user-friendly, and scalable solution to elevate your HR operations",
     slider2,
   ),
-  SliderItem(
+  CardItem(
     softwareProvide,
     "$appname speciality teams create cost-effective innovative custom solutions to meet your challenges",
     slider3,
   ),
-  SliderItem(
+  CardItem(
     courseProvide,
     "$appname speciality teams create cost-effective innovative custom solutions to meet your challenges",
     slider1,
@@ -56,26 +55,24 @@ const sliderList = [
 ];
 
 const servicesList = [
-  SliderItem(webAndApp, webDetails, cSlider1),
-  SliderItem(ecommerce, ecommerceDetails, cSlider2),
-  SliderItem(supportTime, supportDetails, cSlider3),
+  CardItem(webAndApp, webDetails, cSlider1),
+  CardItem(ecommerce, ecommerceDetails, cSlider2),
+  CardItem(supportTime, supportDetails, cSlider3),
 ];
 
 const courseList = [
-  SliderItem(flutter, flutterDesc, imgFlutter),
-  SliderItem(angular, angularDesc, imgAngular),
-  SliderItem(appDev, appDevDesc, imgAppDev),
-  SliderItem(aspNet, aspNetDesc, imgAspNet),
-  SliderItem(blockChain, blockchainDesc, imgBlockChain),
-  SliderItem(frontendDev, frontendDesc, imgFrontend),
-  SliderItem(graphicDesign, graphicDesignDesc, imgGraphics),
-  SliderItem(java, javaDesc, imgJava),
-  SliderItem(js, jsDesc, imgJs),
-  SliderItem(nodeJs, nodeDesc, imgNode),
-  SliderItem(python, pythonDesc, imgPython),
-  SliderItem(reactJs, reactDesc, imgReact),
-  SliderItem(vueJs, vueDesc, imgVue),
-  SliderItem(wordpress, wordpressDesc, imgWordpress),
+  CardItem(appDev, appDevDesc, imgAppDev),
+  CardItem(aspNet, aspNetDesc, imgAspNet),
+  CardItem(blockChain, blockchainDesc, imgBlockChain),
+  CardItem(frontendDev, frontendDesc, imgFrontend),
+  CardItem(graphicDesign, graphicDesignDesc, imgGraphics),
+  CardItem(java, javaDesc, imgJava),
+  CardItem(js, jsDesc, imgJs),
+  CardItem(nodeJs, nodeDesc, imgNode),
+  CardItem(python, pythonDesc, imgPython),
+  CardItem(reactJs, reactDesc, imgReact),
+  CardItem(vueJs, vueDesc, imgVue),
+  CardItem(wordpress, wordpressDesc, imgWordpress),
 ];
 
 const expertiesList = [
@@ -119,7 +116,7 @@ const teamList = [
       introduction: "Chief Executive Officer of Zai Systems",
       description:
           "A chief executive officer (CEO) is the highest-ranking executive of a firm. CEOs act as the company's public face and make major corporate decisions.",
-      contact: "+923346906960",
+      contact: ceoNumber,
       profile:
           "https://www.facebook.com/zaisystems?paipv=0&eav=AfY8FerIphTkdF6U1gcw5SpXWpEET_yups6EeIAuM8C_BP-U5HU003uWYUWbtICGvcY"),
   Member(

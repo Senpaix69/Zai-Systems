@@ -33,7 +33,7 @@ class HCMScreen extends StatelessWidget {
                   return hcmCard(
                     decorationImg: item.image,
                     title: item.title,
-                    text: item.text,
+                    text: item.subText,
                     onClick: () async => await Get.toNamed(routes[index]),
                   );
                 },

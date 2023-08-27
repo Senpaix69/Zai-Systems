@@ -11,7 +11,7 @@ ListView hcmSectionBuilder({required List<CardItem> list}) {
       final item = list[index];
       return section(
         title: "-> ${item.title}",
-        description: item.text,
+        description: item.subText,
         image: item.image,
       );
     },
