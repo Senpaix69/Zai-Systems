@@ -45,7 +45,7 @@ class ServiceSwiper extends StatelessWidget {
                   .justify
                   .make(),
             ],
-          ),
+          ).box.padding(const EdgeInsets.all(20)).make(),
         ),
         Obx(
           () => DotIndicator(
@@ -60,7 +60,6 @@ class ServiceSwiper extends StatelessWidget {
       ],
     )
         .box
-        .padding(const EdgeInsets.all(20))
         .shadowSm
         .white
         .outerShadowSm
