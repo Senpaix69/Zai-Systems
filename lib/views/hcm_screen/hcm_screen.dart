@@ -1,5 +1,7 @@
 import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/controllers/app_routes.dart';
+import 'package:zaisystems/controllers/drawer_controller.dart';
+import 'package:zaisystems/views/drawer_screen/menu_screen.dart';
 import 'package:zaisystems/views/hcm_screen/widgets/hcm_card.dart';
 import 'package:zaisystems/views/hcm_screen/widgets/impulse_description.dart';
 import 'package:zaisystems/widget_common/title_appbar.dart';
@@ -14,12 +16,14 @@ class HCMScreen extends StatelessWidget {
       AppRoutes.attendanceScreen,
       AppRoutes.letterFormsScreen,
     ];
-    return Scaffold(
+    return WillPopScope(
+      onWillPop: () async {
+        NavController().setNavIndex(0, context);
+        return true;
+      },
+      child: Scaffold(
         backgroundColor: lightGrey,
-        appBar: navAppBar(
-          context: context,
-          title: hcm360,
-        ),
+        appBar: navAppBar(title: hcm360),
         body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
@@ -40,6 +44,9 @@ class HCMScreen extends StatelessWidget {
               ),
             ],
           ),
-        ));
+        ),
+        drawer: const MenuScreen(),
+      ),
+    );
   }
 }

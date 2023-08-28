@@ -1,4 +1,5 @@
 import 'package:zaisystems/consts/imports.dart';
+import 'package:zaisystems/controllers/drawer_controller.dart';
 import 'package:zaisystems/views/drawer_screen/menu_screen.dart';
 import 'package:zaisystems/views/home_screen/widgets/app_bar.dart';
 import 'package:zaisystems/views/home_screen/widgets/experties_builder.dart';
@@ -6,6 +7,7 @@ import 'package:zaisystems/views/home_screen/widgets/company_summary.dart';
 import 'package:zaisystems/views/home_screen/widgets/hcm_builder.dart';
 import 'package:zaisystems/views/home_screen/widgets/services_and_courses.dart';
 import 'package:zaisystems/views/home_screen/widgets/testimonials.dart';
+import 'package:zaisystems/widget_common/dialog_boxs.dart';
 import 'package:zaisystems/widget_common/footer.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -13,34 +15,46 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: lightGrey,
-      body: CustomScrollView(
-        slivers: <Widget>[
-          myAppBar(context),
-          SliverToBoxAdapter(
-            child: Column(
-              children: <Widget>[
-                companySummary(context),
-                20.heightBox,
-                hcmBuilder(context: context),
-                20.heightBox,
-                servicesAndCourses(context: context),
-                20.heightBox,
-                expertiesBuilder(),
-                20.heightBox,
-                const Testimonials(),
-                20.heightBox,
-              ],
-            )
-                .box
-                .padding(const EdgeInsets.only(top: 16, left: 10, right: 10))
-                .make(),
-          ),
-          const SliverToBoxAdapter(child: Footer()),
-        ],
+    final controller = Get.put(NavController());
+
+    return WillPopScope(
+      onWillPop: () async {
+        if (controller.currentIndex != 0) {
+          controller.setNavIndex(0, context);
+          return false;
+        }
+        return await confirmDialogue(
+            context: context, message: confirmExit, title: appname);
+      },
+      child: Scaffold(
+        backgroundColor: lightGrey,
+        body: CustomScrollView(
+          slivers: <Widget>[
+            myAppBar(context),
+            SliverToBoxAdapter(
+              child: Column(
+                children: <Widget>[
+                  companySummary(context),
+                  20.heightBox,
+                  hcmBuilder(context: context),
+                  20.heightBox,
+                  servicesAndCourses(context: context),
+                  20.heightBox,
+                  expertiesBuilder(),
+                  20.heightBox,
+                  const Testimonials(),
+                  20.heightBox,
+                ],
+              )
+                  .box
+                  .padding(const EdgeInsets.only(top: 16, left: 10, right: 10))
+                  .make(),
+            ),
+            const SliverToBoxAdapter(child: Footer()),
+          ],
+        ),
+        drawer: const MenuScreen(),
       ),
-      drawer: const MenuScreen(),
     );
   }
 }

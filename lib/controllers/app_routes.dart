@@ -16,6 +16,7 @@ import 'package:zaisystems/views/training_screen/training_screen.dart';
 
 class AppRoutes {
   static const String splashScreen = "/";
+  static const String routesScreen = "/routesController";
   static const String homeScreen = "/home";
   static const String zoomDrawerScreen = "/zoomDrawer";
   static const String drawerScreen = "/drawer";
