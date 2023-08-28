@@ -10,10 +10,7 @@ class AttendanceScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: myAppBar(
-        context: context,
-        title: attendance,
-      ),
+      appBar: myAppBar(title: attendance),
       body: SingleChildScrollView(
         child: Container(
           color: whiteColor,

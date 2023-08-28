@@ -10,10 +10,7 @@ class EmployeeServiceScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: myAppBar(
-        context: context,
-        title: employeeSelfService,
-      ),
+      appBar: myAppBar(title: employeeSelfService),
       body: SingleChildScrollView(
         child: Container(
           color: whiteColor,

@@ -10,10 +10,7 @@ class PayrollScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: myAppBar(
-        context: context,
-        title: payrolls,
-      ),
+      appBar: myAppBar(title: payrolls),
       body: SingleChildScrollView(
         child: Container(
           color: whiteColor,

@@ -1,12 +1,17 @@
 import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/models/card_item.dart';
 import 'package:zaisystems/utils/launch_url.dart';
+import 'package:zaisystems/views/contact_screen/contact_screen.dart';
+import 'package:zaisystems/views/training_screen/widgets/course_button.dart';
+import 'package:zaisystems/views/training_screen/widgets/pdf_screen.dart';
 
 Future<void> courseDetailModel({
   required BuildContext context,
+  required int cardIndex,
   required CardItem course,
 }) async {
-  const url = 'https://wa.me/$ceoNumber/?text=hi! ZaiSystems';
+  const url =
+      'https://wa.me/$ceoNumber/?text=hi! I want to register in a course';
 
   showModalBottomSheet(
     useSafeArea: true,
@@ -28,15 +33,31 @@ Future<void> courseDetailModel({
                 height: 40,
                 color: lightGrey,
               ),
-              "Register here".text.color(fontGrey).make(),
-              10.heightBox,
-              Image.asset(
-                icWhatsapp,
-                color: Colors.green,
-                height: 35,
-              ).marginOnly(left: 10).onTap(
-                    () async => await launchURL(url: url, context: context),
+              Row(
+                children: <Widget>[
+                  courseButton(
+                    onClick: () async =>
+                        await launchURL(url: url, context: context),
+                    title: "Register",
+                    icon: icWhatsapp,
+                    color: Colors.green,
                   ),
+                  20.widthBox,
+                  courseButton(
+                    onClick: () async => await Get.to(
+                      PDFScreen(item: pdfLists[cardIndex]),
+                    ),
+                    title: "PDF",
+                    icon: icPDF,
+                  ),
+                  const Spacer(),
+                  courseButton(
+                    onClick: () async => await Get.to(const ContactScreen()),
+                    title: "Contact",
+                    icon: icContactService,
+                  ),
+                ],
+              ),
             ],
           )
               .box

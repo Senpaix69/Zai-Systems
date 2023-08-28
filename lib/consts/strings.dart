@@ -239,3 +239,9 @@ const usDetails =
     "I worked with Zaisystem on multiple projects and continue to come back to team. They are professional, personable and deliver a great project. They work well with my project feedback, often times able to read between the lines of what I am saying, and are very timely with their turnaround times.";
 const usName = "Jason Galli";
 const usPosition = "App Developer";
+
+//! -------------------------- Courses PDF -------------------------------
+const graphicsPdf = "Graphics Designer";
+const companyProfilePdf = "Company Profile";
+const companyServicesPdf = "Company Services";
+const fullStackDevPdf = "Full Stack Development";

@@ -10,10 +10,7 @@ class LetterFormsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: myAppBar(
-        context: context,
-        title: letterForms,
-      ),
+      appBar: myAppBar(title: letterForms),
       body: SingleChildScrollView(
         child: Container(
           color: whiteColor,

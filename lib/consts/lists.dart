@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart' show Icons;
 import 'package:zaisystems/consts/images.dart';
+import 'package:zaisystems/consts/pdfs.dart';
 import 'package:zaisystems/consts/strings.dart';
 import 'package:zaisystems/models/experties_item.dart';
 import 'package:zaisystems/models/card_item.dart';
@@ -464,4 +465,20 @@ const contactList = [
   CardItem(infoText, infoEmail, ""),
   CardItem(ceoText, ceoEmail, ""),
   CardItem(hrText, hrEmail, ""),
+];
+
+// PDF LISTS
+const pdfLists = [
+  CardItem(graphicsPdf, "", pdfGraphics),
+  CardItem(companyProfilePdf, "", pdfCompanyProfile),
+  CardItem(fullStackDevPdf, "", pdfFullStackWeb),
+  CardItem(companyServicesPdf, "", pdfServices),
+  CardItem(graphicsPdf, "", pdfGraphics),
+  CardItem(companyProfilePdf, "", pdfCompanyProfile),
+  CardItem(fullStackDevPdf, "", pdfFullStackWeb),
+  CardItem(companyServicesPdf, "", pdfServices),
+  CardItem(graphicsPdf, "", pdfGraphics),
+  CardItem(companyProfilePdf, "", pdfCompanyProfile),
+  CardItem(fullStackDevPdf, "", pdfFullStackWeb),
+  CardItem(companyServicesPdf, "", pdfServices),
 ];

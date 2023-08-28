@@ -16,7 +16,7 @@ class _DemoScreenState extends State<DemoScreen> {
     return Scaffold(
       backgroundColor: lightGrey,
       resizeToAvoidBottomInset: false,
-      appBar: myAppBar(context: context, title: demoReq),
+      appBar: myAppBar(title: demoReq),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
