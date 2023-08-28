@@ -22,7 +22,7 @@ Widget servicesAndCourses({required BuildContext context}) {
       ),
       10.heightBox,
       customButton(
-        onPress: () {},
+        onPress: () async => await Get.toNamed(AppRoutes.serviceScreen),
         title: "All Services",
         textColor: whiteColor,
         btnColor: mehroonColor,

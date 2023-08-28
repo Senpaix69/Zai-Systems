@@ -35,6 +35,9 @@ class _DemoScreenState extends State<DemoScreen> {
   }
 
   Future<void> sendEmail() async {
+    if (!_formKey.currentState!.validate()) {
+      return;
+    }
     final name = _nameController.text;
     final subject = _subjectController.text;
     final company = _compController.text;

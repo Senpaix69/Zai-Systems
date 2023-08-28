@@ -173,6 +173,69 @@ const supportDetails =
     "COPC, Six Sigma Certified Customer Support Team at Zai Systems is available 24 hours a day...";
 const coursesDetails =
     "$appname offers a variety of IT courses that cover the fundamentals of web development, cybersecurity, data science, cloud computing, and digital marketing. Students have access to a dedicated instructor and a supportive community of learners";
+const userExp = "User Experience Design";
+const userExpDesc =
+    "We focus on what engages and delights users and combine it with what is technologically feasible and economically viable within a product.";
+const manageCloudService = "Managed Cloud Services";
+const manageCloudServiceDesc =
+    "We help businesses manage their cloud infrastructures as well as architecture, develop and deploy on the AWS cloud by leveraging our demonstrated skills.";
+const devOps = "DevOps";
+const devOpsDesc =
+    "We know what it takes to deliver robust, secure, high performance, and enterprise grade applications and products and expertise in the cloud services domain.";
+const webAndMobile = "Web and Mobile";
+const webAndMobileDesc =
+    "We develop unique and fully customized web and mobile applications. We have a creative team capable of adopting different styles for various business...";
+const ecommerceDesc =
+    "Through our honed engagement process we are able to add value and enrich your ecommerce propositions at every step of the project life cycle for both...";
+const bespokItSolutions = "Bespoke IT Solutions for Business";
+const bespokItSolutionsDesc =
+    "Our IT Solutions and Services give you access to our proficiency in advanced technologies and proven practices along the entire IT life.";
+const dataAnalytics = "Data Analytics";
+const dataAnalyticsDesc =
+    "Data should help you run your business better. That's why we take a business-led approach to data analytics, to help you create sustained business insight.";
+const businessIntelligence = "Business Intelligence";
+const businessIntelligenceDesc =
+    "To drive your business forward you need fast and accurate reporting, swift implementation of processes and answers to simple questions.";
+const infoStrategy = "Information Strategy";
+const infoStrategyDesc =
+    "Information Strategy brings together everything that can have an impact on or be impacted by data analytics.";
+
+// ! More Service
+const moreServices =
+    "Our standard approach is to help your business find the right service to use";
+const discussion = "Discussion";
+const discussionDesc =
+    "We meet customers in set place to discuss the details about needs and demands before.";
+const conceptInit = "Concepts Initiatives";
+const conceptInitDesc =
+    "Our experts come up with all kinds of ideas and initiatives for delivering the best.";
+const testingTrying = "Testing Trying";
+const testingTryingDesc =
+    "After agreeing on the ideas and plans, we will conduct meetings as scheduled and give comments.";
+const execInstall = "Execute install";
+const execInstallDesc =
+    "Once the final plan is approved, everything will be conducted according to the agreed contract.";
+
+// ! what we can do for you
+const sdpService =
+    "Why SMBs, Ecommerce And Web Agencies Fully Rely On Zai Systems As Their Sole Digital Partner?";
+const topRatedDA = "Top Rated Digital Agency";
+const topRatedDADesc =
+    'Top Rated Web Design & Digital Agency over the internet with 97% client retention rate. Zai Systems team is named as "Hard working" "Quick" "intell...';
+const certifiedWeb = "Certified Web Specialists";
+const certifiedWebDesc =
+    "W3C, ITIL Certified Specialists at Zai Systems have worked with 50+ Technologies and tens of diverse business industries to get you all the experience requ...";
+const supportTimeDesc =
+    "COPC, Six Sigma Certified Customer Support Team at Zai Systems is available 24 hours a day according to GMT and US EST timezones. We're always here when yo...";
+const affordablePrice = "Affordable Transparent Prices";
+const affordablePriceDesc =
+    "Super Affordable Prices with 100% transparency that makes it easier for SMEs and Web Agencies to easily sub-contract work. We never over charge our custo...";
+const abilityToLoad = "Ability to take up any load";
+const abilityToLoadDesc =
+    "Zai Systems team work under controlled project management system which enables our customers to sub-contract any amount of work load. We have all the resou...";
+const provenCodeStd = "Proven Code Standards";
+const provenCodeStdDesc =
+    "Zai Systems code standards are proven and being utilized by web companies globally. Code produced by the developers is tested for W3C & Search Engine param...";
 
 // ! -------------------------- courses -----------------------------------
 const graphicDesign = "Graphic Design";

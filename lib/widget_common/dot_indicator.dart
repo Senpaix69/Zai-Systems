@@ -4,12 +4,14 @@ class DotIndicator extends StatelessWidget {
   final int currentIndex;
   final int itemCount;
   final Color activeColor;
+  final Color backColor;
   final Color inactiveColor;
 
   const DotIndicator({
     super.key,
     required this.currentIndex,
     required this.itemCount,
+    this.backColor = darkFontGrey,
     this.activeColor = Colors.blue,
     this.inactiveColor = Colors.grey,
   });
@@ -29,6 +31,6 @@ class DotIndicator extends StatelessWidget {
           ),
         );
       }),
-    ).box.color(darkFontGrey).padding(const EdgeInsets.all(4)).roundedLg.make();
+    ).box.color(backColor).padding(const EdgeInsets.all(4)).roundedLg.make();
   }
 }

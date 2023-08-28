@@ -90,3 +90,21 @@ const imgMobileAtt = "assets/images/mobile.png";
 const imgText = "assets/images/text.jpg";
 const imgForms = "assets/images/forms.png";
 const imgOfficial = "assets/images/official.png";
+
+// Services
+const imgBusinessIntelligence =
+    "assets/images/services/businessIntelligence.png";
+const imgBespoke = "assets/images/services/bespoke.png";
+const imgDataAnalytics = "assets/images/services/dataAnalytics.png";
+const imgDevOps = "assets/images/services/devOps.png";
+const imgEcommerce = "assets/images/services/ecommerce.png";
+const imgInformation = "assets/images/services/information.png";
+const imgManagedCloud = "assets/images/services/managedCloudServices.png";
+const imgUserExp = "assets/images/services/userExp.png";
+const imgWebMobile = "assets/images/services/webMobile.png";
+const imgTopRated = "assets/images/services/topRated.png";
+const imgCertifiedWeb = "assets/images/services/certifiedWeb.png";
+const imgSupportTime = "assets/images/services/supportTime.png";
+const imgAffordablePrice = "assets/images/services/affordable.png";
+const imgAbilityLoad = "assets/images/services/abilityLoad.png";
+const imgProvenCodeStd = "assets/images/services/provenCode.png";

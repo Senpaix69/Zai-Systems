@@ -482,3 +482,37 @@ const pdfLists = [
   CardItem(fullStackDevPdf, "", pdfFullStackWeb),
   CardItem(companyServicesPdf, "", pdfServices),
 ];
+
+// Services
+const servicesLists = [
+  CardItem(userExp, userExpDesc, imgUserExp),
+  CardItem(manageCloudService, manageCloudServiceDesc, imgManagedCloud),
+  CardItem(devOps, devOpsDesc, imgDevOps),
+  CardItem(webAndMobile, webAndMobileDesc, imgWebMobile),
+  CardItem(ecommerce, ecommerceDesc, imgEcommerce),
+  CardItem(bespokItSolutions, bespokItSolutionsDesc, imgBespoke),
+  CardItem(dataAnalytics, dataAnalyticsDesc, imgDataAnalytics),
+  CardItem(
+    businessIntelligence,
+    businessIntelligenceDesc,
+    imgBusinessIntelligence,
+  ),
+  CardItem(infoStrategy, infoStrategyDesc, imgInformation),
+];
+
+// More Services
+const stdApproachList = [
+  CardItem(discussion, discussionDesc, ""),
+  CardItem(conceptInit, conceptInitDesc, ""),
+  CardItem(testingTrying, testingTryingDesc, ""),
+  CardItem(execInstall, execInstallDesc, ""),
+];
+
+const sdpServiceList = [
+  CardItem(topRatedDA, topRatedDADesc, imgTopRated),
+  CardItem(certifiedWeb, certifiedWebDesc, imgCertifiedWeb),
+  CardItem(supportTime, supportTimeDesc, imgSupportTime),
+  CardItem(affordablePrice, affordablePriceDesc, imgAffordablePrice),
+  CardItem(abilityToLoad, abilityToLoadDesc, imgAbilityLoad),
+  CardItem(provenCodeStd, provenCodeStdDesc, imgProvenCodeStd),
+];

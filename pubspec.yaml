@@ -81,6 +81,7 @@ flutter:
     - assets/pdf/
     - assets/images/course/
     - assets/images/team/
+    - assets/images/services/
     - assets/images/testimonial/
     - assets/icons/
 

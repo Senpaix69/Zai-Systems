@@ -57,7 +57,7 @@ class Testimonials extends StatelessWidget {
               () => DotIndicator(
                 currentIndex: controller.sliderIndices[3].value,
                 itemCount: testimonialsList.length,
-                activeColor: mehroonColor,
+                activeColor: whiteColor,
               ).positioned(
                 bottom: 10.0,
               ),
