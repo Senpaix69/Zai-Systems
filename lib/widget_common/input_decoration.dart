@@ -15,6 +15,8 @@ InputDecoration inputDecoration({
       icon: Icon(prefixIcon),
       onPressed: onPress,
     ),
+    alignLabelWithHint: true,
+    suffixIconConstraints: BoxConstraints.loose(Size.zero),
     labelText: hintText,
     contentPadding: const EdgeInsets.all(12),
     hintStyle: const TextStyle(color: fontGrey),
