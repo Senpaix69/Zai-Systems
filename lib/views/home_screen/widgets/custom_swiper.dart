@@ -16,7 +16,7 @@ class CustomSwiper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.put(SliderController());
+    final controller = Get.put(SliderController(), permanent: true);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,

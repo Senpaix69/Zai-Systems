@@ -1,10 +1,12 @@
 import 'package:zaisystems/consts/imports.dart';
-import 'package:zaisystems/controllers/app_routes.dart';
 import 'package:zaisystems/views/home_screen/widgets/company_details.dart';
 import 'package:zaisystems/views/home_screen/widgets/custom_swiper.dart';
 import 'package:zaisystems/widget_common/custom_button.dart';
 
-Widget companySummary(BuildContext context) {
+Widget companySummary({
+  required BuildContext context,
+  final controller,
+}) {
   return Column(
     children: <Widget>[
       companyDetails(),
@@ -16,7 +18,7 @@ Widget companySummary(BuildContext context) {
       ),
       10.heightBox,
       customButton(
-        onPress: () async => await Get.toNamed(AppRoutes.teamScreen),
+        onPress: () => controller.setNavIndex(4),
         title: "Our Team",
         textColor: whiteColor,
         btnColor: mehroonColor,

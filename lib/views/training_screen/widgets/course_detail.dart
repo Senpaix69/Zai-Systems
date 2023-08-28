@@ -1,7 +1,6 @@
 import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/models/card_item.dart';
 import 'package:zaisystems/utils/launch_url.dart';
-import 'package:zaisystems/views/contact_screen/contact_screen.dart';
 import 'package:zaisystems/views/training_screen/widgets/course_button.dart';
 import 'package:zaisystems/views/training_screen/widgets/pdf_screen.dart';
 
@@ -49,12 +48,6 @@ Future<void> courseDetailModel({
                     ),
                     title: "PDF",
                     icon: icPDF,
-                  ),
-                  const Spacer(),
-                  courseButton(
-                    onClick: () async => await Get.to(const ContactScreen()),
-                    title: "Contact",
-                    icon: icContactService,
                   ),
                 ],
               ),

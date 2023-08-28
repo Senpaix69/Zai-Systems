@@ -1,9 +1,7 @@
 import 'package:url_launcher/url_launcher.dart';
 import 'package:zaisystems/consts/imports.dart';
-import 'package:zaisystems/views/drawer_screen/menu_screen.dart';
 import 'package:zaisystems/views/team_screen/widgets/member_card.dart';
 import 'package:zaisystems/views/team_screen/widgets/member_details.dart';
-import 'package:zaisystems/widget_common/title_appbar.dart';
 
 class TeamScreen extends StatelessWidget {
   const TeamScreen({super.key});
@@ -24,28 +22,23 @@ class TeamScreen extends StatelessWidget {
       await launchUrl(uri, mode: LaunchMode.externalApplication);
     }
 
-    return Scaffold(
-      backgroundColor: lightGrey,
-      appBar: navAppBar(title: team),
-      body: ListView.builder(
-        shrinkWrap: true,
-        itemCount: teamList.length,
-        itemBuilder: (context, index) {
-          final member = teamList[index];
-          return memberCard(
+    return ListView.builder(
+      shrinkWrap: true,
+      itemCount: teamList.length,
+      itemBuilder: (context, index) {
+        final member = teamList[index];
+        return memberCard(
+          member: member,
+          onBtnClick: (platform) => launchCustomURL(
+            url: platform == 0 ? member.contact : member.profile,
+            platform: platform,
+          ),
+          onCardClick: () => memberDetailModel(
+            context: context,
             member: member,
-            onBtnClick: (platform) => launchCustomURL(
-              url: platform == 0 ? member.contact : member.profile,
-              platform: platform,
-            ),
-            onCardClick: () => memberDetailModel(
-              context: context,
-              member: member,
-            ),
-          );
-        },
-      ).box.padding(const EdgeInsets.symmetric(horizontal: 10)).make(),
-      drawer: const MenuScreen(),
-    );
+          ),
+        );
+      },
+    ).box.padding(const EdgeInsets.symmetric(horizontal: 10)).make();
   }
 }

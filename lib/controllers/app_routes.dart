@@ -9,6 +9,7 @@ import 'package:zaisystems/views/hcm_screen/hcm_screen.dart';
 import 'package:zaisystems/views/home_screen/home_screen.dart';
 import 'package:zaisystems/views/letter_forms_screen/letter_forms_screen.dart';
 import 'package:zaisystems/views/payroll_screen/payroll_screen.dart';
+import 'package:zaisystems/views/routes_screen.dart';
 import 'package:zaisystems/views/services_screen/services_screen.dart';
 import 'package:zaisystems/views/splash_screen/splash_screen.dart';
 import 'package:zaisystems/views/team_screen/team_screen.dart';
@@ -47,6 +48,7 @@ class AppRoutes {
     GetPage(name: letterFormsScreen, page: () => const LetterFormsScreen()),
     GetPage(name: serviceScreen, page: () => const ServicesScreen()),
     GetPage(name: attendanceScreen, page: () => const AttendanceScreen()),
+    GetPage(name: routesScreen, page: () => const RoutesScreen()),
     GetPage(name: coursesScreen, page: () => const TrainingScreen()),
     GetPage(name: demoScreen, page: () => const DemoScreen()),
   ];

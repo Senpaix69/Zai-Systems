@@ -16,7 +16,7 @@ class MenuScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final userController = Get.find<UserController>();
-    final navController = Get.put(NavController());
+    final navController = Get.find<NavController>();
     final loader = LoadingScreen.instance();
     final firebase = FirebaseService.instance();
 
@@ -55,6 +55,16 @@ class MenuScreen extends StatelessWidget {
       }
     }
 
+    void toggleMenu() {
+      final isDrawerOpen = Scaffold.of(context).isDrawerOpen;
+
+      if (isDrawerOpen) {
+        Scaffold.of(context).closeDrawer();
+      } else {
+        Scaffold.of(context).openDrawer();
+      }
+    }
+
     Widget getProfile() {
       if (userController.isLoggedIn) {
         final profileUrl = userController.currentUser!.profileUrl;
@@ -73,8 +83,11 @@ class MenuScreen extends StatelessWidget {
     return Drawer(
       backgroundColor: whiteColor,
       child: Container(
-        margin: EdgeInsets.symmetric(
-            horizontal: 10.0, vertical: context.screenHeight * 0.06),
+        margin: EdgeInsets.only(
+          left: 10.0,
+          right: 10.0,
+          top: context.screenHeight * 0.06,
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -100,7 +113,10 @@ class MenuScreen extends StatelessWidget {
                 ],
               ),
             ),
-            20.heightBox,
+            const Divider(
+              height: 40,
+              color: lightGrey,
+            ),
             Column(
               children: List.generate(
                 menuItems.length,
@@ -109,10 +125,20 @@ class MenuScreen extends StatelessWidget {
                     title: menuItems[index].title,
                     icon: menuItems[index].icon,
                     isActive: index == navController.currentIndex,
-                    onClick: () => navController.setNavIndex(index, context),
+                    onClick: () {
+                      navController.setNavIndex(index);
+                      Future.delayed(
+                        const Duration(milliseconds: 100),
+                        () => toggleMenu(),
+                      );
+                    },
                   ),
                 ),
               ),
+            ),
+            const Divider(
+              color: lightGrey,
+              height: 10,
             ),
             const Spacer(),
             customButton(
@@ -120,7 +146,7 @@ class MenuScreen extends StatelessWidget {
               title: logout,
               textColor: whiteColor,
               btnColor: mehroonColor,
-            ).box.width(context.screenWidth * 0.4).make().marginOnly(left: 10),
+            ).box.width(context.screenWidth * 0.4).make().centered(),
           ],
         ),
       ),

@@ -1,9 +1,7 @@
 import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/controllers/app_routes.dart';
-import 'package:zaisystems/views/drawer_screen/menu_screen.dart';
 import 'package:zaisystems/views/hcm_screen/widgets/hcm_card.dart';
 import 'package:zaisystems/views/hcm_screen/widgets/impulse_description.dart';
-import 'package:zaisystems/widget_common/title_appbar.dart';
 
 class HCMScreen extends StatelessWidget {
   const HCMScreen({super.key});
@@ -15,31 +13,26 @@ class HCMScreen extends StatelessWidget {
       AppRoutes.attendanceScreen,
       AppRoutes.letterFormsScreen,
     ];
-    return Scaffold(
-      backgroundColor: lightGrey,
-      appBar: navAppBar(title: hcm360),
-      body: SingleChildScrollView(
-        child: Column(
-          children: <Widget>[
-            impulseDescription(),
-            ListView.builder(
-              physics: const NeverScrollableScrollPhysics(),
-              shrinkWrap: true,
-              itemCount: hcmList.length,
-              itemBuilder: (context, index) {
-                final item = hcmList[index];
-                return hcmCard(
-                  decorationImg: item.image,
-                  title: item.title,
-                  text: item.subText,
-                  onClick: () async => await Get.toNamed(routes[index]),
-                );
-              },
-            ),
-          ],
-        ),
+    return SingleChildScrollView(
+      child: Column(
+        children: <Widget>[
+          impulseDescription(),
+          ListView.builder(
+            physics: const NeverScrollableScrollPhysics(),
+            shrinkWrap: true,
+            itemCount: hcmList.length,
+            itemBuilder: (context, index) {
+              final item = hcmList[index];
+              return hcmCard(
+                decorationImg: item.image,
+                title: item.title,
+                text: item.subText,
+                onClick: () async => await Get.toNamed(routes[index]),
+              );
+            },
+          ),
+        ],
       ),
-      drawer: const MenuScreen(),
     );
   }
 }

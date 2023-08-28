@@ -1,6 +1,7 @@
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/controllers/app_routes.dart';
+import 'package:zaisystems/controllers/drawer_controller.dart';
 import 'package:zaisystems/controllers/user_controller.dart';
 import 'package:zaisystems/widget_common/applogo_widget.dart';
 
@@ -15,6 +16,7 @@ class _SplashScreenState extends State<SplashScreen>
     with SingleTickerProviderStateMixin {
   late final AnimationController _animationController;
   final userController = Get.put(UserController(), permanent: true);
+  final navController = Get.put(NavController(), permanent: true);
   late final Animation<Offset> _textAnimation;
 
   void changeScreen() async {
@@ -24,7 +26,7 @@ class _SplashScreenState extends State<SplashScreen>
     Future.delayed(
       const Duration(seconds: 3),
       () async => await Get.offNamed(
-        user != null ? AppRoutes.homeScreen : AppRoutes.loginScreen,
+        user != null ? AppRoutes.routesScreen : AppRoutes.loginScreen,
       ),
     );
   }

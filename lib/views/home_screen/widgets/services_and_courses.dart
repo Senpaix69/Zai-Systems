@@ -1,9 +1,11 @@
 import 'package:zaisystems/consts/imports.dart';
-import 'package:zaisystems/controllers/app_routes.dart';
 import 'package:zaisystems/views/home_screen/widgets/custom_swiper.dart';
 import 'package:zaisystems/widget_common/custom_button.dart';
 
-Widget servicesAndCourses({required BuildContext context}) {
+Widget servicesAndCourses({
+  required BuildContext context,
+  final controller,
+}) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: <Widget>[
@@ -22,7 +24,7 @@ Widget servicesAndCourses({required BuildContext context}) {
       ),
       10.heightBox,
       customButton(
-        onPress: () async => await Get.toNamed(AppRoutes.serviceScreen),
+        onPress: () => controller.setNavIndex(2),
         title: "All Services",
         textColor: whiteColor,
         btnColor: mehroonColor,
@@ -53,7 +55,7 @@ Widget servicesAndCourses({required BuildContext context}) {
 
       10.heightBox,
       customButton(
-        onPress: () async => await Get.toNamed(AppRoutes.coursesScreen),
+        onPress: () => controller.setNavIndex(3),
         title: "All Courses",
         textColor: whiteColor,
         btnColor: mehroonColor,
