@@ -17,16 +17,13 @@ import 'package:zaisystems/views/training_screen/training_screen.dart';
 
 class AppRoutes {
   static const String splashScreen = "/";
-  static const String routesScreen = "/routesController";
+  static const String routesScreen = "/routesScreen";
   static const String homeScreen = "/home";
-  static const String zoomDrawerScreen = "/zoomDrawer";
-  static const String drawerScreen = "/drawer";
   static const String teamScreen = "/team";
   static const String hcmScreen = "/hcm";
   static const String loginScreen = "/login";
   static const String signUpScreen = "/signin";
   static const String profileScreen = "/profile";
-  static const String editProfileScreen = "/editProfile";
   static const String coursesScreen = "/courses";
   static const String contactScreen = "/contact";
   static const String payrollsScreen = "/payrolls";
@@ -42,12 +39,28 @@ class AppRoutes {
     GetPage(name: homeScreen, page: () => const HomeScreen()),
     GetPage(name: teamScreen, page: () => const TeamScreen()),
     GetPage(name: hcmScreen, page: () => const HCMScreen()),
-    GetPage(name: payrollsScreen, page: () => const PayrollScreen()),
+    GetPage(
+      name: payrollsScreen,
+      page: () => const PayrollScreen(),
+      transition: Transition.rightToLeft,
+    ),
     GetPage(name: contactScreen, page: () => const ContactScreen()),
-    GetPage(name: eServiceScreen, page: () => const EmployeeServiceScreen()),
-    GetPage(name: letterFormsScreen, page: () => const LetterFormsScreen()),
+    GetPage(
+      name: eServiceScreen,
+      page: () => const EmployeeServiceScreen(),
+      transition: Transition.rightToLeft,
+    ),
+    GetPage(
+      name: letterFormsScreen,
+      page: () => const LetterFormsScreen(),
+      transition: Transition.rightToLeft,
+    ),
     GetPage(name: serviceScreen, page: () => const ServicesScreen()),
-    GetPage(name: attendanceScreen, page: () => const AttendanceScreen()),
+    GetPage(
+      name: attendanceScreen,
+      page: () => const AttendanceScreen(),
+      transition: Transition.rightToLeft,
+    ),
     GetPage(name: routesScreen, page: () => const RoutesScreen()),
     GetPage(name: coursesScreen, page: () => const TrainingScreen()),
     GetPage(name: demoScreen, page: () => const DemoScreen()),

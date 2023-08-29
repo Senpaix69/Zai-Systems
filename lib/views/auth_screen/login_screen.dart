@@ -76,7 +76,7 @@ class _LoginScreenState extends State<LoginScreen> {
       showError(message: response.dialogText, title: response.dialogTitle);
     } else {
       showSnack(context: context, message: successLogin);
-      await Get.offAllNamed(AppRoutes.zoomDrawerScreen);
+      await Get.offAllNamed(AppRoutes.routesScreen);
     }
   }
 
