@@ -86,7 +86,7 @@ class MenuScreen extends StatelessWidget {
         margin: EdgeInsets.only(
           left: 10.0,
           right: 10.0,
-          top: context.screenHeight * 0.06,
+          top: context.screenHeight * 0.1,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
