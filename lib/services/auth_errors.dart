@@ -10,6 +10,11 @@ const Map<String, AuthError> authErrorMapping = {
   'wrong-password': AuthErrorWrongPassword(),
   'weak-password': AuthErrorWeakPassword(),
   'invalid-email': AuthErrorInvalidEmail(),
+  'missing-email': AuthErrorMissingEmail(),
+  'missing-password': AuthErrorMissingPassword(),
+  'network-request-failed': AuthErrorNetworkRequestFailed(),
+  'too-many-requests': AuthErrorTooManyRequests(),
+  'account-disabled': AuthErrorAccountDisabled(),
 };
 
 @immutable
@@ -25,6 +30,54 @@ abstract class AuthError {
   factory AuthError.from(FirebaseAuthException exception) =>
       authErrorMapping[exception.code.toLowerCase().trim()] ??
       AuthErrorUnknown(error: exception.toString());
+}
+
+@immutable
+class AuthErrorNetworkRequestFailed extends AuthError {
+  const AuthErrorNetworkRequestFailed()
+      : super(
+          dialogTitle: "Network Request Failed",
+          dialogText:
+              "There was an issue with your network connection. Please check your internet connection and try again.",
+        );
+}
+
+@immutable
+class AuthErrorMissingEmail extends AuthError {
+  const AuthErrorMissingEmail()
+      : super(
+          dialogTitle: "Missing Email",
+          dialogText: "Please enter your email address",
+        );
+}
+
+@immutable
+class AuthErrorMissingPassword extends AuthError {
+  const AuthErrorMissingPassword()
+      : super(
+          dialogTitle: "Missing Password",
+          dialogText: "Please enter your password",
+        );
+}
+
+@immutable
+class AuthErrorTooManyRequests extends AuthError {
+  const AuthErrorTooManyRequests()
+      : super(
+          dialogTitle: "Too Many Requests",
+          dialogText:
+              "Too many unsuccessful login attempts. Please try again later.",
+        );
+}
+
+@immutable
+class AuthErrorAccountDisabled extends AuthError {
+  const AuthErrorAccountDisabled()
+      : super(
+          dialogTitle: "Account Disabled",
+          dialogText:
+              "This account has been disabled. Please contact support for assistance.",
+        );
 }
 
 @immutable
