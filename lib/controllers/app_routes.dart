@@ -32,37 +32,27 @@ class AppRoutes {
   static const String serviceScreen = "/service";
   static const String eServiceScreen = "/employeeService";
   static const String demoScreen = "/demoScreen";
-  static final List<GetPage> routes = <GetPage>[
-    GetPage(name: splashScreen, page: () => const SplashScreen()),
-    GetPage(name: loginScreen, page: () => const LoginScreen()),
-    GetPage(name: signUpScreen, page: () => const SignupScreen()),
-    GetPage(name: homeScreen, page: () => const HomeScreen()),
-    GetPage(name: teamScreen, page: () => const TeamScreen()),
-    GetPage(name: hcmScreen, page: () => const HCMScreen()),
-    GetPage(
-      name: payrollsScreen,
-      page: () => const PayrollScreen(),
-      transition: Transition.rightToLeft,
-    ),
-    GetPage(name: contactScreen, page: () => const ContactScreen()),
-    GetPage(
-      name: eServiceScreen,
-      page: () => const EmployeeServiceScreen(),
-      transition: Transition.rightToLeft,
-    ),
-    GetPage(
-      name: letterFormsScreen,
-      page: () => const LetterFormsScreen(),
-      transition: Transition.rightToLeft,
-    ),
-    GetPage(name: serviceScreen, page: () => const ServicesScreen()),
-    GetPage(
-      name: attendanceScreen,
-      page: () => const AttendanceScreen(),
-      transition: Transition.rightToLeft,
-    ),
-    GetPage(name: routesScreen, page: () => const RoutesScreen()),
-    GetPage(name: coursesScreen, page: () => const TrainingScreen()),
-    GetPage(name: demoScreen, page: () => const DemoScreen()),
+
+  static final routes = <GetPage>[
+    for (final route in _routeMap.entries)
+      GetPage(name: route.key, page: route.value),
   ];
+
+  static final _routeMap = {
+    splashScreen: () => const SplashScreen(),
+    loginScreen: () => const LoginScreen(),
+    signUpScreen: () => const SignupScreen(),
+    homeScreen: () => const HomeScreen(),
+    teamScreen: () => const TeamScreen(),
+    hcmScreen: () => const HCMScreen(),
+    payrollsScreen: () => const PayrollScreen(),
+    contactScreen: () => const ContactScreen(),
+    eServiceScreen: () => const EmployeeServiceScreen(),
+    letterFormsScreen: () => const LetterFormsScreen(),
+    serviceScreen: () => const ServicesScreen(),
+    attendanceScreen: () => const AttendanceScreen(),
+    routesScreen: () => const RoutesScreen(),
+    coursesScreen: () => const TrainingScreen(),
+    demoScreen: () => const DemoScreen(),
+  };
 }
