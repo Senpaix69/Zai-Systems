@@ -21,13 +21,15 @@ class DotIndicator extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: List.generate(itemCount, (index) {
-        return Container(
-          width: 8,
-          height: 8,
+        bool isActive = index == currentIndex;
+        return AnimatedContainer(
+          duration: const Duration(milliseconds: 300),
+          width: isActive ? 8 : 6,
+          height: isActive ? 8 : 6,
           margin: const EdgeInsets.symmetric(horizontal: 4),
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            color: index == currentIndex ? activeColor : inactiveColor,
+            color: isActive ? activeColor : inactiveColor,
           ),
         );
       }),
