@@ -79,9 +79,48 @@ const payrollsText = "Powerfull and flexible payroll";
 const attendance = "Attendance";
 const attendanceText =
     "Follow up attendance records from everywhere and anytime";
+const leaveMgmt = "Customizable Leave Management";
+const leaveMgmtText =
+    "Follow up attendance records from everywhere and anytime";
+const selfService = "Employee Self-Service";
+const selfServiceText =
+    "Follow up attendance records from everywhere and anytime";
+const performanceEvaluation = "Performance Evaluation";
+const performanceEvaluationText =
+    "Follow up attendance records from everywhere and anytime";
+const jobPortal = "Job Portal";
+const jobPortalText =
+    "Follow up attendance records from everywhere and anytime";
+const taskMgmt = "Task Management";
+const taskMgmtText = "Follow up attendance records from everywhere and anytime";
 const letterForms = "Letter & Forms";
 const letterFormsText =
     "Create, edit and design HR forms and official letters in a smart way";
+const loansMgmt = "Loans Management";
+const loansMgmtText =
+    "Follow up attendance records from everywhere and anytime";
+const tracking = "Benefits & Expenses Tracking";
+const trackingText = "Follow up attendance records from everywhere and anytime";
+const custodyMgmt = "Custody Management";
+const custodyMgmtText =
+    "Follow up attendance records from everywhere and anytime";
+const notice = "Work Days Notice and Warning Management";
+const noticeText = "Follow up attendance records from everywhere and anytime";
+const approvals = "Workflow & Approvals";
+const approvalsText =
+    "Follow up attendance records from everywhere and anytime";
+const memo = "Memo Communication";
+const memoText = "Follow up attendance records from everywhere and anytime";
+const decision = "Decision Management";
+const decisionText = "Follow up attendance records from everywhere and anytime";
+const endOfService = "End-of-Servicee";
+const endOfServiceText =
+    "Follow up attendance records from everywhere and anytime";
+const dashboard = "Insightful Dashboard";
+const dashboardText =
+    "Follow up attendance records from everywhere and anytime";
+const rules = "Automated Rules & Regulations";
+const rulesText = "Follow up attendance records from everywhere and anytime";
 const employeeSelfService = "Employee Self Services";
 const courses = "Courses";
 const impulseHCM = "Impulse $hcm360";

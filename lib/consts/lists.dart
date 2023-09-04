@@ -423,7 +423,22 @@ const teamList = [
 const hcmList = [
   CardItem(payrolls, payrollsText, imgPayroll),
   CardItem(attendance, attendanceText, imgAttendance),
+  CardItem(leaveMgmt, leaveMgmtText, imgAttendance),
+  CardItem(selfService, selfServiceText, imgAttendance),
+  CardItem(performanceEvaluation, performanceEvaluationText, imgAttendance),
+  CardItem(jobPortal, jobPortalText, imgAttendance),
+  CardItem(taskMgmt, taskMgmtText, imgAttendance),
   CardItem(letterForms, letterFormsText, imgLetterAndServices),
+  CardItem(loansMgmt, loansMgmtText, imgAttendance),
+  CardItem(tracking, trackingText, imgAttendance),
+  CardItem(custodyMgmt, custodyMgmtText, imgAttendance),
+  CardItem(notice, noticeText, imgAttendance),
+  CardItem(approvals, approvalsText, imgAttendance),
+  CardItem(memo, memoText, imgAttendance),
+  CardItem(decision, decisionText, imgAttendance),
+  CardItem(endOfService, endOfServiceText, imgAttendance),
+  CardItem(dashboard, dashboardText, imgAttendance),
+  CardItem(rules, rulesText, imgAttendance),
 ];
 
 const hcmBtns = [
