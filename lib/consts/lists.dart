@@ -41,7 +41,7 @@ const sliderList = [
   CardItem(
     hcm360,
     "$appname brings you an all-encompassing, user-friendly, and scalable solution to elevate your HR operations",
-    slider2,
+    imgHcm360,
   ),
   CardItem(
     softwareProvide,
@@ -56,9 +56,9 @@ const sliderList = [
 ];
 
 const servicesList = [
-  CardItem(webAndApp, webDetails, cSlider1),
-  CardItem(ecommerce, ecommerceDetails, cSlider2),
-  CardItem(supportTime, supportDetails, cSlider3),
+  CardItem(webAndApp, webDetails, imgBanner),
+  CardItem(ecommerce, ecommerceDetails, imgBanner2),
+  CardItem(supportTime, supportDetails, imgBanner3),
 ];
 
 const courseList = [

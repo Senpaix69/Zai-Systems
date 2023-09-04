@@ -27,6 +27,8 @@ const cSlider3 = "assets/images/schedule.png";
 const imgFooter = "assets/images/location.png";
 const imgContact = "assets/images/contact.png";
 const imgBanner = "assets/images/banner.jpg";
+const imgBanner2 = "assets/images/banner2.jpg";
+const imgBanner3 = "assets/images/banner3.jpg";
 
 // courses
 const imgGraphics = "assets/images/course/graphics.jpg";
@@ -84,6 +86,7 @@ const muneeb = "assets/images/team/Muneeb.jpg";
 const sheherbano = "assets/images/team/shehrbano.jpeg";
 
 // HCM 360
+const imgHcm360 = "assets/images/hcm360.png";
 const imgPayroll = "assets/images/payroll.jpg";
 const imgLetterAndServices = "assets/images/letter.png";
 const imgAttendance = "assets/images/attendance.jfif";
