@@ -26,6 +26,7 @@ const cSlider2 = "assets/images/ecom.png";
 const cSlider3 = "assets/images/schedule.png";
 const imgFooter = "assets/images/location.png";
 const imgContact = "assets/images/contact.png";
+const imgBanner = "assets/images/banner.jpg";
 
 // courses
 const imgGraphics = "assets/images/course/graphics.jpg";

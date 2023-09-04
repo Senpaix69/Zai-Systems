@@ -66,7 +66,8 @@ class _SplashScreenState extends State<SplashScreen>
               10.heightBox,
               SlideTransition(
                 position: _textAnimation,
-                child: appname.text
+                child: "ZAI SYSTEMS"
+                    .text
                     .color(whiteColor)
                     .size(16)
                     .fontFamily(bold)
