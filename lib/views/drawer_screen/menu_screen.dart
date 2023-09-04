@@ -67,8 +67,8 @@ class MenuScreen extends StatelessWidget {
 
     Widget getProfile() {
       if (userController.isLoggedIn) {
-        final profileUrl = userController.currentUser!.profileUrl;
-        if (profileUrl.isNotEmpty && File(profileUrl).existsSync()) {
+        final profileUrl = userController.currentUser?.profileUrl;
+        if (profileUrl != null && File(profileUrl).existsSync()) {
           return circularBox(
             widget: Image.file(
               File(profileUrl),
@@ -96,20 +96,13 @@ class MenuScreen extends StatelessWidget {
                 children: <Widget>[
                   getProfile(),
                   const SizedBox(width: 10),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        userController.currentUser!.name.text
-                            .fontFamily(bold)
-                            .make(),
-                        userController.currentUser!.email.text
-                            .size(10)
-                            .color(fontGrey)
-                            .make(),
-                      ],
-                    ),
-                  ),
+                  if (userController.isLoggedIn)
+                    userDetails(
+                      name: userController.currentUser!.name,
+                      email: userController.currentUser!.email,
+                    )
+                  else
+                    userDetails(name: "DummyUser", email: "dummy@gmail.com"),
                 ],
               ),
             ),
@@ -149,6 +142,21 @@ class MenuScreen extends StatelessWidget {
             ).box.width(context.screenWidth * 0.4).make().centered(),
           ],
         ),
+      ),
+    );
+  }
+
+  Expanded userDetails({
+    required String name,
+    required String email,
+  }) {
+    return Expanded(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          name.text.fontFamily(bold).make(),
+          email.text.size(10).color(fontGrey).make(),
+        ],
       ),
     );
   }
