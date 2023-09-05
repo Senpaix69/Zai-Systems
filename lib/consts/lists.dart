@@ -423,12 +423,12 @@ const teamList = [
 const hcmList = [
   CardItem(payrolls, payrollsText, imgPayroll),
   CardItem(attendance, attendanceText, imgAttendance),
+  CardItem(letterForms, letterFormsText, imgLetterAndServices),
   CardItem(leaveMgmt, leaveMgmtText, imgAttendance),
   CardItem(selfService, selfServiceText, imgAttendance),
   CardItem(performanceEvaluation, performanceEvaluationText, imgAttendance),
   CardItem(jobPortal, jobPortalText, imgAttendance),
   CardItem(taskMgmt, taskMgmtText, imgAttendance),
-  CardItem(letterForms, letterFormsText, imgLetterAndServices),
   CardItem(loansMgmt, loansMgmtText, imgAttendance),
   CardItem(tracking, trackingText, imgAttendance),
   CardItem(custodyMgmt, custodyMgmtText, imgAttendance),

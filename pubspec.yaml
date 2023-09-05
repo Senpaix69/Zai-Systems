@@ -83,6 +83,7 @@ flutter:
     - assets/images/team/
     - assets/images/services/
     - assets/images/testimonial/
+    - assets/images/hcm360/
     - assets/icons/
 
   # An image asset can refer to one or more resolution-specific "variants", see

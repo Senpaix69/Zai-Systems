@@ -17,7 +17,7 @@ const footerWebLogo = "assets/icons/website.png";
 
 //images
 const bg = "assets/images/background.jpeg";
-const decoration = "assets/images/sp2.jpg";
+const decoration = "assets/images/banner.jpg";
 const slider1 = "assets/images/bg.png";
 const slider2 = "assets/images/bg3.png";
 const slider3 = "assets/images/img2.jpg";
@@ -87,9 +87,9 @@ const sheherbano = "assets/images/team/shehrbano.jpeg";
 
 // HCM 360
 const imgHcm360 = "assets/images/hcm360.png";
-const imgPayroll = "assets/images/payroll.jpg";
-const imgLetterAndServices = "assets/images/letter.png";
-const imgAttendance = "assets/images/attendance.jfif";
+const imgPayroll = "assets/images/hcm360/payroll.png";
+const imgLetterAndServices = "assets/images/hcm360/Letters & Forms.png";
+const imgAttendance = "assets/images/hcm360/Attendance.png";
 const imgMobileAtt = "assets/images/mobile.png";
 const imgText = "assets/images/text.jpg";
 const imgForms = "assets/images/forms.png";
