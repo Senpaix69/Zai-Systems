@@ -1,4 +1,3 @@
-import 'package:url_launcher/url_launcher.dart';
 import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/views/team_screen/widgets/member_card.dart';
 import 'package:zaisystems/views/team_screen/widgets/member_details.dart';

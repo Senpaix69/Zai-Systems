@@ -1,6 +1,5 @@
 import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/models/member.dart';
-import 'package:zaisystems/widget_common/custom_button.dart';
 import 'package:zaisystems/widget_common/outlined_button.dart';
 
 Widget memberCard({
