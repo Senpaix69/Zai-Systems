@@ -50,7 +50,7 @@ const jason = "assets/images/testimonial/jason.jpg";
 const ryan = "assets/images/testimonial/ryan.jpg";
 
 // team members
-const owais = 'assets/images/team/owais.jpg';
+const owais = 'assets/images/team/owais.jpeg';
 const rafey = 'assets/images/team/abdulrafay.jpg';
 const huzaifa = 'assets/images/team/huzaifa.jpeg';
 const mishal = 'assets/images/team/mishalriasat.jpeg';
@@ -84,6 +84,8 @@ const irfan = "assets/images/team/mIrfan.png";
 const momin = "assets/images/team/mominmohsin.JPG";
 const muneeb = "assets/images/team/Muneeb.jpg";
 const sheherbano = "assets/images/team/shehrbano.jpeg";
+const hareem = "assets/images/team/hareem.jpeg";
+const babar = "assets/images/team/babar.jpeg";
 
 // HCM 360
 const imgHcm360 = "assets/images/hcm360.png";

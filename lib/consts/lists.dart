@@ -136,7 +136,7 @@ const teamList = [
     introduction: "React developer at Zai Systems",
     description: "React Developer",
     contact: "",
-    profile: "",
+    profile: "https://www.linkedin.com/in/huzaifa-ali07/",
   ),
   Member(
     name: 'Mishal Riasat',
@@ -361,7 +361,7 @@ const teamList = [
     introduction: "SEO Intern at Zai Systems",
     description: "SEO Intern",
     contact: "",
-    profile: "",
+    profile: "https://www.linkedin.com/in/izzahmalik",
   ),
   Member(
     name: 'Maniha',
@@ -415,7 +415,25 @@ const teamList = [
     introduction: "Graphic Intern at Zai Systems",
     description: "Graphic Intern",
     contact: "",
+    profile: "https://www.linkedin.com/in/syeda-shehar-bano-455013220",
+  ),
+  Member(
+    name: 'Hareem',
+    position: 'Graphics Lead',
+    image: hareem,
+    introduction: "Graphics Lead at Zai Systems",
+    description: "Graphics Lead",
+    contact: "",
     profile: "",
+  ),
+  Member(
+    name: 'Babar Arif',
+    position: 'Flutter Developer',
+    image: babar,
+    introduction: "Flutter Developer at Zai Systems",
+    description: "Flutter Developer",
+    contact: "",
+    profile: "https://www.linkedin.com/in/babar-arif/",
   ),
 ];
 
