@@ -117,7 +117,6 @@ const teamList = [
       introduction: "Chief Executive Officer of Zai Systems",
       description:
           "A chief executive officer (CEO) is the highest-ranking executive of a firm. CEOs act as the company's public face and make major corporate decisions.",
-      contact: ceoNumber,
       profile:
           "https://www.facebook.com/zaisystems?paipv=0&eav=AfY8FerIphTkdF6U1gcw5SpXWpEET_yups6EeIAuM8C_BP-U5HU003uWYUWbtICGvcY"),
   Member(
@@ -126,7 +125,6 @@ const teamList = [
     image: rafey,
     introduction: "Chief Operating Officer of Zai Systems",
     description: "Our Expert",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -135,7 +133,6 @@ const teamList = [
     image: huzaifa,
     introduction: "React developer at Zai Systems",
     description: "React Developer",
-    contact: "",
     profile: "https://www.linkedin.com/in/huzaifa-ali07/",
   ),
   Member(
@@ -144,7 +141,6 @@ const teamList = [
     image: mishal,
     introduction: "Developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -153,7 +149,6 @@ const teamList = [
     image: saeed,
     introduction: "Developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -162,7 +157,6 @@ const teamList = [
     image: fatima,
     introduction: "Developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -171,7 +165,6 @@ const teamList = [
     image: sami,
     introduction: "Developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -180,7 +173,6 @@ const teamList = [
     image: furqan,
     introduction: "Web developer at Zai Systems",
     description: "Web Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -189,7 +181,6 @@ const teamList = [
     image: aiman,
     introduction: "Developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -198,7 +189,6 @@ const teamList = [
     image: sameen,
     introduction: "Developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -207,7 +197,6 @@ const teamList = [
     image: soha,
     introduction: "Developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -216,7 +205,6 @@ const teamList = [
     image: nadeem,
     introduction: "Developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -225,7 +213,6 @@ const teamList = [
     image: rashid,
     introduction: "Developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -234,7 +221,6 @@ const teamList = [
     image: saad,
     introduction: "Developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -243,7 +229,6 @@ const teamList = [
     image: waqas,
     introduction: "Developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -252,7 +237,6 @@ const teamList = [
     image: abdullah,
     introduction: "Developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -261,7 +245,6 @@ const teamList = [
     image: talha,
     introduction: "Developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -270,7 +253,6 @@ const teamList = [
     image: kumail,
     introduction: "I am a developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -279,7 +261,6 @@ const teamList = [
     image: ubaid,
     introduction: "Developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -288,7 +269,6 @@ const teamList = [
     image: usman,
     introduction: "Developer at Zai Systems",
     description: "Graphic Designer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -297,7 +277,6 @@ const teamList = [
     image: tehseen,
     introduction: "Developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -306,7 +285,6 @@ const teamList = [
     image: asad,
     introduction: "Developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -315,7 +293,6 @@ const teamList = [
     image: husnain,
     introduction: "Developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -324,7 +301,6 @@ const teamList = [
     image: abubkr,
     introduction: "Developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -333,7 +309,6 @@ const teamList = [
     image: malik,
     introduction: "Developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -342,7 +317,6 @@ const teamList = [
     image: waleed,
     introduction: "Developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -351,7 +325,6 @@ const teamList = [
     image: faiq,
     introduction: "Developer at Zai Systems",
     description: "Developer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -360,7 +333,6 @@ const teamList = [
     image: izzah,
     introduction: "SEO Intern at Zai Systems",
     description: "SEO Intern",
-    contact: "",
     profile: "https://www.linkedin.com/in/izzahmalik",
   ),
   Member(
@@ -369,7 +341,6 @@ const teamList = [
     image: maniha,
     introduction: "Graphic Designer at Zai Systems",
     description: "Graphic Designer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -378,7 +349,6 @@ const teamList = [
     image: mariyam,
     introduction: "Graphic Intern at Zai Systems",
     description: "Graphic Intern",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -387,7 +357,6 @@ const teamList = [
     image: irfan,
     introduction: "Graphic Intern at Zai Systems",
     description: "Graphic Intern",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -396,7 +365,6 @@ const teamList = [
     image: momin,
     introduction: "App Developer Intern at Zai Systems",
     description: "App Developer Intern",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -405,7 +373,6 @@ const teamList = [
     image: muneeb,
     introduction: "Graphic Designer at Zai Systems",
     description: "Graphic Designer",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -414,7 +381,6 @@ const teamList = [
     image: sheherbano,
     introduction: "Graphic Intern at Zai Systems",
     description: "Graphic Intern",
-    contact: "",
     profile: "https://www.linkedin.com/in/syeda-shehar-bano-455013220",
   ),
   Member(
@@ -423,7 +389,6 @@ const teamList = [
     image: hareem,
     introduction: "Graphics Lead at Zai Systems",
     description: "Graphics Lead",
-    contact: "",
     profile: "",
   ),
   Member(
@@ -432,7 +397,6 @@ const teamList = [
     image: babar,
     introduction: "Flutter Developer at Zai Systems",
     description: "Flutter Developer",
-    contact: "",
     profile: "https://www.linkedin.com/in/babar-arif/",
   ),
 ];
