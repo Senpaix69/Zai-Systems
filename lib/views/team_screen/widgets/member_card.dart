@@ -52,15 +52,6 @@ Widget memberCard({
                   ),
                 ),
                 10.widthBox,
-                Expanded(
-                  child: customButton(
-                    onPress: () => onBtnClick(0),
-                    title: "Message",
-                    textColor: whiteColor,
-                    btnColor: mehroonColor,
-                    padding: (1, 1),
-                  ),
-                ),
               ],
             ),
           ],
