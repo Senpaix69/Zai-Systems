@@ -86,6 +86,12 @@ const muneeb = "assets/images/team/Muneeb.jpg";
 const sheherbano = "assets/images/team/shehrbano.jpeg";
 const hareem = "assets/images/team/hareem.jpeg";
 const babar = "assets/images/team/babar.jpeg";
+const huraira = "assets/images/team/huraira.jpg";
+const alishoaib = "assets/images/team/alishoaib.jpg";
+const ishfaq = "assets/images/team/ishfaq.jpeg";
+const mirfan = "assets/images/team/mirfan.jpeg";
+const shoaib = "assets/images/team/usmanshoaib.jpeg";
+const sirwaqas = "assets/images/team/waqas.jpeg";
 
 // HCM 360
 const imgHcm360 = "assets/images/hcm360.png";
