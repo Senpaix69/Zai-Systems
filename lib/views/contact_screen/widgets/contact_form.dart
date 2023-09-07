@@ -39,7 +39,7 @@ class _ContactFormState extends State<ContactForm> {
     final subject = _subjectController.text;
     final message = _messageController.text;
     final reqData =
-        'Name: $name\n Email: $email\n Phone: $phone\nMessage: $message';
+        'Name: $name\n Email: $email\n Phone: $phone\n Message: $message';
 
     final Uri emailUri = Uri(
       scheme: 'mailto',
@@ -99,7 +99,9 @@ class _ContactFormState extends State<ContactForm> {
           ),
           20.heightBox,
           customButton(
-            onPress: () {},
+            onPress: () {
+              sendEmail();
+            },
             title: "Submit",
             textColor: whiteColor,
             btnColor: mehroonColor,
