@@ -49,6 +49,8 @@ class _ContactFormState extends State<ContactForm> {
         'body': reqData,
       },
     );
+    print(emailUri.toString().replaceAll("+", ""));
+
     launchURL(url: "", uri: emailUri, context: context);
   }
 
