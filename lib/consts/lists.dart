@@ -116,7 +116,7 @@ const teamList = [
       image: owais,
       introduction: "Chief Executive Officer of Zai Systems",
       description:
-          "A chief executive officer (CEO) is the highest-ranking executive of a firm. CEOs act as the company's public face and make major corporate decisions.",
+          "Boasting over 15 years of experience across esteemed firms, our CEO, Owais Ahmad Khan, showcases remarkable organizational leadership abilities and an entrepreneurial outlook. His adept management extends to efficiently overseeing and managing all organizational affairs.",
       profile:
           "https://www.facebook.com/zaisystems?paipv=0&eav=AfY8FerIphTkdF6U1gcw5SpXWpEET_yups6EeIAuM8C_BP-U5HU003uWYUWbtICGvcY"),
   Member(
@@ -124,7 +124,8 @@ const teamList = [
     position: 'COO',
     image: rafey,
     introduction: "Chief Operating Officer of Zai Systems",
-    description: "Our Expert",
+    description:
+        "Sir Abdul Rafay, our accomplished COO, possesses outstanding leadership acumen. He oversees and guides team performance on a daily basis, with his wealth of experience, skills, and achievements significantly contributing to the success of the organization.",
     profile: "",
   ),
   Member(
@@ -132,7 +133,8 @@ const teamList = [
     position: 'CTO',
     image: huzaifa,
     introduction: "React developer at Zai Systems",
-    description: "React Developer",
+    description:
+        "Meet our visionary CTO Sir Huzaifa Ali, guiding us through the tech frontier, and our ingenious Web Lead, weaving digital wonders into reality.",
     profile: "https://www.linkedin.com/in/huzaifa-ali07/",
   ),
   Member(
@@ -228,7 +230,8 @@ const teamList = [
     position: 'Developer',
     image: waqas,
     introduction: "Developer at Zai Systems",
-    description: "Developer",
+    description:
+        "Accumulating over 12 years of experience, Sir Waqas Mughal has consistently excelled as an exemplary SEO team leader. Beyond his proficiency in digital marketing practices, he ensures adept guidance for his team, effectively incorporating new strategies.",
     profile: "",
   ),
   Member(
@@ -332,7 +335,8 @@ const teamList = [
     position: 'SEO Intern',
     image: izzah,
     introduction: "SEO Intern at Zai Systems",
-    description: "SEO Intern",
+    description:
+        "Izzah Malik, a dedicated and adept SEO specialist at Zai Systems, consistently offers her expertise in providing valuable SEO services for business.",
     profile: "https://www.linkedin.com/in/izzahmalik",
   ),
   Member(
@@ -340,7 +344,8 @@ const teamList = [
     position: 'Graphic Designer',
     image: maniha,
     introduction: "Graphic Designer at Zai Systems",
-    description: "Graphic Designer",
+    description:
+        "Our graphic designer Maniha Noor is a hard working and dedicated employee.She creates designs deligently and her work is always appreciable.",
     profile: "",
   ),
   Member(
@@ -372,7 +377,8 @@ const teamList = [
     position: 'Graphic Designer',
     image: muneeb,
     introduction: "Graphic Designer at Zai Systems",
-    description: "Graphic Designer",
+    description:
+        "Müneeb Naveed, our skilled graphic designer, incorporates dynamic spark effects into his illustrations and graphics, consistently earning admiration for his high-quality creations.",
     profile: "",
   ),
   Member(
@@ -388,7 +394,8 @@ const teamList = [
     position: 'Graphics Designer/Video Editor (Team Lead)',
     image: hareem,
     introduction: "Graphics Lead at Zai Systems",
-    description: "Graphics Lead",
+    description:
+        "Having accumulated 2 years of experience, Miss Hareem Junaid stands as a committed and enthusiastic graphic designer and video editor (also serving as a team lead) at Zai Systems. Her exceptional artistic prowess, along with her role as a managerial figure, quality of her work and her leadership persona.",
     profile: "",
   ),
   Member(
@@ -396,7 +403,8 @@ const teamList = [
     position: 'Mobile App Developer',
     image: babar,
     introduction: "Mobile App Developer at Zai Systems",
-    description: "Mobile App Developer",
+    description:
+        "Our Mobile App Developer Babar Arif devotes his development skills efficiently. We are glad to have him as a great employee.",
     profile: "https://www.linkedin.com/in/babar-arif/",
   ),
   Member(
@@ -404,7 +412,8 @@ const teamList = [
     position: 'Mobile App Developer',
     image: huraira,
     introduction: "Mobile App Developer at Zai Systems",
-    description: "Mobile App Developer",
+    description:
+        "Huraira Younas serves as a mobile app developer at Zai Systems. The skills he exhibits in app development, coupled with his unwavering dedication, bring us immense satisfaction.",
     profile: "https://www.linkedin.com/in/hurairayounas",
   ),
   Member(
@@ -412,7 +421,8 @@ const teamList = [
     position: 'Graphic Designer',
     image: alishoaib,
     introduction: "Graphic Designer at Zai Systems",
-    description: "Graphic Designer",
+    description:
+        "Ali Shoaib, an immensely passionate and industrious graphic designer, channels his dedication into his designs, establishing himself as a standout contributor at Zai Systems.",
     profile: "",
   ),
   Member(
@@ -420,7 +430,8 @@ const teamList = [
     position: 'Graphic Designer',
     image: ishfaq,
     introduction: "Graphic Designer at Zai Systems",
-    description: "Graphic Designer",
+    description:
+        "Mariyam Ishfaq, a remarkable graphic designer at Zai Systems, demonstrates unwavering dedication to enhancing her design skills through diligent effort.",
     profile: "",
   ),
   Member(
@@ -428,7 +439,8 @@ const teamList = [
     position: 'Graphic Designer',
     image: mirfan,
     introduction: "Graphic Designer at Zai Systems",
-    description: "Graphic Designer",
+    description:
+        "Muhammad Irfan, a Passionate Graphic Designer, who loves to put hard work in his graphic designing skills.",
     profile: "",
   ),
   Member(
@@ -436,15 +448,8 @@ const teamList = [
     position: 'Senior Graphic Designer',
     image: shoaib,
     introduction: "Senior Graphic Designer at Zai Systems",
-    description: "Senioer Graphic Designer",
-    profile: "",
-  ),
-  Member(
-    name: 'Waqas',
-    position: 'Digital Marketing Manager',
-    image: sirwaqas,
-    introduction: "Digital Marketing Managerat Zai Systems",
-    description: "Digital Marketing Manager",
+    description:
+        "Our Sr. Graphic Designer Manager, Sir. Usman Bin Sohaib, consistently lends his expertise and skills to benefit our team. His approach and achievements serve as a significant wellspring of inspiration for our fellow graphic designers.",
     profile: "",
   ),
 ];
