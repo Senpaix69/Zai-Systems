@@ -11,7 +11,7 @@ class ContactForm extends StatefulWidget {
 }
 
 class _ContactFormState extends State<ContactForm> {
-  final recipientEmail = "senpai331.rb@gmail.com";
+  final recipientEmail = "zaisystems@gmail.com";
   final _formKey = GlobalKey<FormState>();
   final TextEditingController _nameController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();

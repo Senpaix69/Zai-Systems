@@ -96,6 +96,23 @@ const shoaib = "assets/images/team/usmanshoaib.jpeg";
 const imgHcm360 = "assets/images/hcm360.png";
 const imgPayroll = "assets/images/hcm360/payroll.png";
 const imgLetterAndServices = "assets/images/hcm360/Letters & Forms.png";
+const imgleaveMgmt = "assets/images/hcm360/Customizable Leave Management.png";
+const imgselfService = "assets/images/hcm360/Employee Self-Service.png";
+const imgperformanceEvaluation =
+    "assets/images/hcm360/Performance Evaluation.png";
+const imgjobPotal = "assets/images/hcm360/Job Portal.png";
+const imgtaskMgmt = "assets/images/hcm360/Task Management.png";
+const imgloansMgmt = "assets/images/hcm360/Loans Management.png";
+const imgtracking = "assets/images/hcm360/Benefits & Expenses Tracking.png";
+const imgcustodyMgmt = "assets/images/hcm360/Custody Management.png";
+const imgnotice =
+    "assets/images/hcm360/Work Days Notice and Warning Management.png";
+const imgapprovals = "assets/images/hcm360/Workflow & Approvals.png";
+const imgmemo = "assets/images/hcm360/Memo Communication.png";
+const imgdecision = "assets/images/hcm360/Decision Management.png";
+const imgendOfService = "assets/images/hcm360/End-of-Service.png";
+const imgdashboard = "assets/images/hcm360/Insightful Dashboard.png";
+const imgrules = "assets/images/hcm360/Customizable Leave Management.png";
 const imgAttendance = "assets/images/hcm360/Attendance.png";
 const imgMobileAtt = "assets/images/mobile.png";
 const imgText = "assets/images/text.jpg";
