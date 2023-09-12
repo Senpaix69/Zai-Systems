@@ -121,12 +121,12 @@ const imgOfficial = "assets/images/official.png";
 
 // Services
 const imgBusinessIntelligence =
-    "assets/images/services/businessIntelligence.png";
+    "assets/images/services/Business Intelligence.png";
 const imgBespoke = "assets/images/services/bespoke.png";
-const imgDataAnalytics = "assets/images/services/dataAnalytics.png";
+const imgDataAnalytics = "assets/images/services/Data Analytics.png";
 const imgDevOps = "assets/images/services/devOps.png";
 const imgEcommerce = "assets/images/services/ecommerce.png";
-const imgInformation = "assets/images/services/information.png";
+const imgInformation = "assets/images/services/Information Strategy.png";
 const imgManagedCloud = "assets/images/services/managedCloudServices.png";
 const imgUserExp = "assets/images/services/userExp.png";
 const imgWebMobile = "assets/images/services/webMobile.png";
