@@ -58,7 +58,6 @@ const saeed = 'assets/images/team/saeed.jpeg';
 const fatima = 'assets/images/team/fatima.jpg';
 const sami = 'assets/images/team/samiahmed.png';
 const furqan = 'assets/images/team/mfurqan.jpg';
-const aiman = "assets/images/team/aimandev.PNG";
 const sameen = "assets/images/team/sameen.PNG";
 const soha = "assets/images/team/soha.jpeg";
 const nadeem = "assets/images/team/nadeem.PNG";
@@ -122,14 +121,15 @@ const imgOfficial = "assets/images/official.png";
 // Services
 const imgBusinessIntelligence =
     "assets/images/services/Business Intelligence.png";
-const imgBespoke = "assets/images/services/bespoke.png";
+const imgBespoke =
+    "assets/images/services/Bespoke IT Solutions for Business.png";
 const imgDataAnalytics = "assets/images/services/Data Analytics.png";
-const imgDevOps = "assets/images/services/devOps.png";
+const imgDevOps = "assets/images/services/Dev Ops.png";
 const imgEcommerce = "assets/images/services/ecommerce.png";
 const imgInformation = "assets/images/services/Information Strategy.png";
-const imgManagedCloud = "assets/images/services/managedCloudServices.png";
-const imgUserExp = "assets/images/services/userExp.png";
-const imgWebMobile = "assets/images/services/webMobile.png";
+const imgManagedCloud = "assets/images/services/Managed Cloud Services.png";
+const imgUserExp = "assets/images/services/User Experience Design.png";
+const imgWebMobile = "assets/images/services/Web and Mobile.png";
 const imgTopRated = "assets/images/services/topRated.png";
 const imgCertifiedWeb = "assets/images/services/certifiedWeb.png";
 const imgSupportTime = "assets/images/services/supportTime.png";

@@ -178,14 +178,6 @@ const teamList = [
     profile: "",
   ),
   Member(
-    name: 'Aiman Atif',
-    position: 'Developer',
-    image: aiman,
-    introduction: "Developer at Zai Systems",
-    description: "Developer",
-    profile: "",
-  ),
-  Member(
     name: 'Sameen Fatime',
     position: 'Developer',
     image: sameen,
