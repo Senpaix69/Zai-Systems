@@ -44,8 +44,9 @@ class _DemoScreenState extends State<DemoScreen> {
     final employee = _empController.text;
     final number = _phoneController.text;
     final email = _emailController.text;
+    final msg = _bodyController.text;
     final reqData =
-        'Name: $name\n Company: $company\n Employee: $employee\n Email: $email\n Phone: $number';
+        'Name: $name\n Company: $company\n Employee: $employee\n Email: $email\n Phone: $number\n Message: $msg';
 
     final Uri emailUri = Uri(
       scheme: 'mailto',
@@ -89,6 +90,18 @@ class _DemoScreenState extends State<DemoScreen> {
                 hint: "Phone No",
                 prefixIcon: Icons.contact_page,
                 controller: _phoneController,
+              ),
+              20.heightBox,
+              customTextField(
+                hint: "Company Name",
+                prefixIcon: Icons.contact_page,
+                controller: _compController,
+              ),
+              20.heightBox,
+              customTextField(
+                hint: "No. of Employees",
+                prefixIcon: Icons.contact_page,
+                controller: _empController,
               ),
               20.heightBox,
               customTextField(
