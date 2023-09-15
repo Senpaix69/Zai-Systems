@@ -3,7 +3,6 @@ import 'package:zaisystems/utils/launch_url.dart';
 import 'package:zaisystems/widget_common/custom_button.dart';
 import 'package:zaisystems/widget_common/custom_textfield.dart';
 import 'package:zaisystems/widget_common/my_appbar.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_email_sender/flutter_email_sender.dart';
 
 class DemoScreen extends StatefulWidget {
@@ -153,7 +152,7 @@ class _DemoScreenState extends State<DemoScreen> {
                   controller: _bodyController),
               20.heightBox,
               customButton(
-                onPress: () async => await sendEmail(),
+                onPress: () async => await send(),
                 title: "Submit",
                 textColor: whiteColor,
                 btnColor: mehroonColor,
