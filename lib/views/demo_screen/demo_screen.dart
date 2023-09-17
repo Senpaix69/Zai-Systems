@@ -14,7 +14,7 @@ class DemoScreen extends StatefulWidget {
 
 class _DemoScreenState extends State<DemoScreen> {
   final _formKey = GlobalKey<FormState>();
-  final recipientEmail = 'senpai331.rb@gmail.com';
+  final recipientEmail = 'zaisystems@gmail.com';
   final _recipientController = TextEditingController(
     text: 'senpai331.rb@gmail.com',
   );
@@ -153,6 +153,7 @@ class _DemoScreenState extends State<DemoScreen> {
               20.heightBox,
               customButton(
                 onPress: () async => await send(),
+                // onPress: () async => await sendEmail(),
                 title: "Submit",
                 textColor: whiteColor,
                 btnColor: mehroonColor,
