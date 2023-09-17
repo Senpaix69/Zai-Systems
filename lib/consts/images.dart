@@ -125,7 +125,7 @@ const imgBespoke =
     "assets/images/services/Bespoke IT Solutions for Business.png";
 const imgDataAnalytics = "assets/images/services/Data Analytics.png";
 const imgDevOps = "assets/images/services/Dev Ops.png";
-const imgEcommerce = "assets/images/services/ecommerce.png";
+const imgEcommerce = "assets/images/services/E-Commerce.png";
 const imgInformation = "assets/images/services/Information Strategy.png";
 const imgManagedCloud = "assets/images/services/Managed Cloud Services.png";
 const imgUserExp = "assets/images/services/User Experience Design.png";
