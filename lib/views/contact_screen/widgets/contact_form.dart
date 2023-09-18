@@ -1,5 +1,5 @@
+import 'package:flutter_email_sender/flutter_email_sender.dart';
 import 'package:zaisystems/consts/imports.dart';
-import 'package:zaisystems/utils/launch_url.dart';
 import 'package:zaisystems/widget_common/custom_button.dart';
 import 'package:zaisystems/widget_common/custom_textfield.dart';
 
@@ -41,17 +41,13 @@ class _ContactFormState extends State<ContactForm> {
     final reqData =
         'Name: $name\n Email: $email\n Phone: $phone\n Message: $message';
 
-    final Uri emailUri = Uri(
-      scheme: 'mailto',
-      path: recipientEmail,
-      queryParameters: {
-        'subject': subject,
-        'body': reqData,
-      },
+    final Email emailObj = Email(
+      body: reqData,
+      subject: subject,
+      recipients: [recipientEmail],
     );
-    print(emailUri.toString().replaceAll("+", ""));
 
-    launchURL(url: "", uri: emailUri, context: context);
+    await FlutterEmailSender.send(emailObj);
   }
 
   @override
