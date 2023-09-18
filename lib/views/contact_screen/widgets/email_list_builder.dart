@@ -32,6 +32,11 @@ Widget emailListBuilder() {
       ...List.generate(
         contactList.length,
         (index) => TextButton(
+          style: TextButton.styleFrom(
+            minimumSize: Size.zero,
+            padding: EdgeInsets.zero,
+            tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+          ),
           onPressed: () => launchGmail(mail: contactList[index].subText),
           child: titleText(
             title: contactList[index].title,
