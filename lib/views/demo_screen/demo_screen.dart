@@ -152,8 +152,8 @@ class _DemoScreenState extends State<DemoScreen> {
                   controller: _bodyController),
               20.heightBox,
               customButton(
-                onPress: () async => await send(),
-                // onPress: () async => await sendEmail(),
+                // onPress: () async => await send(),
+                onPress: () async => await sendEmail(),
                 title: "Submit",
                 textColor: whiteColor,
                 btnColor: mehroonColor,
