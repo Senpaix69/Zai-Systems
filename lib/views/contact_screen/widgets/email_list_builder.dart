@@ -1,5 +1,27 @@
 import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/views/contact_screen/widgets/title_text.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'dart:io';
+
+void launchGmail({
+  required String mail,
+}) async {
+  String url() {
+    if (Platform.isAndroid) {
+      // add the [https]
+      return "mailto:$mail"; // new line
+    } else {
+      // add the [https]
+      return "https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=$mail"; // new line
+    }
+  }
+
+  if (await canLaunch(url())) {
+    await launch(url());
+  } else {
+    throw 'Could not launch ${url()}';
+  }
+}
 
 Widget emailListBuilder() {
   return Column(
@@ -9,9 +31,12 @@ Widget emailListBuilder() {
       10.heightBox,
       ...List.generate(
         contactList.length,
-        (index) => titleText(
-          title: contactList[index].title,
-          email: contactList[index].subText,
+        (index) => TextButton(
+          onPressed: () => launchGmail(mail: email),
+          child: titleText(
+            title: contactList[index].title,
+            email: contactList[index].subText,
+          ),
         ),
       )
     ],
