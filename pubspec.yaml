@@ -49,8 +49,10 @@ dependencies:
   uuid: ^3.0.7
   file_picker: ^5.3.3
   percent_indicator: ^4.2.3
-  url_launcher: ^6.1.12
+  url_launcher: ^6.1.14
   syncfusion_flutter_pdfviewer: ^22.2.10
+  flutter_email_sender: ^6.0.1
+
 
 dev_dependencies:
   flutter_test:
@@ -83,6 +85,7 @@ flutter:
     - assets/images/team/
     - assets/images/services/
     - assets/images/testimonial/
+    - assets/images/hcm360/
     - assets/icons/
 
   # An image asset can refer to one or more resolution-specific "variants", see

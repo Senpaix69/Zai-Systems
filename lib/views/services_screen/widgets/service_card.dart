@@ -16,7 +16,7 @@ Widget serviceCard({
               .border(color: mehroonColor, width: 3)
               .roundedFull
               .make(),
-      20.heightBox,
+      10.heightBox,
       item.title.text
           .size(heading)
           .color(mehroonColor)
@@ -38,7 +38,7 @@ Widget serviceCard({
 Image renderImg(String img, Color? color) {
   return Image.asset(
     img,
-    height: 80,
+    height: 200,
     color: color,
   );
 }

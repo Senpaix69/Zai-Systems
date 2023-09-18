@@ -1,6 +1,5 @@
 import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/models/member.dart';
-import 'package:zaisystems/widget_common/custom_button.dart';
 import 'package:zaisystems/widget_common/outlined_button.dart';
 
 Widget memberCard({
@@ -52,15 +51,6 @@ Widget memberCard({
                   ),
                 ),
                 10.widthBox,
-                Expanded(
-                  child: customButton(
-                    onPress: () => onBtnClick(0),
-                    title: "Message",
-                    textColor: whiteColor,
-                    btnColor: mehroonColor,
-                    padding: (1, 1),
-                  ),
-                ),
               ],
             ),
           ],

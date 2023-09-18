@@ -11,7 +11,7 @@ class ContactForm extends StatefulWidget {
 }
 
 class _ContactFormState extends State<ContactForm> {
-  final recipientEmail = "senpai331.rb@gmail.com";
+  final recipientEmail = "zaisystems@gmail.com";
   final _formKey = GlobalKey<FormState>();
   final TextEditingController _nameController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
@@ -39,7 +39,7 @@ class _ContactFormState extends State<ContactForm> {
     final subject = _subjectController.text;
     final message = _messageController.text;
     final reqData =
-        'Name: $name\n Email: $email\n Phone: $phone\nMessage: $message';
+        'Name: $name\n Email: $email\n Phone: $phone\n Message: $message';
 
     final Uri emailUri = Uri(
       scheme: 'mailto',
@@ -49,6 +49,8 @@ class _ContactFormState extends State<ContactForm> {
         'body': reqData,
       },
     );
+    print(emailUri.toString().replaceAll("+", ""));
+
     launchURL(url: "", uri: emailUri, context: context);
   }
 
@@ -99,7 +101,9 @@ class _ContactFormState extends State<ContactForm> {
           ),
           20.heightBox,
           customButton(
-            onPress: () {},
+            onPress: () {
+              sendEmail();
+            },
             title: "Submit",
             textColor: whiteColor,
             btnColor: mehroonColor,

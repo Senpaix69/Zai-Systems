@@ -79,6 +79,9 @@ const payrollsText = "Powerfull and flexible payroll";
 const attendance = "Attendance";
 const attendanceText =
     "Follow up attendance records from everywhere and anytime";
+const letterForms = "Letter & Forms";
+const letterFormsText =
+    "Create, edit and design HR forms and official letters in a smart way";
 const leaveMgmt = "Customizable Leave Management";
 const leaveMgmtText =
     "Follow up attendance records from everywhere and anytime";
@@ -93,9 +96,7 @@ const jobPortalText =
     "Follow up attendance records from everywhere and anytime";
 const taskMgmt = "Task Management";
 const taskMgmtText = "Follow up attendance records from everywhere and anytime";
-const letterForms = "Letter & Forms";
-const letterFormsText =
-    "Create, edit and design HR forms and official letters in a smart way";
+
 const loansMgmt = "Loans Management";
 const loansMgmtText =
     "Follow up attendance records from everywhere and anytime";

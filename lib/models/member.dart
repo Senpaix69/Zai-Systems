@@ -7,7 +7,7 @@ class Member {
   final String image;
   final String introduction;
   final String description;
-  final String contact;
+
   final String profile;
 
   const Member({
@@ -16,7 +16,6 @@ class Member {
     required this.image,
     required this.introduction,
     required this.description,
-    required this.contact,
     required this.profile,
   });
 }

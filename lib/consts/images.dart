@@ -17,7 +17,7 @@ const footerWebLogo = "assets/icons/website.png";
 
 //images
 const bg = "assets/images/background.jpeg";
-const decoration = "assets/images/sp2.jpg";
+const decoration = "assets/images/banner.jpg";
 const slider1 = "assets/images/bg.png";
 const slider2 = "assets/images/bg3.png";
 const slider3 = "assets/images/img2.jpg";
@@ -50,7 +50,7 @@ const jason = "assets/images/testimonial/jason.jpg";
 const ryan = "assets/images/testimonial/ryan.jpg";
 
 // team members
-const owais = 'assets/images/team/owais.jpg';
+const owais = 'assets/images/team/owais.jpeg';
 const rafey = 'assets/images/team/abdulrafay.jpg';
 const huzaifa = 'assets/images/team/huzaifa.jpeg';
 const mishal = 'assets/images/team/mishalriasat.jpeg';
@@ -58,7 +58,6 @@ const saeed = 'assets/images/team/saeed.jpeg';
 const fatima = 'assets/images/team/fatima.jpg';
 const sami = 'assets/images/team/samiahmed.png';
 const furqan = 'assets/images/team/mfurqan.jpg';
-const aiman = "assets/images/team/aimandev.PNG";
 const sameen = "assets/images/team/sameen.PNG";
 const soha = "assets/images/team/soha.jpeg";
 const nadeem = "assets/images/team/nadeem.PNG";
@@ -84,12 +83,36 @@ const irfan = "assets/images/team/mIrfan.png";
 const momin = "assets/images/team/mominmohsin.JPG";
 const muneeb = "assets/images/team/Muneeb.jpg";
 const sheherbano = "assets/images/team/shehrbano.jpeg";
+const hareem = "assets/images/team/hareem.jpeg";
+const babar = "assets/images/team/babar.jpeg";
+const huraira = "assets/images/team/huraira.jpg";
+const alishoaib = "assets/images/team/alishoaib.jpg";
+const ishfaq = "assets/images/team/ishfaq.jpeg";
+const mirfan = "assets/images/team/mirfan.jpeg";
+const shoaib = "assets/images/team/usmanshoaib.jpeg";
 
 // HCM 360
 const imgHcm360 = "assets/images/hcm360.png";
-const imgPayroll = "assets/images/payroll.jpg";
-const imgLetterAndServices = "assets/images/letter.png";
-const imgAttendance = "assets/images/attendance.jfif";
+const imgPayroll = "assets/images/hcm360/payroll.png";
+const imgLetterAndServices = "assets/images/hcm360/Letters & Forms.png";
+const imgleaveMgmt = "assets/images/hcm360/Customizable Leave Management.png";
+const imgselfService = "assets/images/hcm360/Employee Self-Service.png";
+const imgperformanceEvaluation =
+    "assets/images/hcm360/Performance Evaluation.png";
+const imgjobPotal = "assets/images/hcm360/Job Portal.png";
+const imgtaskMgmt = "assets/images/hcm360/Task Management.png";
+const imgloansMgmt = "assets/images/hcm360/Loans Management.png";
+const imgtracking = "assets/images/hcm360/Benefits & Expenses Tracking.png";
+const imgcustodyMgmt = "assets/images/hcm360/Custody Management.png";
+const imgnotice =
+    "assets/images/hcm360/Work Days Notice and Warning Management.png";
+const imgapprovals = "assets/images/hcm360/Workflow & Approvals.png";
+const imgmemo = "assets/images/hcm360/Memo Communication.png";
+const imgdecision = "assets/images/hcm360/Decision Management.png";
+const imgendOfService = "assets/images/hcm360/End-of-Service.png";
+const imgdashboard = "assets/images/hcm360/Insightful Dashboard.png";
+const imgrules = "assets/images/hcm360/Automated Rules & Regulations.png";
+const imgAttendance = "assets/images/hcm360/Attendance.png";
 const imgMobileAtt = "assets/images/mobile.png";
 const imgText = "assets/images/text.jpg";
 const imgForms = "assets/images/forms.png";
@@ -97,15 +120,16 @@ const imgOfficial = "assets/images/official.png";
 
 // Services
 const imgBusinessIntelligence =
-    "assets/images/services/businessIntelligence.png";
-const imgBespoke = "assets/images/services/bespoke.png";
-const imgDataAnalytics = "assets/images/services/dataAnalytics.png";
-const imgDevOps = "assets/images/services/devOps.png";
-const imgEcommerce = "assets/images/services/ecommerce.png";
-const imgInformation = "assets/images/services/information.png";
-const imgManagedCloud = "assets/images/services/managedCloudServices.png";
-const imgUserExp = "assets/images/services/userExp.png";
-const imgWebMobile = "assets/images/services/webMobile.png";
+    "assets/images/services/Business Intelligence.png";
+const imgBespoke =
+    "assets/images/services/Bespoke IT Solutions for Business.png";
+const imgDataAnalytics = "assets/images/services/Data Analytics.png";
+const imgDevOps = "assets/images/services/Dev Ops.png";
+const imgEcommerce = "assets/images/services/E-Commerce.png";
+const imgInformation = "assets/images/services/Information Strategy.png";
+const imgManagedCloud = "assets/images/services/Managed Cloud Services.png";
+const imgUserExp = "assets/images/services/User Experience Design.png";
+const imgWebMobile = "assets/images/services/Web and Mobile.png";
 const imgTopRated = "assets/images/services/topRated.png";
 const imgCertifiedWeb = "assets/images/services/certifiedWeb.png";
 const imgSupportTime = "assets/images/services/supportTime.png";

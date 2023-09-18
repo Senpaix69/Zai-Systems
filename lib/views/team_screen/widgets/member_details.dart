@@ -15,10 +15,10 @@ Future<void> memberDetailModel({
           Image.asset(
             member.image,
             width: context.screenWidth,
-            height: 500,
+            height: 485,
             fit: BoxFit.cover,
           ),
-          10.heightBox,
+          5.heightBox,
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -32,7 +32,7 @@ Future<void> memberDetailModel({
                   .fontFamily(semibold)
                   .color(darkFontGrey)
                   .make(),
-              10.heightBox,
+              5.heightBox,
               member.description.text.justify.size(text).make(),
             ],
           )

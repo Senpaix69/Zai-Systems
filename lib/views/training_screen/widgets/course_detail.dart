@@ -3,6 +3,7 @@ import 'package:zaisystems/models/card_item.dart';
 import 'package:zaisystems/utils/launch_url.dart';
 import 'package:zaisystems/views/training_screen/widgets/course_button.dart';
 import 'package:zaisystems/views/training_screen/widgets/pdf_screen.dart';
+import 'package:zaisystems/widget_common/outlined_button.dart';
 
 Future<void> courseDetailModel({
   required BuildContext context,
@@ -49,6 +50,17 @@ Future<void> courseDetailModel({
                     title: "PDF",
                     icon: icPDF,
                   ),
+                  20.widthBox,
+                  Expanded(
+                    child: outLinedButton(
+                      onPress: () => launchURL(url: url, context: context),
+                      title: "Register Now",
+                      textColor: mehroonColor,
+                      outlineColor: mehroonColor,
+                      padding: (1, 1),
+                    ),
+                  ),
+                  10.widthBox,
                 ],
               ),
             ],
