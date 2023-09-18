@@ -32,7 +32,7 @@ Widget emailListBuilder() {
       ...List.generate(
         contactList.length,
         (index) => TextButton(
-          onPressed: () => launchGmail(mail: email),
+          onPressed: () => launchGmail(mail: contactList[index].subText),
           child: titleText(
             title: contactList[index].title,
             email: contactList[index].subText,
