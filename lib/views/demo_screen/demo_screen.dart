@@ -37,8 +37,6 @@ class _DemoScreenState extends State<DemoScreen> {
   Future<void> send() async {
     final compname = _compnameController.text;
     final subject = _subjectController.text;
-    final company = _compController.text;
-    final employee = _empController.text;
     final number = _phoneController.text;
     final email = _emailController.text;
     final msg = _bodyController.text;
