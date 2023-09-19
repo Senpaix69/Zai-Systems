@@ -6,7 +6,8 @@ Widget customTextField({
   IconData? suffixIcon,
   IconData? prefixIcon,
   bool obsecure = false,
-  int? maxLines = 1,
+  int? minLines = 1,
+  int? maxLines = 6,
   Function()? onPress,
   Function(String)? onChange,
   bool? enabled,
@@ -17,6 +18,7 @@ Widget customTextField({
     enabled: enabled,
     obscureText: obsecure,
     controller: controller,
+    minLines: minLines,
     maxLines: maxLines,
     decoration: inputDecoration(
       prefixIcon: prefixIcon,
