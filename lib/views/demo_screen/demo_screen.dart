@@ -1,6 +1,6 @@
 import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/widget_common/custom_button.dart';
-import 'package:zaisystems/widget_common/custom_textfield.dart';
+import 'package:zaisystems/widget_common/demo_textfield.dart';
 import 'package:zaisystems/widget_common/my_appbar.dart';
 import 'package:flutter_email_sender/flutter_email_sender.dart';
 
@@ -16,7 +16,7 @@ class _DemoScreenState extends State<DemoScreen> {
   final recipientEmail = 'zaisystems@gmail.com';
   final TextEditingController _subjectController = TextEditingController();
   final TextEditingController _bodyController = TextEditingController();
-  final TextEditingController _nameController = TextEditingController();
+  final TextEditingController _compnameController = TextEditingController();
   final TextEditingController _compController = TextEditingController();
   final TextEditingController _empController = TextEditingController();
   final TextEditingController _phoneController = TextEditingController();
@@ -24,7 +24,7 @@ class _DemoScreenState extends State<DemoScreen> {
 
   @override
   void dispose() {
-    _nameController.dispose();
+    _compnameController.dispose();
     _compController.dispose();
     _empController.dispose();
     _phoneController.dispose();
@@ -35,15 +35,13 @@ class _DemoScreenState extends State<DemoScreen> {
   }
 
   Future<void> send() async {
-    final name = _nameController.text;
+    final compname = _compnameController.text;
     final subject = _subjectController.text;
-    final company = _compController.text;
-    final employee = _empController.text;
     final number = _phoneController.text;
     final email = _emailController.text;
     final msg = _bodyController.text;
     final reqData =
-        'Name: $name\n Company: $company\n Employee: $employee\n Email: $email\n Phone: $number\n Message: $msg';
+        'Company Name: $compname\n Email: $email\n Phone: $number\n Detail: $msg';
 
     final Email emailObj = Email(
       body: reqData,
@@ -70,43 +68,35 @@ class _DemoScreenState extends State<DemoScreen> {
               demoDetails.text.color(fontGrey).justify.bold.make(),
               20.heightBox,
               customTextField(
-                hint: name,
+                maxLines: 1,
+                hint: compname,
                 prefixIcon: Icons.person,
-                controller: _nameController,
+                controller: _compnameController,
               ),
               20.heightBox,
               customTextField(
+                maxLines: 1,
                 hint: email,
                 prefixIcon: Icons.email,
                 controller: _emailController,
               ),
               20.heightBox,
               customTextField(
+                maxLines: 1,
                 hint: "Phone No",
                 prefixIcon: Icons.contact_page,
                 controller: _phoneController,
               ),
               20.heightBox,
               customTextField(
-                hint: "Company Name",
-                prefixIcon: Icons.contact_page,
-                controller: _compController,
-              ),
-              20.heightBox,
-              customTextField(
-                hint: "No. of Employees",
-                prefixIcon: Icons.contact_page,
-                controller: _empController,
-              ),
-              20.heightBox,
-              customTextField(
-                hint: "Subject",
+                maxLines: 1,
+                hint: "Demo Title",
                 prefixIcon: Icons.subject,
                 controller: _subjectController,
               ),
               20.heightBox,
               customTextField(
-                  hint: "Your message",
+                  hint: "Demo Details",
                   prefixIcon: Icons.message,
                   controller: _bodyController),
               20.heightBox,

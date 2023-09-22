@@ -86,7 +86,7 @@ class _ContactFormState extends State<ContactForm> {
             hint: "Subject",
             prefixIcon: Icons.subject,
             controller: _subjectController,
-            maxLines: null,
+            maxLines: 1,
           ),
           20.heightBox,
           customTextField(
