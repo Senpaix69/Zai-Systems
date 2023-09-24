@@ -1,4 +1,5 @@
 import 'package:flutter_email_sender/flutter_email_sender.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/widget_common/custom_button.dart';
 import 'package:zaisystems/widget_common/custom_textfield.dart';
@@ -47,7 +48,22 @@ class _ContactFormState extends State<ContactForm> {
       recipients: [recipientEmail],
     );
 
-    await FlutterEmailSender.send(emailObj);
+    String platformResponse;
+
+    try {
+      await FlutterEmailSender.send(emailObj);
+      platformResponse = 'Email Sent';
+      Fluttertoast.showToast(msg: platformResponse);
+    } catch (error) {
+      platformResponse = error.toString();
+      Fluttertoast.showToast(msg: platformResponse);
+    }
+
+    _nameController.clear();
+    _emailController.clear();
+    _phoneNumberController.clear();
+    _subjectController.clear();
+    _messageController.clear();
   }
 
   @override

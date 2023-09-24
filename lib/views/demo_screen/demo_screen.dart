@@ -1,3 +1,4 @@
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:zaisystems/consts/imports.dart';
 import 'package:zaisystems/widget_common/custom_button.dart';
 import 'package:zaisystems/widget_common/demo_textfield.dart';
@@ -49,7 +50,22 @@ class _DemoScreenState extends State<DemoScreen> {
       recipients: [recipientEmail],
     );
 
-    await FlutterEmailSender.send(emailObj);
+    String platformResponse;
+
+    try {
+      await FlutterEmailSender.send(emailObj);
+      platformResponse = 'Email Sent';
+      Fluttertoast.showToast(msg: platformResponse);
+    } catch (error) {
+      platformResponse = error.toString();
+      Fluttertoast.showToast(msg: platformResponse);
+    }
+
+    _compnameController.clear();
+    _emailController.clear();
+    _phoneController.clear();
+    _subjectController.clear();
+    _bodyController.clear();
   }
 
   @override
