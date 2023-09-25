@@ -541,6 +541,17 @@ const servicesLists = [
     imgBusinessIntelligence,
   ),
   CardItem(infoStrategy, infoStrategyDesc, imgInformation),
+  CardItem(enterpriseDev, enterpriseDevDesc, imgEnterpriseDev),
+  CardItem(customDev, customDevDesc, imgCustomDev),
+  CardItem(swProductDev, swProductDevDesc, imgSwProductDev),
+  CardItem(swProjMgmt, swProjMgmtDesc, imgSwProjMgmt),
+  CardItem(qualityAssurance, qualityAssuranceDesc, imgQualityAssurance),
+  CardItem(blockChain, blockChainDesc, imgBlockChain),
+  CardItem(artificialIntelligence, artificialIntelligenceDesc,
+      imgArtificialIntelligence),
+  CardItem(staffAug, staffAugDesc, imgStaffAug),
+  CardItem(icoMarketing, icoMarketingDesc, imgIcoMarketing),
+  CardItem(digMarketing, digMarketingDesc, imgDigMarketing),
 ];
 
 // More Services
