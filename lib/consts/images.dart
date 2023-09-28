@@ -136,15 +136,16 @@ const imgSupportTime = "assets/images/services/supportTime.png";
 const imgAffordablePrice = "assets/images/services/affordable.png";
 const imgAbilityLoad = "assets/images/services/abilityLoad.png";
 const imgProvenCodeStd = "assets/images/services/provenCode.png";
-const imgEnterpriseDev = "assets/images/services/Information Strategy.png";
+const imgEnterpriseDev = "assets/images/services/Enterprise Development.png";
 const imgCustomDev = "assets/images/services/Custom Software Development.png";
-const imgSwProductDev = "assets/images/services/Information Strategy.png";
-const imgSwProjMgmt = "assets/images/services/Information Strategy.png";
+const imgSwProductDev =
+    "assets/images/services/Software Product Development.png";
+const imgSwProjMgmt = "assets/images/services/Software Project Management.png";
 const imgQualityAssurance =
     "assets/images/services/Software Quality Assurance.png";
-const imgBlockchain = "assets/images/services/Information Strategy.png";
+const imgBlockchain = "assets/images/services/Blockchain Development.png";
 const imgArtificialIntelligence =
     "assets/images/services/Artificial Intelligence.png";
 const imgStaffAug = "assets/images/services/Staff Augmentation.png";
 const imgIcoMarketing = "assets/images/services/ICO Marketing.png";
-const imgDigMarketing = "assets/images/services/Information Strategy.png";
+const imgDigMarketing = "assets/images/services/digital marketing.png";

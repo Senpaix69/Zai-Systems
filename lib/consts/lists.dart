@@ -546,7 +546,7 @@ const servicesLists = [
   CardItem(swProductDev, swProductDevDesc, imgSwProductDev),
   CardItem(swProjMgmt, swProjMgmtDesc, imgSwProjMgmt),
   CardItem(qualityAssurance, qualityAssuranceDesc, imgQualityAssurance),
-  CardItem(blockChain, blockChainDesc, imgBlockChain),
+  CardItem(blockChain, blockChainDesc, imgBlockchain),
   CardItem(artificialIntelligence, artificialIntelligenceDesc,
       imgArtificialIntelligence),
   CardItem(staffAug, staffAugDesc, imgStaffAug),
