@@ -259,7 +259,7 @@ const qualityAssuranceDesc =
 const blockChain = "Blockchain Development";
 const blockChainDesc =
     "We use Blockchain technologies to provide you with innovative solutions that offer security, privacy, and greater transparency.";
-const artificialIntelligence = "Artifical Intelligence";
+const artificialIntelligence = "Artificial Intelligence";
 const artificialIntelligenceDesc =
     "Leverage the power of Artificial Intelligence to boost your business growth. Automate the entire process and achieve quicker results.";
 const staffAug = "Staff Augmentation";
