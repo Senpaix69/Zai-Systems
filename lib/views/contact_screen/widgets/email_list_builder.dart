@@ -10,6 +10,9 @@ void launchGmail({
     if (Platform.isAndroid) {
       // add the [https]
       return "mailto:$mail"; // new line
+    } else if (Platform.isIOS) {
+      // add the [https]
+      return "mailto:$mail"; // new line
     } else {
       // add the [https]
       return "https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=$mail"; // new line

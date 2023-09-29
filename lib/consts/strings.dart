@@ -241,6 +241,36 @@ const businessIntelligenceDesc =
 const infoStrategy = "Information Strategy";
 const infoStrategyDesc =
     "Information Strategy brings together everything that can have an impact on or be impacted by data analytics.";
+const enterpriseDev = "Enterprise Software Development";
+const enterpriseDevDesc =
+    "Streamline your business processes by developing enterprise software applications to determine high performance, faster response times, improved coordination, cost-effectiveness, enhanced scalability and greater customer service.";
+const customDev = "Custom Software Development";
+const customDevDesc =
+    "Whatever form of B2B, B2C or SaaS software development solutions you want, you will find it all under one roof. We give the best with years of expertise in custom software development projects for our worldwide clientele.";
+const swProductDev = "Software Product Development";
+const swProductDevDesc =
+    "Building futuristic software products—How do we go about it? We provide scalable solutions that are quick to deploy and easy to manage. Using our technological skills, we integrate business principles to make your digital products user-friendly.";
+const swProjMgmt = "Software Project Management";
+const swProjMgmtDesc =
+    "Taking your vision seriously, we seamlessly bring it to life through daily collaborative meetings, sprint leadership, resource management, user story composition, backlog grooming, feature prioritization, roadmap creation and more.";
+const qualityAssurance = "Software Quality Assurance";
+const qualityAssuranceDesc =
+    "Whether you want a mobile, desktop, or next-generation-based application, our offshore team of software testing professionals works with a targeted strategy to help you get the most out of our testing efforts and improve time to market.";
+const blockChain = "Blockchain Development";
+const blockChainDesc =
+    "We use Blockchain technologies to provide you with innovative solutions that offer security, privacy, and greater transparency.";
+const artificialIntelligence = "Artificial Intelligence";
+const artificialIntelligenceDesc =
+    "Leverage the power of Artificial Intelligence to boost your business growth. Automate the entire process and achieve quicker results.";
+const staffAug = "Staff Augmentation";
+const staffAugDesc =
+    "Hire a qualified team to take care of specific tasks while you focus on the core of the business. Increase your productivity with a skilled team.";
+const icoMarketing = "ICO Marketing";
+const icoMarketingDesc =
+    "We offer an array of ICO Marketing services to provide sustainable results and to make it a huge success.";
+const digMarketing = "Digital Marketing";
+const digMarketingDesc =
+    "We offer Digital Marketing services that help your business with lead generation, making sales and increased ROI.";
 
 // ! More Service
 const moreServices =
@@ -313,7 +343,7 @@ const pythonDesc =
 const nodeJs = "Node JS";
 const nodeDesc =
     "An open-source JavaScript runtime environment that enables server-side scripting, allowing developers to build scalable and efficient network applications, APIs, and real-time services using JavaScript on the server.";
-const blockChain = "Block Chain";
+const blockchain = "Block Chain";
 const blockchainDesc =
     "A decentralized and secure digital ledger technology that records and verifies transactions across multiple computers, providing transparency, immutability, and potential applications in various fields, including cryptocurrencies, supply chain management, and data integrity.";
 const vueJs = "Vue JS";
